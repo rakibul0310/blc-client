@@ -1,0 +1,71 @@
+@mixin breakpoints($size) {
+  @if $size ==mobile {
+    @media screen and (max-width: 320px) {
+      @content;
+    }
+  } @else if $size ==largeMiniMobile {
+    @media screen and (max-width: 376px) {
+      @content;
+    }
+  } @else if $size ==mdlgMobile {
+    @media screen and (max-width: 386px) {
+      @content;
+    }
+  } @else if $size ==largeMobile {
+    @media screen and (max-width: 420px) {
+      @content;
+    }
+  } @else if $size ==largeMiniMobile {
+    @media screen and (max-width: 470px) {
+      @content;
+    }
+  } @else if $size ==miniPortraitTablet {
+    @media screen and (max-width: 510px) {
+      @content;
+    }
+  } @else if $size ==portraitTablet {
+    @media screen and (max-width: 641px) {
+      @content;
+    }
+  } @else if $size ==tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $size ==miniSemiTablet {
+    @media screen and (max-width: 837px) {
+      @content;
+    }
+  } @else if $size ==semiTablet {
+    @media screen and (max-width: 879px) {
+      @content;
+    }
+  } @else if $size ==semiMiniTablet {
+    @media screen and (max-width: 990px) {
+      @content;
+    }
+  } @else if $size ==smLaptop {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  } @else if $size ==laptop {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $size ==semiLargeLaptop {
+    @media screen and (max-width: 1150px) {
+      @content;
+    }
+  } @else if $size ==largeLaptop {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $size ==xtraLargeLaptop {
+    @media screen and (max-width: 1280px) {
+      @content;
+    }
+  } @else if $size ==4kdevice {
+    @media screen and (min-width: 1550px) {
+      @content;
+    }
+  }
+}

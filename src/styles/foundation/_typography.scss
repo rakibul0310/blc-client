@@ -1,0 +1,39 @@
+/*=============================================
+=            FOUNDATION - Typography         =
+=============================================*/
+
+/**
+ * This fiel defines the default font sizes to be used on headings and texts. The defaults come
+ * from the palette defined in _variables.scss.
+ */
+
+/*=============================================
+ =            Body Font Family                 =
+ =============================================*/
+
+$body-font-family: var(--lms-body-font-family, $roboto) !default;
+
+/*=============================================
+ =            Body Font Sizes                  =
+ =============================================*/
+
+$body-font-size-sm: var(--lms-body-font-size-sm, $fs-sm) !default;
+$body-font-size-lg: var(--lms-body-font-size-lg, $fs-lg) !default;
+
+/*=============================================
+ =            Font weight                     =
+ =============================================*/
+
+$font-weight-light: var(--lms-font-weight-light, $fw-light) !default;
+$font-weight-normal: var(--lms-font-weight-normal, $fw-normal) !default;
+
+/*=============================================
+ =            Heading Font Sizes               =
+ =============================================*/
+
+$h-1-font-size: var(--lms-h-1-font-size, $h-1) !default;
+$h-2-font-size: var(--lms-h-2-font-size, $h-2) !default;
+$h-3-font-size: var(--lms-h-2-font-size, $h-3) !default;
+$h-4-font-size: var(--lms-h-2-font-size, $h-4) !default;
+$h-5-font-size: var(--lms-h-2-font-size, $h-5) !default;
+$h-6-font-size: var(--lms-h-2-font-size, $h-6) !default;

@@ -1,0 +1,23 @@
+/* Default CSS Variables */
+
+/**
+ *
+ * ! Default CSS Variables
+ * As scss is not fully compatible with CSS,
+ * We neet embed this variable
+ *
+ */
+
+:root {
+  --lms-body-text-color: #{$dark};
+  --lms-body-bg-color: #{$white};
+
+  --lms-btn-primary-color: #{$white};
+  --lms-btn-primary-bg-color: #{$green};
+  --lms-btn-primary-bg-hover: #{$green-light};
+
+  --lms-form-border-color: #{$dark-light};
+  --lms-form-bg-color: #{$white};
+  --lms-form-bg-option-selected: #{$dark};
+  --lms-form-color-option-selected: #{$dark-light};
+}
