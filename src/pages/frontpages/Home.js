@@ -1,10 +1,18 @@
 import React from "react";
-import Header from "./Component/Header";
+import Header from "./Header";
+import HeroBanner from "./HeroBanner";
+import Banner from "./Banner";
+import TopCourses from "./TopCourses";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <section className="home__top">
+        <Header />
+        <HeroBanner />
+      </section>
+      <Banner />
+      <TopCourses />
+    </>
   );
 }

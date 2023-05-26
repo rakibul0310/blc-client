@@ -1,0 +1,76 @@
+@import "../../../foundation/_breakpoint.scss";
+@import "../../../foundation/variable";
+
+.sticky {
+  background-color: #0e0524 !important;
+  transition: all 0.3s ease-in-out;
+
+  span {
+    color: #fff !important;
+  }
+
+  .nav__link {
+    color: #fff !important;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+
+  .header__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-size: x-large;
+      font-family: "Nunito";
+      font-style: italic;
+      font-weight: 700;
+      color: tomato;
+      margin: 0;
+      padding-bottom: 0;
+    }
+    span {
+      color: #000000;
+      font-size: small;
+    }
+  }
+
+  .header__nav {
+    .nav__toggle {
+      .btn--toggle {
+        display: none;
+        @include breakpoints(tablet) {
+          display: block;
+        }
+      }
+    }
+
+    .nav__container {
+      .nav__list {
+        display: flex;
+        margin: 0 1.5rem;
+        list-style-type: none;
+
+        .nav__item {
+          margin: 1.5rem;
+          font-size: $fs-lg;
+
+          .nav__link {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

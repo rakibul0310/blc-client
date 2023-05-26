@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CustomLink = (props) => {
   return (
     <div>
-      <a href=""></a>
+      <Link to={props?.href} className={`${props?.className} link`}>
+        {props?.children}
+      </Link>
     </div>
   );
 };
