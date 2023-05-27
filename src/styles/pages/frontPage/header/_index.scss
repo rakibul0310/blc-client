@@ -12,6 +12,13 @@
   .nav__link {
     color: #fff !important;
   }
+
+  .nav__link.nav__link-btn {
+    background-color: #4105d996 !important;
+    &:hover {
+      background-color: #4105d9 !important;
+    }
+  }
 }
 .header {
   display: flex;
@@ -68,6 +75,23 @@
 
           .nav__link {
             color: #000000;
+          }
+
+          .nav__link.nav__link-btn {
+            background-color: #4105d93c;
+            color: #4105d9;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 35px;
+            font-family: "Poppins", sans-serif;
+            font-size: small;
+            font-weight: 500;
+
+            &:hover {
+              background-color: #4105d9;
+              color: #ffffff;
+              transition: all 0.3s ease-in-out;
+            }
           }
         }
       }

@@ -1,0 +1,19 @@
+.btn {
+  font-family: "Poppins", sans-serif;
+  padding: 15px 30px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 35px;
+  background-color: #4005d9;
+  // background-color: #006adc;
+  color: #ffffff;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #5410ff;
+    //   background-color: #4005d9;
+    //   background-color: #006adc;
+  }
+}

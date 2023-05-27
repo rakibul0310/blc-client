@@ -1,5 +1,6 @@
 import React from "react";
 import HeroAnimation from "../../componentes/Animation/HeroAnimation";
+import Button from "../../componentes/Common/Button";
 
 const HeroBanner = () => {
   return (
@@ -13,9 +14,11 @@ const HeroBanner = () => {
             Free online courses form the world's leading experts. Join 17
             million learners today
           </p>
-          <div>
-            <button>Join For Free</button>
-            <button>Find Courses</button>
+          <div className="hero__btn-container">
+            <Button className="btn hero__btn btn__join">Join For Free</Button>
+            <Button className="btn hero__btn btn__find-courses">
+              Find Courses
+            </Button>
           </div>
         </div>
         <HeroAnimation />

@@ -56,12 +56,12 @@ const Header = () => {
                 </CustomLink>
               </li>
               <li className="nav__item">
-                <CustomLink className="nav__link" href="#">
+                <CustomLink className="nav__link nav__link-btn" href="#">
                   Login
                 </CustomLink>
               </li>
               <li className="nav__item">
-                <CustomLink className="nav__link" href="#">
+                <CustomLink className="nav__link nav__link-btn" href="#">
                   Register
                 </CustomLink>
               </li>
