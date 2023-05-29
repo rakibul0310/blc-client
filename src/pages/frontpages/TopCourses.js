@@ -1,5 +1,11 @@
 import React from "react";
 import Button from "../../componentes/Common/Button";
+import topCourse1 from "../../assets/topCourses/top_course1.jpg";
+import topCourse2 from "../../assets/topCourses/top_course2.jpg";
+import topCourse3 from "../../assets/topCourses/top_course3.jpg";
+import topCourse4 from "../../assets/topCourses/top_course4.jpg";
+import avater from "../../assets/avater/avater1.jpg";
+import CourseCard from "../../componentes/Common/CourseCard";
 
 const TopCourses = () => {
   return (
@@ -12,66 +18,14 @@ const TopCourses = () => {
           </p>
         </div>
         <div className="top__courses__btn__container">
-          <Button>All Courses</Button>
+          <Button className="btn__all-courses">All Courses</Button>
         </div>
       </div>
       <div className="top__courses__container">
-        <div className="course">
-          <div className="course__rating__container">
-            <div>*****</div>
-            <div>(45)</div>
-          </div>
-          <div className="course__title__container">
-            <h4>Anguler - The Complete Guide(2023 Edition)</h4>
-          </div>
-          <div className="course__details__container">
-            <div>
-              icons
-              <span>12 Lessons</span>
-            </div>
-            <div>
-              icons
-              <span>9 Hours</span>
-            </div>
-            <div>
-              icons
-              <span>All Levels</span>
-            </div>
-          </div>
-          <div className="course__footer">
-            <div className="course__teacher-info__container">
-              <div>
-                Avater
-                <span>Robert FOx</span>
-              </div>
-            </div>
-            <div className="course__pricing__container">
-              <span>reguler price</span>
-              <span>offer price</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>Rating</div>
-          <div>Title</div>
-          <div>Details</div>
-          <div>Teacher info</div>
-          <div>Pricing</div>
-        </div>
-        <div>
-          <div>Rating</div>
-          <div>Title</div>
-          <div>Details</div>
-          <div>Teacher info</div>
-          <div>Pricing</div>
-        </div>
-        <div>
-          <div>Rating</div>
-          <div>Title</div>
-          <div>Details</div>
-          <div>Teacher info</div>
-          <div>Pricing</div>
-        </div>
+        <CourseCard img={topCourse1} avater={avater} />
+        <CourseCard img={topCourse2} avater={avater} />
+        <CourseCard img={topCourse3} avater={avater} />
+        <CourseCard img={topCourse4} avater={avater} />
       </div>
     </section>
   );

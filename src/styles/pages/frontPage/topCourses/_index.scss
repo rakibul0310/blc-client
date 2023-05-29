@@ -1,0 +1,52 @@
+.react-icon {
+  vertical-align: middle;
+  font-size: small;
+  font-family: "poppins", sans-serif;
+}
+.top__courses__section {
+  padding: 0 5%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  .top__courses__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .top__courses__title__container {
+      margin-bottom: 40px;
+      .top__courses__title {
+        margin-bottom: 0.5rem;
+      }
+      .top__courses__description {
+        margin-top: 0.2rem;
+      }
+    }
+    .top__courses__btn__container {
+      .btn__all-courses {
+        font-size: medium;
+        font-weight: 500;
+        padding: 15px 35px;
+        background-color: #4105d942;
+        color: #4005d9;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+          color: #ffffff;
+          background-color: #4005d9;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  .top__courses__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+  }
+}
