@@ -1,0 +1,91 @@
+.section__container {
+  margin: 30px 0;
+  padding: 0 2%;
+
+  .top__categories__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .top__categories__heding__container {
+      font-family: "poppins", sans-serif;
+      text-align: center;
+      margin-bottom: 40px;
+      h2 {
+        padding: 0.5rem;
+        margin-bottom: 0.2rem;
+      }
+
+      span {
+        margin-top: 0.2rem;
+        font-size: small;
+        color: #1f1f1f64;
+      }
+    }
+
+    .categories__container {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 15px;
+
+      .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 2%;
+
+        .category__icon__container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2rem 0;
+          border-radius: 5px;
+        }
+        .ct__digital__marketing {
+          background-color: #f7e9e7;
+        }
+        .ct__web__development {
+          background-color: #def5f0;
+        }
+        .ct__art {
+          background-color: #e3edfd;
+        }
+        .ct__personal__development {
+          background-color: #fcedcd;
+        }
+        .ct__it {
+          background-color: #dff1dd;
+        }
+        .ct__social {
+          background-color: #eef2f6;
+        }
+        .ct__graphic {
+          background-color: #deffef;
+        }
+
+        .category__body__container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-family: "poppins", sans-serif;
+
+          .category__title {
+            margin-bottom: 0.5rem;
+            font-size: medium;
+            font-weight: 500;
+          }
+
+          .category__details {
+            font-size: small;
+            margin-top: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
