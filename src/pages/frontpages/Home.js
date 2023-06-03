@@ -4,6 +4,8 @@ import HeroBanner from "./HeroBanner";
 import Banner from "./Banner";
 import TopCourses from "./TopCourses";
 import TopCatagories from "./TopCatagories";
+import CountUpProfile from "./CountUpProfile";
+import Events from "./Events";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Banner />
       <TopCatagories />
       <TopCourses />
+      <CountUpProfile />
+      <Events />
     </>
   );
 }

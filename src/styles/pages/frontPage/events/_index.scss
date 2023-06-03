@@ -1,0 +1,39 @@
+@import "../../../foundation/_breakpoint.scss";
+
+.events__section {
+  padding: 0 5%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  @include breakpoints(semiMiniTablet) {
+    align-items: center;
+  }
+  .events__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .events__title__container {
+      margin-bottom: 40px;
+      .events__title {
+        margin-bottom: 0.5rem;
+      }
+      .events__description {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+
+  .events__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+
+    @include breakpoints(semiMiniTablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

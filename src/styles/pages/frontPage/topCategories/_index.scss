@@ -1,3 +1,5 @@
+@import "../../../foundation/_breakpoint.scss";
+
 .section__container {
   margin: 30px 0;
   padding: 0 2%;
@@ -28,6 +30,10 @@
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       grid-gap: 15px;
+
+      @include breakpoints(semiMiniTablet) {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       .category {
         display: flex;

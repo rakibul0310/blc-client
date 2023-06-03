@@ -1,3 +1,5 @@
+@import "../../../foundation/_breakpoint.scss";
+
 .react-icon {
   vertical-align: middle;
   font-size: small;
@@ -11,6 +13,9 @@
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 60px;
+  @include breakpoints(semiMiniTablet) {
+    align-items: center;
+  }
   .top__courses__heading {
     display: flex;
     justify-content: space-between;
@@ -48,5 +53,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
+    @include breakpoints(semiMiniTablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

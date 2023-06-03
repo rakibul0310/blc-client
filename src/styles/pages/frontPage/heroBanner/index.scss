@@ -1,8 +1,13 @@
+@import "../../../foundation/_breakpoint.scss";
+
 .hero__section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+  @include breakpoints(semiMiniTablet) {
+    flex-direction: column-reverse;
+  }
 
   .hero__description {
     // display: flex;
@@ -11,6 +16,9 @@
     // align-items: center;
     width: 40%;
     padding: 0 30px;
+    @include breakpoints(semiMiniTablet) {
+      width: 90%;
+    }
 
     h2 {
       width: 100%;

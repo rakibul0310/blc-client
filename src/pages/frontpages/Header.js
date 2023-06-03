@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GrMenu } from "react-icons/gr";
 import CustomLink from "../../componentes/Common/CustomLink";
+import CustomIcon from "../../componentes/Common/CustomIcon";
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
@@ -33,8 +34,10 @@ const Header = () => {
         <nav className="header__nav">
           {/* toggle btn */}
           <div className="nav__toggle">
-            <button className="btn btn--toggle">
-              <GrMenu />
+            <button className="btn--toggle">
+              <CustomIcon>
+                <GrMenu />
+              </CustomIcon>
             </button>
           </div>
           {/* nav links */}

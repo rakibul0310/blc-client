@@ -1,3 +1,5 @@
+@import "../../../foundation/_breakpoint.scss";
+
 .react-icons {
   vertical-align: middle;
   color: rgb(141, 219, 141);
@@ -29,6 +31,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    @include breakpoints(semiMiniTablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .banner {
       display: flex;
       flex-direction: column;

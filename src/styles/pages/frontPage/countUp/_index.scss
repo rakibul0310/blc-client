@@ -1,0 +1,60 @@
+@import "../../../foundation/_breakpoint.scss";
+
+.react-icons-countup {
+  color: #ffffff;
+  font-size: 84px;
+  vertical-align: middle;
+}
+.countup__section__container {
+  background: #5433ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 4%;
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+
+  .countup__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 45px;
+    @include breakpoints(semiMiniTablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .countup__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .item__details__container {
+        margin-left: 0.5rem;
+        color: #ffffff;
+        font-family: "poopins", sans-serif;
+
+        .item__title {
+          margin: 0;
+          font-size: xx-large;
+          vertical-align: middle;
+        }
+        .item__details {
+          margin-top: 0;
+          font-size: medium;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

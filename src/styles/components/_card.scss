@@ -1,0 +1,35 @@
+.card__container {
+  box-shadow: 1px 1px 10px #cecbcb;
+  border-radius: 5px;
+  .card__body {
+    padding: 2%;
+    .date__container {
+      display: flex;
+      align-items: center;
+      .date__word__container {
+        margin-left: 0.5rem;
+        font-size: small;
+      }
+    }
+    .card__title__container {
+      h4 {
+        font-size: small;
+        font-family: "poppins", sans-serif;
+        font-weight: 600;
+        margin: 0.8rem 0;
+      }
+    }
+    .card__details__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 95%;
+      span {
+        margin-left: 0.5rem;
+        font-size: small;
+        // vertical-align: middle;
+        font-family: "poppins", sans-serif;
+      }
+    }
+  }
+}
