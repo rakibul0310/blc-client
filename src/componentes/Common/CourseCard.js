@@ -4,13 +4,12 @@ import { HiOutlineDocumentText } from "react-icons/hi";
 import { SlClock } from "react-icons/sl";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import StarRatings from "react-star-ratings";
-// import "../../styles/components/_courseCard.scss";
 
 const CourseCard = (props) => {
   return (
     <IconContext.Provider value={{ className: "react-icon" }}>
       <div className="course">
-        <img src={props.img} alt="" width={300} />
+        <img src={props?.coverImg} alt="" width="100%" />
         <div className="card__body">
           <div className="course__rating__container">
             <div className="rating__star">
@@ -34,7 +33,9 @@ const CourseCard = (props) => {
           <div className="course__details__container">
             <div>
               <HiOutlineDocumentText />
-              <span>{props.lesson ? props.lesson : "12 Lessons"}</span>
+              <span>
+                {props.totalLesson ? props.totalLesson : "12 Lessons"}
+              </span>
             </div>
             <div>
               <SlClock />
@@ -50,16 +51,16 @@ const CourseCard = (props) => {
               <div className="info__container">
                 <img className="avater" src={props.avater} alt="" />
                 <span className="name">
-                  {props.teacherName ? props.teacherName : "Robert FOx"}
+                  {props.author ? props.author : "Robert FOx"}
                 </span>
               </div>
             </div>
             <div className="course__pricing__container">
               <span className="reguler__price">
-                {props.rePrice ? props.rePrice : "$1200"}
+                {props.regulerPrice ? props.regulerPrice : "$1200"}
               </span>
               <span className="offer__price">
-                {props.ofPrice ? props.ofPrice : "$400"}
+                {props.offerPrice ? props.offerPrice : "$400"}
               </span>
             </div>
           </div>

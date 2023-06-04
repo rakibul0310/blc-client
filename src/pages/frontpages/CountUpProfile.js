@@ -29,6 +29,7 @@ const CountUpProfile = () => {
                 enableScrollSpy={true}
                 onEnd={() => console.log("Ended! 👏")}
                 onStart={() => console.log("Started! 💨")}
+                scrollSpyOnce={true}
               />
               +
             </h4>
@@ -53,6 +54,7 @@ const CountUpProfile = () => {
                 enableScrollSpy={true}
                 onEnd={() => console.log("Ended! 👏")}
                 onStart={() => console.log("Started! 💨")}
+                scrollSpyOnce={true}
               />
               +
             </h4>
@@ -77,6 +79,7 @@ const CountUpProfile = () => {
                 enableScrollSpy={true}
                 onEnd={() => console.log("Ended! 👏")}
                 onStart={() => console.log("Started! 💨")}
+                scrollSpyOnce={true}
               />
               +
             </h4>
@@ -101,6 +104,7 @@ const CountUpProfile = () => {
                 enableScrollSpy={true}
                 onEnd={() => console.log("Ended! 👏")}
                 onStart={() => console.log("Started! 💨")}
+                scrollSpyOnce={true}
               />
               %
             </h4>

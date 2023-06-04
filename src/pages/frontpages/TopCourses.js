@@ -22,10 +22,10 @@ const TopCourses = () => {
         </div>
       </div>
       <div className="top__courses__container">
-        <CourseCard img={topCourse1} avater={avater} />
-        <CourseCard img={topCourse2} avater={avater} />
-        <CourseCard img={topCourse3} avater={avater} />
-        <CourseCard img={topCourse4} avater={avater} />
+        <CourseCard coverImg={topCourse1} avater={avater} />
+        <CourseCard coverImg={topCourse2} avater={avater} />
+        <CourseCard coverImg={topCourse3} avater={avater} />
+        <CourseCard coverImg={topCourse4} avater={avater} />
       </div>
     </section>
   );
