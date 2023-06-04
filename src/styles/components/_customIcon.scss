@@ -29,3 +29,13 @@
   font-size: xxx-large;
   color: rgb(16, 234, 125) !important;
 }
+
+.nav__toggle__btn__icon {
+  color: #ffffff;
+  font-size: xx-large;
+  // transition: all 1 ease-in-out;
+}
+
+.nav__toggle__btn__icon.cross {
+  color: red;
+}

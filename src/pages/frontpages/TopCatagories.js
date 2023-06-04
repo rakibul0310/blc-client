@@ -27,7 +27,7 @@ const TopCatagories = () => {
         </div>
         <div className="categories__container">
           {topCategories.map((c, i) => (
-            <div className="category">
+            <div className="category" key={i}>
               <CustomLink>
                 <div
                   className={`category__icon__container ct${c.iconClasName}`}

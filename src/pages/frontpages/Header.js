@@ -1,10 +1,24 @@
-import React, { useState } from "react";
-import { GrMenu } from "react-icons/gr";
+import React, { useEffect, useRef, useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import { RxCrossCircled } from "react-icons/rx";
 import CustomLink from "../../componentes/Common/CustomLink";
 import CustomIcon from "../../componentes/Common/CustomIcon";
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  let toggleRef = useRef();
+
+  useEffect(() => {
+    const handleMenuDropDown = (e) => {
+      setToggle(false);
+      // if (toggleRef.current.contains(e.target)) {
+      //   console.log(toggleRef);
+      // }
+    };
+
+    document.addEventListener("mousedown", handleMenuDropDown);
+  });
 
   const addStickyNav = () => {
     if (window.pageYOffset > 100) {
@@ -31,17 +45,21 @@ const Header = () => {
           </CustomLink>
         </div>
         {/* nav menus */}
-        <nav className="header__nav">
+        <nav className="header__nav" ref={toggleRef}>
           {/* toggle btn */}
           <div className="nav__toggle">
-            <button className="btn--toggle">
-              <CustomIcon>
-                <GrMenu />
+            <button className="btn--toggle" onClick={() => setToggle(!toggle)}>
+              <CustomIcon
+                className={`nav__toggle__btn__icon  ${
+                  toggle ? "cross" : "menu"
+                }`}
+              >
+                {toggle ? <RxCrossCircled /> : <AiOutlineMenu />}
               </CustomIcon>
             </button>
           </div>
           {/* nav links */}
-          <div className="nav__container">
+          <div className={`nav__container  ${toggle ? "" : "toggled"}`}>
             <ul className="nav__list">
               <li className="nav__item">
                 <CustomLink className="nav__link" href="#">
