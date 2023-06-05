@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/frontpages/Home";
+import Home from "./pages/frontPages/Home";
 import "./styles/global.scss";
 import Footer from "./componentes/Footer/Footer";
-import Courses from "./pages/frontpages/courses/Courses";
-// import Header from "./pages/frontpages/Header";
+import Courses from "./pages/frontPages/courses/Courses";
+// import Header from "./pages/frontPages/Header";
 
 function App() {
   return (

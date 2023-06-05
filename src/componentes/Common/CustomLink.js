@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/components/_link.scss";
+// import "../../styles/components/_link.scss";
 
 const CustomLink = (props) => {
   return (
