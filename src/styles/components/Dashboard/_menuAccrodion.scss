@@ -1,0 +1,79 @@
+@import "../../foundation/breakpoint";
+@import "../../foundation/variable";
+
+.sidebar__menu__list {
+  margin: auto;
+  margin-bottom: 1rem;
+  .sidebar__menu__link {
+    display: flex;
+    align-items: center;
+    padding: 6px 30px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:focus {
+      outline: none;
+    }
+    .icon_text {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: "poppins", sans-serif;
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: $text-black;
+        text-transform: capitalize;
+        &:hover {
+          color: $text-menu-active-color;
+        }
+        &:visited {
+          color: none;
+        }
+        &:active {
+          color: $text-black;
+        }
+      }
+    }
+  }
+  ul {
+    transform: translateX(30px);
+    li {
+      margin: 1rem 0;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        color: $text-menu-active-color;
+      }
+      .nav__link {
+        color: $text-black;
+        text-transform: capitalize;
+        font-family: "poppins", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        &:hover {
+          color: $text-menu-active-color;
+        }
+        &:visited {
+          color: none;
+        }
+      }
+      .active {
+        color: $text-menu-active-color;
+      }
+    }
+  }
+
+  .sidebar__logout {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: red;
+    text-transform: capitalize;
+    &:hover {
+      color: darkred;
+    }
+    &:visited {
+      color: none;
+    }
+  }
+}

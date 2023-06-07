@@ -6,6 +6,7 @@ import TopCourses from "./TopCourses";
 import TopCatagories from "./TopCatagories";
 import CountUpProfile from "./CountUpProfile";
 import Events from "./Events";
+import Footer from "../../componentes/Footer/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <TopCourses />
       <CountUpProfile />
       <Events />
+      <Footer />
     </>
   );
 }

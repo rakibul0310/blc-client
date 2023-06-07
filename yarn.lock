@@ -7691,7 +7691,12 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@>=17.0.0":
+"react-device-breakpoints@^2.0.3":
+  "integrity" "sha512-X/i+Vt5Yyi5xU76xp4/rgMRHxFz3zznbf9z7mOqCMiE6Drk9WV7vJFvllWKB7Ne2ZFpBA8tfAxx7n27O0MCOLA=="
+  "resolved" "https://registry.npmjs.org/react-device-breakpoints/-/react-device-breakpoints-2.0.3.tgz"
+  "version" "2.0.3"
+
+"react-dom@^16.8.6", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@>=17.0.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -7813,7 +7818,7 @@
     "prop-types" "^15.6.0"
     "react" "^16.1.0"
 
-"react@*", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.3.0", "react@>=16.8", "react@>=17.0.0":
+"react@*", "react@^16.8.6", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.3.0", "react@>=16.8", "react@>=17.0.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

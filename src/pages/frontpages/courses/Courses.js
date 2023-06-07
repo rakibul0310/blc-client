@@ -2,6 +2,7 @@ import React from "react";
 import CourseCard from "../../../componentes/Common/CourseCard";
 import { coursesData } from "../../../fakeData/coursesData";
 import Header from "../Header";
+import Footer from "../../../componentes/Footer/Footer";
 
 const Courses = () => {
   return (
@@ -16,6 +17,7 @@ const Courses = () => {
             coursesData.map((c) => <CourseCard key={c.id} {...c} />)}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

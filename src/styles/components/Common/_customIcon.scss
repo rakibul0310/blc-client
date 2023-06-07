@@ -1,3 +1,6 @@
+@import "../../foundation/variable";
+@import "../../foundation/breakpoint";
+
 .ci {
   vertical-align: middle;
 }
@@ -38,4 +41,33 @@
 
 .nav__toggle__btn__icon.cross {
   color: red;
+}
+
+.sidebar__menu__icon {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+  color: $text-black;
+  font-size: 1.3rem;
+  margin-right: 0.6rem;
+  &:hover {
+    color: $text-menu-active-color;
+  }
+  &:visited {
+    color: none;
+  }
+  &:active {
+    color: $text-black;
+  }
+}
+
+.sidebar__menu__icon.logout {
+  font-size: 1.6rem;
+  color: red;
+  &:hover {
+    color: darkred;
+  }
+  &:visited {
+    color: none;
+  }
 }
