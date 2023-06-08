@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { RiBarChartHorizontalLine } from "react-icons/ri";
 import CustomIcon from "../Common/CustomIcon";
 import CustomLink from "../Common/CustomLink";
@@ -9,44 +9,60 @@ import avatar from "../../assets/avater/avater1.jpg";
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [changeTheme, setChangeTheme] = useState("light");
+  let toggleRef = useRef();
+
+  useEffect(() => {
+    const handleMenuDropDown = (e) => {
+      if (!toggleRef.current.contains(e.target)) {
+        setOpenMenu(false);
+        // console.log(toggleRef);
+      }
+      // console.log(openMenu);
+    };
+
+    document.addEventListener("mousedown", handleMenuDropDown);
+  });
   return (
     <section className="navbar__section__container">
       <div className="navbar__branding__container">
         <CustomIcon className="hamburger_icon">
           <RiBarChartHorizontalLine
-          //   onClick={() => setShow(!show)}
+          // onClick={() => setShow(!show)}
           />
         </CustomIcon>
-        {/* logo or branding */}
-        <div className="navbar__logo">
-          <CustomLink className="header__logo" href="/">
-            {/* <img src={logo} alt="Brand" width={150} /> */}
-            <h2>BLC.</h2>
-            <span>Blended Learning Center</span>
-          </CustomLink>
-        </div>
       </div>
       <div>
         <ul className="navbar__menu__lists">
           <li className="navbar__menu__list">
-            <div className="theme_icon" id="theme_icon">
+            <div className="theme_icon">
               <button
                 onClick={() =>
                   setChangeTheme(changeTheme === "light" ? "dark" : "light")
                 }
                 id="theme_icon"
               >
-                {changeTheme === "dark" ? <FiSun /> : <MdOutlineDarkMode />}
+                {changeTheme === "dark" ? (
+                  <CustomIcon className="theme__change__icon">
+                    <FiSun />
+                  </CustomIcon>
+                ) : (
+                  <CustomIcon className="theme__change__icon">
+                    <MdOutlineDarkMode />
+                  </CustomIcon>
+                )}
               </button>
             </div>
           </li>
-          <li className="rf_header_menu_list">
+          <li className="navbar__menu__list" ref={toggleRef}>
             <img
               src={avatar}
               alt="user_pic"
-              onClick={() => setOpenMenu(!openMenu)}
+              onClick={() => {
+                setOpenMenu(!openMenu);
+                // setShowPopupMenu(!showPopupMenu);
+              }}
             />
-            <div className={`${openMenu ? "open" : "close"}`}>
+            <div className={`popup__menu ${openMenu ? "open" : "close"}`}>
               <ul>
                 <li>
                   <CustomLink href="#">Profile</CustomLink>

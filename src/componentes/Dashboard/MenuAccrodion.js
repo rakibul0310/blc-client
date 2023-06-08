@@ -15,7 +15,6 @@ const MenuAccrodion = () => {
       return setCollapse(null);
     }
     setCollapse(index);
-    console.log(collapse);
   };
   const device = useBreakpoints();
 
@@ -30,7 +29,7 @@ const MenuAccrodion = () => {
           <CustomLink
             href={d?.route}
             onClick={() => {
-              console.log("clicked");
+              // console.log("clicked");
               toggle(d.id);
               if (!d.dropdown) {
                 // sideBarShow(true);

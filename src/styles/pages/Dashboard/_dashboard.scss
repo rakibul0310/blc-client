@@ -310,4 +310,16 @@ html {
       background: #dcdada;
     }
   }
+
+  .main__content__section {
+    position: relative;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+    width: calc(100% - 18%);
+
+    .main__content__container {
+      min-height: 70vh;
+      // min-height: 45.5vh;
+    }
+  }
 }

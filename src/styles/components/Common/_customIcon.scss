@@ -71,3 +71,18 @@
     color: none;
   }
 }
+
+.hamburger_icon {
+  color: $text-black;
+  font-size: 1.6rem;
+  // box-shadow: $box-shadow-navicon;
+}
+
+.theme__change__icon {
+  text-align: center;
+  font-size: 1.5rem;
+  color: $text-navicon-color;
+}
+.theme__change__icon.dark {
+  color: $text-black;
+}
