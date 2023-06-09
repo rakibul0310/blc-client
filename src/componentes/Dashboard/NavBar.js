@@ -6,14 +6,14 @@ import { FiSun } from "react-icons/fi";
 import { MdOutlineDarkMode } from "react-icons/md";
 import avatar from "../../assets/avater/avater1.jpg";
 
-const NavBar = () => {
+const NavBar = ({ sidebarToggle, setSidebarToggle, setTriggred }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [changeTheme, setChangeTheme] = useState("light");
   let toggleRef = useRef();
 
   useEffect(() => {
     const handleMenuDropDown = (e) => {
-      if (!toggleRef.current.contains(e.target)) {
+      if (!toggleRef?.current?.contains(e?.target)) {
         setOpenMenu(false);
         // console.log(toggleRef);
       }
@@ -27,9 +27,20 @@ const NavBar = () => {
       <div className="navbar__branding__container">
         <CustomIcon className="hamburger_icon">
           <RiBarChartHorizontalLine
-          // onClick={() => setShow(!show)}
+            onClick={() => {
+              setSidebarToggle(!sidebarToggle);
+              setTriggred(true);
+            }}
           />
         </CustomIcon>
+        {/* {sidebarToggle && (
+          <div className="logo__container">
+            <CustomLink className="header__logo" href="/">
+              <h2>BLC.</h2>
+              <span>Blended Learning Center</span>
+            </CustomLink>
+          </div>
+        )} */}
       </div>
       <div>
         <ul className="navbar__menu__lists">

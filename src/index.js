@@ -3,13 +3,19 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { Breakpoints } from "react-device-breakpoints";
 
+const breakpoints = {
+  isTablet: "(max-width: 767px)",
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Breakpoints {...breakpoints}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Breakpoints>
   </React.StrictMode>
 );
 

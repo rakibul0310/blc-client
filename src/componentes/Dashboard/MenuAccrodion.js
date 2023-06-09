@@ -3,19 +3,21 @@ import CustomLink from "../Common/CustomLink";
 import { dashboardMenus } from "../../utils/tools/dashboardMenus";
 import { FiLogOut } from "react-icons/fi";
 import { RiArrowDropRightLine } from "react-icons/ri";
-import { useBreakpoints } from "react-device-breakpoints";
 import CustomIcon from "../Common/CustomIcon";
 import { useLocation } from "react-router-dom";
+import { useBreakpoints } from "react-device-breakpoints";
 
-const MenuAccrodion = () => {
+const MenuAccrodion = ({ setSidebarToggle }) => {
   const [collapse, setCollapse] = useState(false);
   const activePath = useLocation();
+
   const toggle = (index) => {
     if (collapse === index) {
       return setCollapse(null);
     }
     setCollapse(index);
   };
+
   const device = useBreakpoints();
 
   return (
@@ -29,10 +31,8 @@ const MenuAccrodion = () => {
           <CustomLink
             href={d?.route}
             onClick={() => {
-              // console.log("clicked");
               toggle(d.id);
               if (!d.dropdown) {
-                // sideBarShow(true);
               }
             }}
             className="sidebar__menu__link"
@@ -62,6 +62,7 @@ const MenuAccrodion = () => {
                         onClick={() => {
                           //   sideBarShow(true);
                           device.isTablet && setCollapse(false);
+                          // console.log("clicked");
                           // setCollapse(false);
                         }}
                       >

@@ -292,6 +292,11 @@ html {
     overflow-x: hidden;
     z-index: 999;
     border-right: $border-header;
+    @include breakpoints(tablet) {
+      position: absolute;
+      width: 60%;
+      animation: menuToggle 0.5s;
+    }
 
     // scroll bar
     &::-webkit-scrollbar {
@@ -310,16 +315,53 @@ html {
       background: #dcdada;
     }
   }
+  .sidebar__section_hide {
+    display: none;
+  }
+
+  .sidebar__section.toggled {
+    width: 0%;
+  }
 
   .main__content__section {
     position: relative;
     margin-left: auto;
     transition: all 0.3s ease-in-out;
     width: calc(100% - 18%);
+    @include breakpoints(tablet) {
+      width: 100%;
+    }
 
     .main__content__container {
       min-height: 70vh;
       // min-height: 45.5vh;
     }
+  }
+
+  .main__content__section_wide {
+    position: relative;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    .main__content__container {
+      min-height: 70vh;
+      // min-height: 45.5vh;
+    }
+  }
+
+  .main__content__section.toggled {
+    width: 100%;
+  }
+}
+
+@keyframes menuToggle {
+  from {
+    width: 0%;
+    transition: all 0.3s ease-in-out;
+  }
+  to {
+    width: 60%;
+    transition: all 0.3s ease-in-out;
   }
 }
