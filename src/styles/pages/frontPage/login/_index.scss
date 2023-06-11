@@ -1,0 +1,128 @@
+@import "../../../foundation/breakpoint";
+@import "../../../foundation/variable";
+
+.login__main__container {
+  padding: 10rem 0;
+  background-color: $bg-gray-white;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login__form__container {
+    background-color: $bg-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: $box-shadow-1;
+    width: 40%;
+    padding: 2rem;
+    @include breakpoints(laptop) {
+      width: 50%;
+    }
+    @include breakpoints(tablet) {
+      width: 90%;
+    }
+
+    .page__title {
+      margin-bottom: 1rem;
+      h2 {
+        font-family: "poppins", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      input {
+        border: $border-1;
+        padding: 0.8rem 2rem;
+        width: 100%;
+        font-family: "poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 1rem 0;
+      }
+
+      .form__additional__info__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .keep__me__login__container {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 50%;
+          input {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.5rem;
+          }
+          span {
+            font-family: "poopins", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            @include breakpoints(tablet) {
+              font-size: 0.8rem;
+            }
+          }
+        }
+        a {
+          width: 40%;
+          color: $text-menu-active-color;
+          text-decoration: underline;
+          &:visited {
+            color: none;
+          }
+        }
+      }
+
+      .btn__login {
+        margin: 1rem 0;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 0.8rem 0;
+        font-family: "poppins", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 500;
+        background-color: $bg-primary;
+        color: $text-white;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: $bg-primary-hover;
+        }
+      }
+      .register__now__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "poopins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-top: 1rem;
+        .register__link {
+          margin-left: 0.3rem;
+          color: $text-menu-active-color;
+          text-decoration: underline;
+
+          &:visited {
+            color: none;
+          }
+        }
+      }
+    }
+  }
+}

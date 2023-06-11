@@ -7,39 +7,44 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div>
-        <div>
-          <h2>Hi, Welcome back!</h2>
-        </div>
-
-        <form action="">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
-          <div>
-            <div>
-              <input type="checkbox" name="" id="" />
-              <span>Keep me loged in</span>
-            </div>
-
-            <CustomLink>Forgot?</CustomLink>
+      <div className="login__main__container">
+        <div className="login__form__container">
+          <div className="page__title">
+            <h2>Hi, Welcome back!</h2>
           </div>
 
-          <input type="button" value="Login" />
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <div className="form__additional__info__container">
+              <div className="keep__me__login__container">
+                <input type="checkbox" name="" id="" />
+                <span>Keep me loged in</span>
+              </div>
 
-          <span>
-            Don't have an account? <CustomLink>Register Now</CustomLink>
-          </span>
-        </form>
+              <CustomLink href="#">Forgot?</CustomLink>
+            </div>
+
+            <input className="btn__login" type="button" value="Login" />
+
+            <span className="register__now__text">
+              Don't have an account?
+              <CustomLink className="register__link" href="/register">
+                Register Now
+              </CustomLink>
+            </span>
+          </form>
+        </div>
       </div>
       <Footer />
     </>
