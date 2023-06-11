@@ -46,14 +46,17 @@
 
       .popup__menu {
         background-color: $bg-gray-white;
+        box-shadow: $box-shadow;
         position: absolute;
         top: 65px;
         right: 45px;
         width: 14rem;
         height: 14rem;
         padding: 1.5rem;
+        overflow: hidden;
         transition: all 0.3s ease-in-out;
-        // border-radius: 1px 1px 1px 1px;
+        border-radius: 5px;
+        animation: popupMenuToggle 0.5s;
 
         ul {
           font-family: "poppins", sans-serif;
@@ -80,11 +83,27 @@
       .open {
         display: block;
         transition: all 0.3s ease-in-out;
+        // animation: popupMenuClose 0.5s;
       }
       .close {
+        animation: popupMenuClose;
+        animation: both;
         display: none;
         transition: all 0.3s ease-in-out;
       }
     }
+  }
+}
+
+@keyframes popupMenuToggle {
+  from {
+    // width: 0rem;
+    height: 0rem;
+    transition: all 0.3s ease-in-out;
+  }
+  to {
+    // width: 14rem;
+    height: 14rem;
+    transition: all 0.5s ease-in-out;
   }
 }

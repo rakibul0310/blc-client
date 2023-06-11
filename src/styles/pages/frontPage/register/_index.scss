@@ -1,0 +1,194 @@
+@import "../../../foundation/variable";
+@import "../../../foundation/breakpoint";
+
+.regiser__section__container {
+  background-color: $bg-gray-white;
+  padding-top: 10rem;
+  overflow: hidden;
+  .main__container {
+    background-color: transparent;
+    padding: 2%;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .register__container {
+      background-color: $bg-white;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      box-shadow: $box-shadow-1;
+      // width: 100%;
+      width: 40%;
+      @include breakpoints(tablet) {
+        width: 100%;
+      }
+      .page__title {
+        font-family: "poppins", sans-serif;
+        // padding: 1rem;
+        h2 {
+          margin-bottom: 0.3rem;
+          font-size: 2rem;
+          font-weight: 500;
+          color: $text-black;
+          text-align: center;
+        }
+        span {
+          margin-top: 0.2rem;
+          margin-bottom: 0.2rem;
+          font-size: 1rem;
+          font-weight: 500;
+          text-align: center;
+          text-transform: uppercase;
+          color: $text-gray;
+        }
+      }
+
+      .horizontal__devider {
+        width: 70%;
+        height: 0.1rem;
+        background-color: $bg-gray-white;
+        margin: 1rem 0;
+      }
+
+      .glg__btn__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-gray-white;
+        border-radius: 6px;
+        padding: 0.6rem 8rem;
+        cursor: pointer;
+        font-size: 1rem;
+        font-family: "poppins", sans-serif;
+        &:hover {
+          box-shadow: $box-shadow-1;
+        }
+        @include breakpoints(laptop) {
+          font-size: 0.5rem;
+          padding: 0.6rem 4rem;
+        }
+
+        button {
+          border: none;
+          outline: none;
+        }
+      }
+
+      .devider__container {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        .horizontal__devider {
+          width: 15rem;
+          height: 0.1rem;
+          background-color: $bg-gray-white;
+        }
+        span {
+          margin: 0 0.5rem;
+          font-family: "poppins", sans-serif;
+          font-size: 1rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+
+      .regiser__form {
+        width: 100%;
+
+        label {
+          font-family: "poppins", sans-serif;
+          font-size: 0.9rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: $text-gray;
+        }
+
+        .input__container {
+          margin: 0.6rem 0;
+          font-family: "poppins", sans-serif;
+          width: 100%;
+          display: flex;
+          overflow: hidden;
+          justify-content: center;
+          align-items: center;
+          svg {
+            position: relative;
+            left: 1.5rem;
+            color: #757575;
+          }
+          input {
+            border: $border-1;
+            padding: 0.8rem 2rem;
+            width: 100%;
+            font-family: "poppins", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+
+        .btn__register {
+          margin: 1rem 0;
+          width: 100%;
+          border: none;
+          border-radius: 5px;
+          padding: 0.8rem 0;
+          font-family: "poppins", sans-serif;
+          font-size: 1.1rem;
+          font-weight: 500;
+          background-color: $bg-primary;
+          color: $text-white;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: $bg-primary-hover;
+          }
+        }
+
+        .trems__container {
+          display: flex;
+          align-items: center;
+
+          input {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.6rem;
+          }
+
+          span {
+            font-family: "poppins", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .allready__registered__container {
+        margin: 1rem 0;
+        width: 100%;
+
+        span {
+          display: flex;
+          align-items: center;
+          font-family: "poppins", sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+
+          a {
+            margin-left: 0.3rem;
+            color: $text-menu-active-color;
+            text-decoration: underline;
+            &:visited {
+              color: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

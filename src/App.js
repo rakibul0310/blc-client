@@ -3,6 +3,8 @@ import Home from "./pages/frontPages/Home";
 import "./styles/global.scss";
 import Courses from "./pages/frontPages/courses/Courses";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Register from "./pages/frontPages/Register/Register";
+import Login from "./pages/frontPages/Login/Login";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/*" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
     </>

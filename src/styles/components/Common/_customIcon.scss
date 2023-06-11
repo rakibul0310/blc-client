@@ -86,3 +86,10 @@
 .theme__change__icon.dark {
   color: $text-black;
 }
+
+.google__icon {
+  font-size: 1.8rem;
+  @include breakpoints(tablet) {
+    font-size: 1rem;
+  }
+}
