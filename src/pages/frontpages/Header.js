@@ -77,6 +77,11 @@ const Header = () => {
                 </CustomLink>
               </li>
               <li className="nav__item">
+                <CustomLink className="nav__link" href="/dashboard">
+                  Dashboard
+                </CustomLink>
+              </li>
+              <li className="nav__item">
                 <CustomLink className="nav__link nav__link-btn" href="/login">
                   Login
                 </CustomLink>

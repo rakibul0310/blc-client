@@ -123,13 +123,20 @@
             left: 1.5rem;
             color: #757575;
           }
-          input {
+          input,
+          select {
             border: $border-1;
             padding: 0.8rem 2rem;
             width: 100%;
             font-family: "poppins", sans-serif;
             font-size: 1rem;
             font-weight: 400;
+
+            option {
+              font-family: "poppins", sans-serif;
+              font-size: 1rem;
+              font-weight: 400;
+            }
           }
         }
 

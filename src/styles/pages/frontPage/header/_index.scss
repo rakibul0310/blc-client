@@ -2,7 +2,8 @@
 @import "../../../foundation/variable";
 
 .sticky {
-  background-color: #0e0524 !important;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   transition: all 0.3s ease-in-out;
 
   span {
@@ -11,12 +12,17 @@
 
   .nav__link {
     color: #fff !important;
+    &:hover {
+      color: #ff4500 !important;
+    }
   }
 
   .nav__link.nav__link-btn {
-    background-color: #4105d996 !important;
+    background-color: #ff4500 !important;
+    transition: background-color 0.3s ease;
     &:hover {
-      background-color: #4105d9 !important;
+      background-color: #ff5722 !important;
+      color: #ffffff !important;
     }
   }
 }
@@ -34,7 +40,8 @@
   right: 0;
   transition: all 0.3s ease-in-out;
   @include breakpoints(semiMiniTablet) {
-    background-color: #0e0524 !important;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   }
 
   .header__logo {
@@ -47,7 +54,7 @@
     }
     h2 {
       font-size: x-large;
-      font-family: "Nunito";
+      font-family: "Poppins", sans-serif;
       font-style: italic;
       font-weight: 700;
       color: tomato;
@@ -77,7 +84,6 @@
         padding: 0;
         background-color: transparent;
         border: none;
-        // transition: all 1 ease-in-out;
         @include breakpoints(semiMiniTablet) {
           display: block;
         }
@@ -88,7 +94,6 @@
       transition: all 1s ease-in-out;
       @include breakpoints(semiMiniTablet) {
         right: -300px;
-        // top: 40px;
       }
     }
 
@@ -98,17 +103,18 @@
         position: absolute;
         width: 300px;
         height: 500px;
-        background-color: #0e0524;
+        background-color: #2a2a72;
+        background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
         color: #ffffff;
         right: 0px;
-        top: 40px;
+        top: 0px;
+        border-radius: 0px 0px 0px 60px;
       }
       .nav__list {
         display: flex;
         margin: 0 1.5rem;
         list-style-type: none;
         @include breakpoints(semiMiniTablet) {
-          // display: relative;
           flex-direction: column;
         }
 
@@ -118,6 +124,10 @@
 
           .nav__link {
             color: #000000;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: #ff4500;
+            }
             &:focus {
               outline: none;
             }
@@ -127,8 +137,8 @@
           }
 
           .nav__link.nav__link-btn {
-            background-color: #4105d93c;
-            color: #4105d9;
+            background-color: #2a2a72;
+            color: #ffffff;
             padding: 12px 28px;
             border: none;
             border-radius: 35px;
@@ -137,8 +147,7 @@
             font-weight: 500;
 
             &:hover {
-              background-color: #4105d9;
-              color: #ffffff;
+              background-color: #3748ac;
               transition: all 0.3s ease-in-out;
             }
           }

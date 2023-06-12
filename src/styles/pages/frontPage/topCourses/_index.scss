@@ -35,14 +35,14 @@
         font-size: medium;
         font-weight: 500;
         padding: 15px 35px;
-        background-color: #4105d942;
-        color: #4005d9;
+        background-color: #2a2a72;
+        color: #ffffff;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
 
         &:hover {
-          color: #ffffff;
-          background-color: #4005d9;
+          // color: #ffffff;
+          background-color: #3748ac;
           transition: 0.5s;
         }
       }

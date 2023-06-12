@@ -1,19 +1,37 @@
 .btn {
-  font-family: "Poppins", sans-serif;
-  padding: 15px 30px;
-  margin-right: 20px;
-  border: none;
-  border-radius: 35px;
-  background-color: #4005d9;
-  // background-color: #006adc;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
   color: #ffffff;
-  font-size: small;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  background-color: #2a2a72;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-  &:hover {
-    background-color: #5410ff;
-    //   background-color: #4005d9;
-    //   background-color: #006adc;
-  }
+.btn:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover {
+  background-color: #3748ac;
+}
+
+.btn:hover:before {
+  transform: translateY(0);
 }

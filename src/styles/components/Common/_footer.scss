@@ -2,7 +2,9 @@
 @import "../../foundation/index";
 
 footer {
-  background-color: #0e0524;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  // background-color: #0e0524;
   color: #ffffff;
   padding: 4% 4% 2% 4%;
   .footer__menus {
@@ -21,7 +23,22 @@ footer {
       list-style-type: none;
 
       li {
-        color: #ffffff;
+        // color: #ffffff;
+        div {
+          a {
+            font-family: "poppins", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: $text-white;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: #ff4500;
+            }
+            &:visited {
+              color: none;
+            }
+          }
+        }
       }
     }
 
@@ -43,7 +60,7 @@ footer {
       margin: 0.3rem 0;
       h2 {
         font-size: x-large;
-        font-family: "Nunito";
+        font-family: "poppins", sans-serif;
         font-style: italic;
         font-weight: 700;
         color: tomato;

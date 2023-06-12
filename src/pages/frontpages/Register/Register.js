@@ -5,8 +5,6 @@ import Footer from "../../../componentes/Footer/Footer";
 import CustomIcon from "../../../componentes/Common/CustomIcon";
 import { AiOutlineMail, AiOutlineUser, AiOutlineGoogle } from "react-icons/ai";
 import { RiEyeCloseLine } from "react-icons/ri";
-// import { GiSunkenEye } from "react-icons/gi";
-import { BiLogoGoogle } from "react-icons/bi";
 
 const Register = () => {
   return (
@@ -92,6 +90,20 @@ const Register = () => {
                 name="confrimPassword"
                 placeholder="Confrim password"
               />
+            </div>
+            <label className="label" htmlFor="register_as">
+              Register As:
+            </label>
+            <div className="input__container">
+              <select
+                name="registerAs"
+                id="register_as"
+                defaultValue="student"
+                onChange={(e) => console.log(e.target.value)}
+              >
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+              </select>
             </div>
             <input className="btn__register" type="button" value="Register" />
             <div className="trems__container">

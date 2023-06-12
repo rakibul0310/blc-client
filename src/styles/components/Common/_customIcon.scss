@@ -36,10 +36,14 @@
 .nav__toggle__btn__icon {
   color: #ffffff;
   font-size: xx-large;
+  z-index: 10;
+  position: relative;
   // transition: all 1 ease-in-out;
 }
 
 .nav__toggle__btn__icon.cross {
+  position: relative;
+  z-index: 10;
   color: red;
 }
 
