@@ -16,6 +16,7 @@
     "react-scripts": "5.0.1",
     "react-star-ratings": "^2.3.0",
     "sass": "^1.60.0",
+    "victory": "^36.6.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

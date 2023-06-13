@@ -1,0 +1,35 @@
+@import "../../../foundation/index";
+
+.student__home__container {
+  padding: 4rem;
+  width: 100%;
+  background-color: $bg-gray-white;
+  display: flex;
+
+  .left__container {
+    width: 65%;
+    padding-right: 1rem;
+
+    .wecome__text__container {
+      margin-bottom: 1.5rem;
+
+      span {
+        font-family: "poppins", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      h2 {
+        font-family: "poppins", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  .right__container {
+    width: 35%;
+    margin-left: 1rem;
+  }
+}

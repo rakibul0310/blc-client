@@ -4,6 +4,7 @@ import Sidebar from "../../componentes/Dashboard/Sidebar";
 import NavBar from "../../componentes/Dashboard/NavBar";
 import { useBreakpoints } from "react-device-breakpoints";
 import { useEffect } from "react";
+import StudentHome from "./studentPages/StudentHome";
 
 const Dashboard = () => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
@@ -53,7 +54,10 @@ const Dashboard = () => {
             setTriggred={setTriggred}
           />
           {/* main content here  */}
-          <div className="main__content__container">main content here</div>
+          <div className="main__content__container">
+            {/* main content here */}
+            <StudentHome />
+          </div>
           {/* footer here  */}
           <Footer />
         </div>
