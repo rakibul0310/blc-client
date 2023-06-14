@@ -6,6 +6,7 @@ import UpcominTask from "../../../componentes/Dashboard/User/UpcominTask";
 import Transactions from "../../../componentes/Dashboard/Common/Transactions";
 import PieChart from "../../../componentes/Dashboard/Common/PieChart";
 import { coursesData } from "../../../fakeData/coursesData";
+import AreaChart from "../../../componentes/Dashboard/Common/AreaChart";
 
 const StudentHome = () => {
   return (
@@ -16,8 +17,17 @@ const StudentHome = () => {
           <h2>Welcome to Blended Learning Center(BLC)</h2>
         </div>
         <Analytics />
+        <div
+          className="area__charts__container"
+          style={{ width: "100%", overflow: "hidden" }}
+        >
+          <AreaChart />
+        </div>
         <PromotedCourse />
-        <MyCourses data={coursesData} limit={3} />
+        <div className="courses__container">
+          <h2>Courses</h2>
+          <MyCourses data={coursesData} limit={3} />
+        </div>
       </div>
       <div className="right__container">
         <PieChart />

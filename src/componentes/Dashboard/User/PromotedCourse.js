@@ -1,4 +1,5 @@
 import React from "react";
+import cover from "../../../assets/topCourses/top_course1.jpg";
 
 const PromotedCourse = () => {
   return (
@@ -10,7 +11,7 @@ const PromotedCourse = () => {
           <button>Join Trial Class</button>
         </div>
         <div className="course__image__container">
-          <img src="" alt="Course cover" />
+          <img src={cover} alt="Course cover" width="100%" />
         </div>
       </div>
     </>

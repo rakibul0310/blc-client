@@ -1,0 +1,12 @@
+@import "../../../foundation/index";
+
+.pie__chart__container {
+  width: 90%;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   background-color: $bg-white;
+}

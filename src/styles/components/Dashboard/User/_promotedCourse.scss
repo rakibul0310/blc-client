@@ -1,0 +1,64 @@
+@import "../../../foundation/index";
+
+.promoted__course__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.3rem;
+  border: 5px solid;
+  animation: gradient-animation 5s infinite;
+  padding: 1.3rem;
+  margin-bottom: 2rem;
+
+  .course__details__container {
+    h2 {
+      text-align: left;
+      width: 80%;
+      font-size: 2rem;
+      color: $text-black;
+      margin-bottom: 0.4rem;
+    }
+    p {
+      color: $text-gray-p-color;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      width: 90%;
+    }
+    button {
+      // display: inline-block;
+      padding: 10px 20px;
+      background-color: #009ffd;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 28px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00ccff;
+    }
+  }
+
+  .course__image__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    border-image: linear-gradient(to right, #ff00cc, #3333ff) 1;
+  }
+  50% {
+    border-image: linear-gradient(to right, #3333ff, #00ccff) 1;
+  }
+  100% {
+    border-image: linear-gradient(to right, #00ccff, #ff00cc) 1;
+  }
+}

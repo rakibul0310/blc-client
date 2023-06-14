@@ -11,6 +11,7 @@
   background-color: $bg-white;
   transition: all 0.3s ease-in-out;
   border-bottom: $border-header;
+  z-index: 20000;
 
   .navbar__branding__container {
     padding: 0.7rem;
@@ -45,7 +46,12 @@
       }
 
       .popup__menu {
-        background-color: $bg-gray-white;
+        background: linear-gradient(
+          to bottom,
+          rgba(51, 51, 255, 0.5),
+          rgba(0, 204, 255, 0.5)
+        );
+        backdrop-filter: blur(10px);
         box-shadow: $box-shadow;
         position: absolute;
         top: 65px;
@@ -67,10 +73,10 @@
             margin: 0.5rem 0;
 
             a {
-              color: $text-black;
+              color: $text-white;
 
               &:hover {
-                color: $text-filter-active-color;
+                color: #ff4500;
               }
               &:visited {
                 color: none;
