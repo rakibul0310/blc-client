@@ -1,4 +1,6 @@
 import React from "react";
+import CustomIcon from "../../Common/CustomIcon";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const UpcominTask = () => {
   return (
@@ -20,7 +22,12 @@ const UpcominTask = () => {
           <span>By Jhon D.</span>
         </div>
         <div className="view__all__btn__container">
-          <button>View all Tasks</button>
+          <button className="btn__view__all__arrow">
+            View all Tasks
+            <CustomIcon className="btn__arrow">
+              <AiOutlineArrowRight />
+            </CustomIcon>
+          </button>
         </div>
       </div>
     </>

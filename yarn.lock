@@ -7719,7 +7719,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.5.7", "prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.8.1":
+"prop-types@^15.5.4", "prop-types@^15.5.7", "prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -7864,7 +7864,7 @@
   "resolved" "https://registry.npmjs.org/react-device-breakpoints/-/react-device-breakpoints-2.0.3.tgz"
   "version" "2.0.3"
 
-"react-dom@^16.8.6", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@>=17.0.0":
+"react-dom@^16.0.0", "react-dom@^16.8.6", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@>=16.8.0", "react-dom@>=17.0.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -7881,6 +7881,11 @@
   "integrity" "sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ=="
   "resolved" "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz"
   "version" "3.2.2"
+
+"react-gradient-progress@^1.0.3":
+  "integrity" "sha512-aEUQ/BxC7OPIqdmR8gSepdwkCA2sPQTnjRHoYO/PtV5Jac7XBVGXRPkhPQNczczc68OhDhCXLt/YAI/eEXzgrw=="
+  "resolved" "https://registry.npmjs.org/react-gradient-progress/-/react-gradient-progress-1.0.3.tgz"
+  "version" "1.0.3"
 
 "react-icons@^4.9.0":
   "integrity" "sha512-ijUnFr//ycebOqujtqtV9PFS7JjhWg0QU6ykURVHuL4cbofvRCf3f6GMn9+fBktEFQOIVZnuAYLZdiyadRQRFg=="
@@ -7906,6 +7911,11 @@
   "integrity" "sha512-pywF6oouJWuqL26xV3OruRSIqai31R9SdJX/I3gP2q8jLxUnA1IwXcLW8werUHLZOrp4N7YOeQNZrh/BKrHI4A=="
   "resolved" "https://registry.npmjs.org/react-merge-refs/-/react-merge-refs-2.0.1.tgz"
   "version" "2.0.1"
+
+"react-progressbar-fancy@^1.1.4":
+  "integrity" "sha512-Pgx6yecmWFHbIYI9IOYoJ+sskEiteC5IKJmc0KtTwEHlitQQwSwp8732xKbe10UrxfS6zR4qiHtZmqUwzVWKGw=="
+  "resolved" "https://registry.npmjs.org/react-progressbar-fancy/-/react-progressbar-fancy-1.1.4.tgz"
+  "version" "1.1.4"
 
 "react-refresh@^0.11.0", "react-refresh@>=0.10.0 <1.0.0":
   "integrity" "sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A=="
@@ -7991,7 +8001,7 @@
     "prop-types" "^15.6.0"
     "react" "^16.1.0"
 
-"react@*", "react@^16.8.6", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.3.0", "react@>=0.13", "react@>=16.6.0", "react@>=16.8", "react@>=17.0.0":
+"react@*", "react@^16.0.0", "react@^16.8.6", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.3.0", "react@>=0.13", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@>=17.0.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

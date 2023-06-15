@@ -35,3 +35,40 @@
 .btn:hover:before {
   transform: translateY(0);
 }
+
+.btn__view__all {
+  background-color: #009ffd;
+  border-radius: 28px;
+  border: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: #118fd8;
+    color: white;
+  }
+}
+.btn__view__all__arrow {
+  background-color: transparent;
+  border: 2px solid #009ffd;
+  border-radius: 28px;
+  color: #009ffd;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+  vertical-align: middle;
+  &:hover {
+    border-color: #ff5722;
+    color: #ff5722;
+  }
+}

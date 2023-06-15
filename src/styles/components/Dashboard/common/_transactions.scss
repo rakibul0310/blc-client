@@ -1,0 +1,46 @@
+@import "../../../foundation/index";
+
+.transactions__container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+
+  .transaction {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-bottom: 1.3rem;
+
+    .icon__container {
+      justify-self: center;
+      align-self: center;
+    }
+    .details__container {
+      h4 {
+        margin: 0.3rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      span {
+        font-size: 0.9rem;
+        color: $text-gray-p-color;
+      }
+    }
+    .amount__container {
+      h4 {
+        margin: 0.3rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: red;
+      }
+    }
+  }
+  .view__all__btn__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 1.3rem 0;
+  }
+}

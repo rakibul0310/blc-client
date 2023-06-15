@@ -1,0 +1,53 @@
+@import "../../../foundation/index";
+
+.my__courses__container {
+  //   padding: 0.6rem;
+  background-color: $bg-white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: $box-shadow-1;
+  width: 100%;
+  overflow-x: auto;
+
+  .course__container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr 2fr;
+    // grid-gap: 10px;
+    align-items: center;
+
+    .icon__container {
+      justify-self: center;
+    }
+    .course__title {
+      h4 {
+        margin-bottom: 0.3rem;
+        font-weight: 600;
+      }
+      span {
+        color: $text-gray-p-color;
+        font-size: 0.9rem;
+      }
+    }
+    .course__traking__percentence__container {
+      padding: 0 0.3rem;
+    }
+
+    .course__rating__container {
+      span {
+        vertical-align: middle;
+        margin-left: 0.3rem;
+      }
+    }
+    .course__btn__container {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
+  .view__all__btn__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.3rem;
+  }
+}
