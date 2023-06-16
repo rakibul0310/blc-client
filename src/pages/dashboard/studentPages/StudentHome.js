@@ -26,7 +26,9 @@ const StudentHome = () => {
         <PromotedCourse />
         <div className="courses__container">
           <h2>Courses</h2>
-          <MyCourses data={coursesData} limit={3} />
+          <div className="course__section__container">
+            <MyCourses data={coursesData} limit={3} />
+          </div>
         </div>
       </div>
       <div className="right__container">

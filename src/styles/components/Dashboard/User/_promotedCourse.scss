@@ -8,6 +8,9 @@
   animation: gradient-animation 5s infinite;
   padding: 1.3rem;
   margin-bottom: 2rem;
+  @include breakpoints(tablet) {
+    grid-template-columns: auto;
+  }
 
   .course__details__container {
     h2 {

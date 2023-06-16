@@ -5,10 +5,17 @@
   width: 100%;
   background-color: $bg-gray-white;
   display: flex;
+  @include breakpoints(tablet) {
+    flex-direction: column;
+    padding: 2rem;
+  }
 
   .left__container {
     width: 65%;
-    padding-right: 1rem;
+    padding: 0.5rem;
+    @include breakpoints(tablet) {
+      width: 100%;
+    }
 
     .wecome__text__container {
       margin-bottom: 1.5rem;
@@ -34,9 +41,14 @@
       align-items: flex-start;
       margin: 1.3rem 0;
       width: 100%;
-
       h2 {
         font-size: 1.7rem;
+      }
+      .course__section__container {
+        width: 100%;
+        @include breakpoints(tablet) {
+          overflow-x: scroll;
+        }
       }
     }
   }
@@ -44,5 +56,9 @@
   .right__container {
     width: 35%;
     margin-left: 1rem;
+    @include breakpoints(tablet) {
+      width: 100%;
+      padding: 0.5rem;
+    }
   }
 }

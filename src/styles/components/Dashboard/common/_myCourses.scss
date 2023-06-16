@@ -7,13 +7,19 @@
   border-radius: 8px;
   box-shadow: $box-shadow-1;
   width: 100%;
-  overflow-x: auto;
+  @include breakpoints(tablet) {
+    width: fit-content;
+  }
 
   .course__container {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr 2fr;
     // grid-gap: 10px;
+    width: 100%;
     align-items: center;
+    @include breakpoints(tablet) {
+      width: 660px;
+    }
 
     .icon__container {
       justify-self: center;

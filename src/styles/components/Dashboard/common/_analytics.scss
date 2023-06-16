@@ -4,6 +4,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
+  @include breakpoints(tablet) {
+    grid-template-columns: auto;
+  }
 
   .learnig__analysis__container,
   .learnig__activity__container {
