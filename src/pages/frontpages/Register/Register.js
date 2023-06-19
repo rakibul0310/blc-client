@@ -19,18 +19,18 @@ const Register = () => {
 
           <div className="horizontal__devider"></div>
 
-          <div className="glg__btn__container">
+          {/* <div className="glg__btn__container">
             <CustomIcon className="google__icon">
               <AiOutlineGoogle />
             </CustomIcon>
             <button>Continue with Google</button>
-          </div>
+          </div> */}
 
-          <div className="devider__container">
+          {/* <div className="devider__container">
             <div className="horizontal__devider"></div>
             <span>OR</span>
             <div className="horizontal__devider"></div>
-          </div>
+          </div> */}
 
           <form className="regiser__form" action="">
             <label className="label" htmlFor="name">

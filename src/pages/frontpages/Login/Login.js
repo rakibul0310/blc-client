@@ -2,8 +2,23 @@ import React from "react";
 import Header from "../Header";
 import Footer from "../../../componentes/Footer/Footer";
 import CustomLink from "../../../componentes/Common/CustomLink";
+import { useDispatch, useSelector } from "react-redux";
+import { userLogin } from "../../../services/Slices/userSlices/userLoginSlice";
 
 const Login = () => {
+  const loginState = useSelector((state) => state.login);
+  const dispatch = useDispatch();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    dispatch(
+      userLogin({
+        email: "abcd@mail.com",
+        password: "123",
+      })
+    );
+  };
   return (
     <>
       <Header />
@@ -35,7 +50,12 @@ const Login = () => {
               <CustomLink href="#">Forgot?</CustomLink>
             </div>
 
-            <input className="btn__login" type="button" value="Login" />
+            <input
+              onClick={(e) => handleLogin(e)}
+              className="btn__login"
+              type="button"
+              value="Login"
+            />
 
             <span className="register__now__text">
               Don't have an account?
