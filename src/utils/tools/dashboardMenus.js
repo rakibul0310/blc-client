@@ -71,7 +71,7 @@ export let dashboardMenus = [
   //   permission: ["user"],
   // },
   {
-    id: "f7df8sfd7f",
+    id: "f7df8sfd7fk",
     menu: "Order History",
     icon: <AiOutlineWallet />,
     route: "/dashboard/order-history",

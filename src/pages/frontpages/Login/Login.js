@@ -1,21 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header";
 import Footer from "../../../componentes/Footer/Footer";
 import CustomLink from "../../../componentes/Common/CustomLink";
 import { useDispatch, useSelector } from "react-redux";
-import { userLogin } from "../../../services/Slices/userSlices/userLoginSlice";
+import { useNavigate } from "react-router-dom";
+import { userLogin } from "../../../features/slices/authSlice";
+import { useEffect } from "react";
 
 const Login = () => {
-  const loginState = useSelector((state) => state.login);
+  const loginInfo = useSelector((state) => state.auth);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const handleLogin = (e) => {
+  useEffect(() => {
+    const userToken = localStorage.getItem("blcToken");
+    if (JSON.parse(userToken) === loginInfo?.data?.user?.token) {
+      navigate("/dashboard");
+    }
+
+    if (loginInfo.error) {
+      setError(loginInfo.error);
+    }
+    console.log(error);
+  }, [loginInfo?.data?.user?.token, loginInfo.error, navigate, error]);
+
+  const handleLogin = async (e) => {
     e.preventDefault();
-
     dispatch(
       userLogin({
-        email: "abcd@mail.com",
-        password: "123",
+        email,
+        password,
       })
     );
   };
@@ -34,12 +51,16 @@ const Login = () => {
               name="email"
               id="email"
               placeholder="Email Address"
+              required={true}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
               name="password"
               id="password"
               placeholder="Password"
+              required={true}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <div className="form__additional__info__container">
               <div className="keep__me__login__container">
@@ -50,13 +71,13 @@ const Login = () => {
               <CustomLink href="#">Forgot?</CustomLink>
             </div>
 
+            <div>{error && <span style={{ color: "red" }}>{error}</span>}</div>
             <input
               onClick={(e) => handleLogin(e)}
               className="btn__login"
               type="button"
               value="Login"
             />
-
             <span className="register__now__text">
               Don't have an account?
               <CustomLink className="register__link" href="/register">

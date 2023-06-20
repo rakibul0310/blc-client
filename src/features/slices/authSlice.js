@@ -6,14 +6,16 @@ export const userLogin = createAsyncThunk(
   "auth/login",
   async (data, thunkApi) => {
     try {
-      return authServices.login(data);
+      return await authServices.login(data);
     } catch (error) {
-      const msg =
-        (error.response &&
-          error.response.data &&
-          error.response.data.message) ||
-        error.message ||
-        error.toString();
+      let msg = "";
+      console.log(error);
+      if (error.response.data.message) {
+        msg = error.response.data.message;
+      } else {
+        msg = error.message;
+      }
+      console.log(msg);
 
       return thunkApi.rejectWithValue(msg);
     }
@@ -25,7 +27,7 @@ export const userRegister = createAsyncThunk(
   "auth/register",
   async (data, thunkApi) => {
     try {
-      return authServices.register(data);
+      return await authServices.register(data);
     } catch (error) {
       const msg =
         (error.response &&
@@ -44,7 +46,7 @@ export const authSlice = createSlice({
   name: "auth",
   initialState: {
     isLoading: false,
-    userInfo: {},
+    data: {},
     error: null,
   },
 
@@ -57,12 +59,12 @@ export const authSlice = createSlice({
     });
     builder.addCase(userLogin.fulfilled, (state, action) => {
       state.isLoading = false;
-      state.userInfo = action.payload;
+      state.data = action.payload;
       state.error = null;
     });
     builder.addCase(userLogin.rejected, (state, action) => {
       state.isLoading = false;
-      state.userInfo = {};
+      state.data = {};
       state.error = action.payload;
     });
     /*
@@ -73,12 +75,12 @@ export const authSlice = createSlice({
     });
     builder.addCase(userRegister.fulfilled, (state, action) => {
       state.isLoading = false;
-      state.userInfo = action.payload;
+      state.data = action.payload;
       state.error = null;
     });
     builder.addCase(userRegister.rejected, (state, action) => {
       state.isLoading = false;
-      state.userInfo = {};
+      state.data = {};
       state.error = action.payload;
     });
   },

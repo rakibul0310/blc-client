@@ -29,8 +29,8 @@ const Transactions = () => {
           <h2>Your Transactions</h2>
         </div>
 
-        {data.map((d) => (
-          <div className="transaction">
+        {data.map((d, i) => (
+          <div className="transaction" key={i}>
             <div className="icon__container">
               <CustomIcon className="transacttion__history">
                 <GiPayMoney />

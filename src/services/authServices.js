@@ -1,22 +1,29 @@
 import axios from "axios";
-import baseURL from "./httpHelper";
+
+const httpHelper = {
+  baseURL: "http://localhost:1000",
+};
 
 const login = async (data) => {
-  const res = await axios.post(baseURL + "/public/api/login", data);
-  if (res.data) {
-    localStorage.setItem("blcUser", JSON.stringify(res.data));
+  const res = await axios.post(httpHelper.baseURL + "/public/api/login", data);
+  console.log("here is resposnse", res);
+  if (res.data.user.token) {
+    localStorage.setItem("blcToken", JSON.stringify(res.data.user.token));
   }
   return res.data;
 };
 
 const register = async (data) => {
-  const res = await axios.post(baseURL + "/public/api/register", data);
-  if (res.data) {
-    const existingUser = localStorage.getItem("blcUser");
+  const res = await axios.post(
+    httpHelper.baseURL + "/public/api/register",
+    data
+  );
+  if (res.data.user.token) {
+    const existingUser = localStorage.getItem("blcToken");
     if (JSON.parse(existingUser)) {
-      localStorage.removeItem("blcUser");
+      localStorage.removeItem("blcToken");
     }
-    localStorage.setItem("user", JSON.stringify(res.data));
+    localStorage.setItem("user", JSON.stringify(res.data.user.token));
   }
   return res.data;
 };

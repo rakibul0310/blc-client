@@ -2,7 +2,6 @@ import React from "react";
 import CustomIcon from "../../Common/CustomIcon";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
-import { CircleProgress } from "react-gradient-progress";
 import { ProgressBar } from "react-progressbar-fancy";
 
 const MyCourses = ({ data, limit }) => {
@@ -10,8 +9,8 @@ const MyCourses = ({ data, limit }) => {
     <>
       <div className="my__courses__container">
         {data &&
-          data.slice(0, limit).map((d) => (
-            <div className="course__container">
+          data.slice(0, limit).map((d, i) => (
+            <div className="course__container" key={i}>
               <div className="icon__container">
                 <CustomIcon className="my__courses__course__icon">
                   <MdOutlineVideoLibrary />
