@@ -5,18 +5,27 @@ import NavBar from "../../componentes/Dashboard/NavBar";
 import { useBreakpoints } from "react-device-breakpoints";
 import { useEffect } from "react";
 import StudentHome from "./studentPages/StudentHome";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
   const [triggred, setTriggred] = useState(false);
 
   const device = useBreakpoints();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (device.isTablet) {
       setSidebarToggle(true);
     }
   }, [device.isTablet]);
+
+  useEffect(() => {
+    const token = localStorage.getItem("blcToken");
+    if (!token) {
+      navigate("/login");
+    }
+  }, [navigate]);
 
   return (
     <>

@@ -9,13 +9,11 @@ export const userLogin = createAsyncThunk(
       return await authServices.login(data);
     } catch (error) {
       let msg = "";
-      console.log(error);
       if (error.response.data.message) {
         msg = error.response.data.message;
       } else {
         msg = error.message;
       }
-      console.log(msg);
 
       return thunkApi.rejectWithValue(msg);
     }
@@ -29,13 +27,12 @@ export const userRegister = createAsyncThunk(
     try {
       return await authServices.register(data);
     } catch (error) {
-      const msg =
-        (error.response &&
-          error.response.data &&
-          error.response.data.message) ||
-        error.message ||
-        error.toString();
-
+      let msg = "";
+      if (error.response.data.message) {
+        msg = error.response.data.message;
+      } else {
+        msg = error.message;
+      }
       return thunkApi.rejectWithValue(msg);
     }
   }

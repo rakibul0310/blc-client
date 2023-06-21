@@ -6,6 +6,8 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Register from "./pages/frontPages/Register/Register";
 import Login from "./pages/frontPages/Login/Login";
 import About from "./pages/frontPages/about/About";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -19,6 +21,18 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 }

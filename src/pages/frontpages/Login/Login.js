@@ -16,15 +16,16 @@ const Login = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const userToken = localStorage.getItem("blcToken");
-    if (JSON.parse(userToken) === loginInfo?.data?.user?.token) {
+    if (loginInfo?.data?.user?.token) {
+      localStorage.setItem(
+        "blcToken",
+        JSON.stringify(loginInfo?.data?.user?.token)
+      );
       navigate("/dashboard");
     }
-
     if (loginInfo.error) {
       setError(loginInfo.error);
     }
-    console.log(error);
   }, [loginInfo?.data?.user?.token, loginInfo.error, navigate, error]);
 
   const handleLogin = async (e) => {
