@@ -1,24 +1,28 @@
 @import "../../../foundation/_breakpoint.scss";
+@import "../../../foundation/variable";
 
 .react-icons-countup {
-  color: #ffffff;
-  font-size: 84px;
+  // color: #ffffff;
+  color: #2a2a72;
+  font-size: 124px;
   vertical-align: middle;
 }
 .countup__section__container {
-  background: #5433ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a5fecb,
-    #20bdff,
-    #5433ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a5fecb,
-    #20bdff,
-    #5433ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #5433ff; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to right,
+  //   #a5fecb,
+  //   #20bdff,
+  //   #5433ff
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   to right,
+  //   #a5fecb,
+  //   #20bdff,
+  //   #5433ff
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: $box-shadow-1;
+  border: $border-1;
   padding: 4%;
   margin: 60px 0;
   display: flex;
@@ -41,7 +45,8 @@
 
       .item__details__container {
         margin-left: 0.5rem;
-        color: #ffffff;
+        // color: #ffffff;
+        color: #2a2a72;
         font-family: "poopins", sans-serif;
 
         .item__title {

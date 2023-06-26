@@ -64,8 +64,9 @@ const Footer = () => {
         <div className="footer__branding">
           <CustomLink className="header__logo" href="/">
             {/* <img src={logo} alt="Brand" width={150} /> */}
-            <h2>BLC.</h2>
-            <span>Blended Learning Center</span>
+            <h2>Blended</h2>
+            {/* <h2>BLC.</h2>
+            <span>Blended Learning Center</span> */}
           </CustomLink>
         </div>
         <div className="footer__copyright">
