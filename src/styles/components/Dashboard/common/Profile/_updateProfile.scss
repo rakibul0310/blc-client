@@ -1,0 +1,134 @@
+@import "../../../../foundation/index";
+
+.userUpdate_page_wrapper {
+  margin-top: 20px;
+  .userupdate_card {
+    padding: 25px;
+    min-height: 250px;
+    .userupdate_title {
+      text-align: start;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: $text-p-color;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .userupdate_field {
+      form {
+        .left {
+          margin-right: 33px !important;
+          @include breakpoints(portraitTablet) {
+            margin-right: 20px !important;
+          }
+        }
+        .right {
+          margin-right: 19px !important;
+        }
+        .form_group {
+          display: flex;
+          margin: 15px 0;
+          @include breakpoints(portraitTablet) {
+            display: inherit;
+            margin: 0px;
+          }
+          .form_group_special_container {
+            width: 50%;
+            margin-right: 25px !important;
+            @include breakpoints(portraitTablet) {
+              width: 100%;
+              margin-right: 20px !important;
+            }
+            .special_input {
+              margin-top: 8px;
+              display: inherit;
+            }
+          }
+          .input_group {
+            width: 50%;
+            @include breakpoints(portraitTablet) {
+              width: auto;
+              margin: 10px 0;
+            }
+          }
+          div {
+            width: 50%;
+            @include breakpoints(portraitTablet) {
+              width: auto;
+            }
+          }
+          .gender_select {
+            margin-right: 20px !important;
+            @include breakpoints(portraitTablet) {
+              margin-right: 0px;
+              margin: 13px 0;
+            }
+            .special_input {
+              margin-top: 8px;
+            }
+          }
+          label {
+            width: 100%;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 10px !important;
+            color: $text-p-color;
+            transition: all 0.3s ease-in-out;
+            @include breakpoints(tablet) {
+              font-size: 14px;
+            }
+          }
+          input {
+            width: 100%;
+            padding: 10px 0px 10px 8px;
+            border: $border-header;
+            outline: none;
+            border-radius: 5px;
+            color: $text-p-color;
+            background: $bg-body;
+            margin-top: 10px;
+          }
+          input:disabled {
+            background-color: $bg-body;
+            border: none;
+            cursor: no-drop;
+            border: $border-header !important;
+          }
+          select {
+            width: 100%;
+            padding: 10px 8px;
+            border: $border-header;
+            outline: none;
+            border-radius: 5px;
+            color: $text-p-color;
+            background: $bg-body;
+          }
+        }
+        .submit_button {
+          button {
+            margin-top: 10px;
+            width: 130px;
+            padding: 10px 8px;
+            background: $bg-thin-green;
+            box-shadow: $box-shadow-sidebar-menu;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              opacity: 0.8;
+            }
+            @include breakpoints(portraitTablet) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

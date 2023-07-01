@@ -1,0 +1,326 @@
+@import "../../../../foundation/index";
+
+.my_profile_page_wrapper {
+  margin-top: 10px;
+  .my_profile_card {
+    padding: 25px;
+    min-height: 250px;
+    .section_title {
+      h2 {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: $text-p-color;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .profile_head {
+      margin-top: 20px;
+      .photo_content {
+        position: relative;
+        .cover_photo {
+          // background: url("../../../../assets/cover.jpg");
+          background-size: cover;
+          background-position: 50%;
+          min-height: 250px;
+          width: 100%;
+          border-radius: 20px;
+          @include breakpoints(tablet) {
+            min-height: 170px;
+          }
+          @include breakpoints(largeMobile) {
+            min-height: 120px;
+          }
+        }
+      }
+      .profile_short_info {
+        display: flex;
+        position: relative;
+        padding: 15px 20px;
+        @include breakpoints(tablet) {
+          display: inherit;
+          text-align: center;
+        }
+        .profile_photo {
+          width: 100px;
+          height: 100px;
+          position: relative;
+          z-index: 1;
+          margin-top: -66px;
+          margin-right: 20px;
+          border-radius: 50%;
+          overflow: hidden;
+          @include breakpoints(tablet) {
+            max-width: inherit;
+            text-align: center;
+          }
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50% !important;
+          }
+          img:hover ~ form {
+            visibility: visible !important;
+            opacity: 1 !important;
+            transition: all 0.3s ease-in-out;
+          }
+          form {
+            position: absolute;
+            bottom: -2px;
+            margin: auto;
+            left: 0px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              visibility: visible !important;
+              opacity: 1 !important;
+              transition: all 0.3s ease-in-out;
+            }
+            input {
+              width: 100%;
+              overflow: hidden;
+              &::-webkit-file-upload-button {
+                visibility: hidden;
+              }
+              &::before {
+                font-family: poppins;
+                content: "<>";
+                display: inline-block;
+                border: 1px solid #999;
+                color: #000000;
+                border-radius: 3px;
+                padding: 8px 8px;
+                position: absolute;
+                left: -8px;
+                outline: none;
+                white-space: nowrap;
+                -webkit-user-select: none;
+                text-align: center;
+                user-select: none;
+                bottom: 0;
+                cursor: pointer;
+                text-shadow: 1px 1px #fff;
+                font-weight: 700;
+                font-size: 10pt;
+                width: 100%;
+                background: #000000ab;
+              }
+              @include breakpoints(tablet) {
+                margin: 10px 0;
+              }
+            }
+          }
+        }
+        .profile_info {
+          display: flex;
+          @include breakpoints(tablet) {
+            display: inherit;
+          }
+          .profile_name {
+            margin-right: 25px;
+            @include breakpoints(tablet) {
+              margin-right: 0px;
+            }
+            h2 {
+              font-size: 18px;
+              color: $text-primary;
+              // font-weight: 600 !important;
+              @include breakpoints(mdlgMobile) {
+                font-size: 14px;
+                padding: 5px 5px;
+              }
+              @include breakpoints(mdlgMobile) {
+                font-size: 14px;
+                padding: 5px 5px;
+              }
+            }
+            p {
+              font-size: 13px;
+              color: $text-p-color;
+            }
+          }
+          .profile_email {
+            h2 {
+              font-size: 18px;
+              color: $text-primary;
+              transition: all 0.3s ease-in-out;
+              @include breakpoints(tablet) {
+                font-size: 16px;
+              }
+              @include breakpoints(mdlgMobile) {
+                font-size: 14px;
+                padding: 5px 5px;
+              }
+              @include breakpoints(mdlgMobile) {
+                font-size: 14px;
+                padding: 5px 5px;
+              }
+            }
+            p {
+              font-size: 13px;
+              color: $text-p-color;
+              @include breakpoints(tablet) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        button {
+          padding: 4px 8px;
+          color: #fff;
+          width: 85px;
+          font-size: 10px;
+          border: none;
+          border-radius: 6px;
+          margin-right: 10px;
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          height: 25px;
+          align-self: center;
+          margin-left: 10px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        .green {
+          background-color: $text-primary;
+          box-shadow: $box-shadow;
+          border-radius: 2px;
+        }
+      }
+    }
+    .profile_bottom {
+      margin-top: 15px;
+      .rf_profile_title {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 18px;
+          text-transform: capitalize;
+          color: $text-p-color;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .profile_field {
+        .form_group {
+          display: flex;
+          margin: 15px 0;
+          @include breakpoints(portraitTablet) {
+            display: inherit;
+            margin: 0px;
+          }
+          .input_group {
+            width: 50%;
+            // background: red;
+            @include breakpoints(portraitTablet) {
+              width: auto;
+              margin: 10px 0;
+            }
+          }
+          .left {
+            margin-right: 33px !important;
+            @include breakpoints(portraitTablet) {
+              margin-right: 16px !important;
+            }
+          }
+          .right {
+            margin-right: 15px !important;
+          }
+          label {
+            width: 100%;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 15px !important;
+            color: $text-p-color;
+            transition: all 0.3s ease-in-out;
+            @include breakpoints(tablet) {
+              font-size: 14px;
+            }
+          }
+          input {
+            width: 100%;
+            padding: 10px 8px;
+            border: $border-header;
+            outline: none;
+            border-radius: 5px;
+            color: $text-p-color;
+            background: $bg-body;
+            transition: all 0.3s ease-in-out;
+            margin-top: 10px;
+          }
+          input:disabled {
+            background-color: $bg-body;
+            border: none;
+            cursor: no-drop;
+            border: $border-header !important;
+          }
+          .copyToClipboard {
+            color: $text-primary;
+            background-color: $bg-body;
+          }
+        }
+        .form_group_special_container {
+          width: 50%;
+          @include breakpoints(portraitTablet) {
+            width: 100%;
+          }
+          position: relative;
+          // margin-right: 33px;
+          .left {
+            margin-right: 35px !important;
+            @include breakpoints(portraitTablet) {
+              margin-right: 16px !important;
+            }
+          }
+          span {
+            position: absolute;
+            top: 36px;
+            right: 18px;
+            border-radius: 5px;
+            background-color: $bg-body;
+            padding: 3px 8px;
+            z-index: 999;
+            font-size: 28px;
+            width: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              color: $text-primary;
+              cursor: pointer;
+            }
+          }
+          label {
+            width: 100%;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 15px !important;
+            color: $text-p-color;
+            transition: all 0.3s ease-in-out;
+            @include breakpoints(tablet) {
+              font-size: 14px;
+            }
+          }
+          input {
+            width: 100%;
+            padding: 10px 8px;
+            border: $border-header;
+            outline: none;
+            border-radius: 5px;
+            color: $text-p-color;
+            background: $bg-body;
+            transition: all 0.3s ease-in-out;
+            margin-top: 10px;
+          }
+          input:disabled {
+            background-color: $bg-body;
+            border: $border-header !important;
+            border: none;
+            cursor: no-drop;
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import { useBreakpoints } from "react-device-breakpoints";
 import { useEffect } from "react";
 import StudentHome from "./studentPages/StudentHome";
 import { useNavigate } from "react-router-dom";
+import AppContent from "./AppContent";
 
 const Dashboard = () => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
@@ -65,7 +66,8 @@ const Dashboard = () => {
           {/* main content here  */}
           <div className="main__content__container">
             {/* main content here */}
-            <StudentHome />
+            {/* <StudentHome /> */}
+            <AppContent />
           </div>
           {/* footer here  */}
           <Footer />
