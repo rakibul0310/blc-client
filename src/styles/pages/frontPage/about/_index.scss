@@ -1,0 +1,23 @@
+@import "../../../foundation/_index.scss";
+
+.about__main__container {
+  padding: 10rem 4%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .about__section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    .about__heading {
+      font-size: 2rem;
+      text-decoration: underline;
+      text-decoration-color: #2a2a72;
+    }
+  }
+}

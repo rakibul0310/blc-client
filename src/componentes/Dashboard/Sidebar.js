@@ -12,8 +12,8 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle }) => {
   useEffect(() => {
     const handleMenuDropDown = (e) => {
       if (device.isTablet && !toggleRef?.current?.contains(e?.target)) {
-        setSidebarToggle(true);
-        // console.log(toggleRef);
+        // setSidebarToggle(true);
+        console.log(sidebarToggle);
       }
       // console.log(openMenu);
     };
@@ -25,8 +25,9 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle }) => {
     <section className="sidebar__section__container" ref={toggleRef}>
       <div className="logo__container">
         <CustomLink className="header__logo" href="/">
-          <h2>BLC.</h2>
-          <span>Blended Learning Center</span>
+          {/* <h2>BLC.</h2>
+          <span>Blended Learning Center</span> */}
+          <h2>Blended</h2>
         </CustomLink>
       </div>
       <div className="user__info__container">
