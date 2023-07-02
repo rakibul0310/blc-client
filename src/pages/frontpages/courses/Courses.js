@@ -10,7 +10,7 @@ const Courses = () => {
       <Header />
       <section className="courses__section">
         <div className="courses__heading__container">
-          <h2>Courses Heading</h2>
+          <h2>All Courses</h2>
         </div>
         <div className="courses__container">
           {coursesData &&

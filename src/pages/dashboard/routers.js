@@ -1,5 +1,10 @@
 import React from "react";
 import Page404 from "../../componentes/Common/Page404";
+const MyCourses = React.lazy(() => import("./common/Courses/MyCourses"));
+const AllCourses = React.lazy(() =>
+  import("../dashboard/common/Courses/AllCourses")
+);
+
 const ProfileUpdate = React.lazy(() =>
   import("../../pages/dashboard/common/Profile/ProfileUpdate")
 );
@@ -28,6 +33,8 @@ export const routers = [
   },
 
   // Common Routes
+
+  // Profile
   {
     path: "/profile",
     name: "My Profile",
@@ -58,6 +65,26 @@ export const routers = [
     name: "My Profile",
     permission: ["student", "teacher", "admin"],
     component: PasswordUpdate,
+  },
+
+  // Courses
+  {
+    path: "/courses",
+    name: "My Courses",
+    permission: ["student", "teacher"],
+    component: MyCourses,
+  },
+  {
+    path: "/courses/my-courses",
+    name: "My Courses",
+    permission: ["student", "teacher"],
+    component: MyCourses,
+  },
+  {
+    path: "/courses/all-courses",
+    name: "All Courses",
+    permission: ["student", "teacher", "admin"],
+    component: AllCourses,
   },
 
   // User Dashboard

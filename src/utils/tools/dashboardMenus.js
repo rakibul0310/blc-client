@@ -51,20 +51,14 @@ export let dashboardMenus = [
     dropdown: [
       {
         id: "r3er8re8sdf7dn",
-        menu: "Enrolled Courses",
-        route: "/dashboard/enrolled-courses",
-        permission: ["student"],
-      },
-      {
-        id: "r3er8re8sdf7dn",
         menu: "My Courses",
-        route: "/dashboard/my-courses",
-        permission: ["teacher"],
+        route: "/dashboard/courses/my-courses",
+        permission: ["student", "teacher"],
       },
       {
         id: "fs7erw55s",
         menu: "All Courses",
-        route: "/dashboard/all-courses",
+        route: "/dashboard/courses/all-courses",
         permission: ["student", "teacher"],
       },
     ],
