@@ -1,6 +1,6 @@
 import React from "react";
 import avatar from "../../../../assets/avater/avater1.jpg";
-import Input from "../../../Common/Input";
+import Input from "../../../../componentes/Common/Input";
 
 const MyProfile = () => {
   return (
@@ -57,8 +57,6 @@ const MyProfile = () => {
                 disabled={true}
                 inputGroupClass="right"
               />
-            </div>
-            <div className="form_group">
               <Input
                 label="Email"
                 type="text"
@@ -67,6 +65,8 @@ const MyProfile = () => {
                 disabled={true}
                 inputGroupClass="left"
               />
+            </div>
+            <div className="form_group">
               <Input
                 label="Phone No."
                 type="text"
@@ -75,8 +75,6 @@ const MyProfile = () => {
                 disabled={true}
                 inputGroupClass="right"
               />
-            </div>
-            <div className="form_group">
               <Input
                 label="Join Date"
                 type="text"

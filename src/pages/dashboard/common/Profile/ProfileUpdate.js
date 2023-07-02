@@ -1,9 +1,9 @@
 import React from "react";
-import Select from "../../../Common/Select";
-import Input from "../../../Common/Input";
+import Select from "../../../../componentes/Common/Select";
+import Input from "../../../../componentes/Common/Input";
 import { useEffect } from "react";
 import { useState } from "react";
-import Button from "../../../Common/Button";
+import Button from "../../../../componentes/Common/Button";
 
 const ProfileUpdate = () => {
   const [countries, setCountries] = useState([]);

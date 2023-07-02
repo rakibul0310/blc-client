@@ -1,18 +1,18 @@
 import React from "react";
 import Page404 from "../../componentes/Common/Page404";
 const ProfileUpdate = React.lazy(() =>
-  import("../../componentes/Dashboard/Common/Profile/ProfileUpdate")
+  import("../../pages/dashboard/common/Profile/ProfileUpdate")
 );
 const EmailUpdate = React.lazy(() =>
-  import("../../componentes/Dashboard/Common/Profile/EmailUpdate")
+  import("../../pages/dashboard/common/Profile/EmailUpdate")
 );
 const PasswordUpdate = React.lazy(() =>
-  import("../../componentes/Dashboard/Common/Profile/PasswordUpdate")
+  import("../../pages/dashboard/common/Profile/PasswordUpdate")
 );
 
 const StudentHome = React.lazy(() => import("./studentPages/StudentHome"));
 const MyProfile = React.lazy(() =>
-  import("../../componentes/Dashboard/Common/Profile/MyProfile")
+  import("../../pages/dashboard/common/Profile/MyProfile")
 );
 
 // { path: '/user/logout', name: 'Logout', permission: ['user','admin'], component: Logout },

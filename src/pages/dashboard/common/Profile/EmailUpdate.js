@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "../../../Common/Input";
-import Button from "../../../Common/Button";
+import Input from "../../../../componentes/Common/Input";
+import Button from "../../../../componentes/Common/Button";
 
 const EmailUpdate = () => {
   return (
