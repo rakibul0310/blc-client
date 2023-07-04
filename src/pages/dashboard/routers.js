@@ -1,5 +1,6 @@
 import React from "react";
 import Page404 from "../../componentes/Common/Page404";
+const OrderHistory = React.lazy(() => import("./studentPages/OrderHistory"));
 const MyCourses = React.lazy(() => import("./common/Courses/MyCourses"));
 const AllCourses = React.lazy(() =>
   import("../dashboard/common/Courses/AllCourses")
@@ -94,5 +95,12 @@ export const routers = [
     name: "Dashboard",
     permission: ["student"],
     component: StudentHome,
+  },
+  {
+    path: "/order-history",
+    exact: true,
+    name: "Order History",
+    permission: ["student"],
+    component: OrderHistory,
   },
 ];

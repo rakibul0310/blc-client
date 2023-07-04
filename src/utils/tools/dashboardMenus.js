@@ -85,6 +85,13 @@ export let dashboardMenus = [
     permission: ["teacher"],
   },
   {
+    id: "f7df8sfd7fk",
+    menu: "Payment History",
+    icon: <AiOutlineWallet />,
+    route: "/dashboard/all-payment-history",
+    permission: ["admin"],
+  },
+  {
     id: "f7df8sfd7f",
     menu: "Bookmarks",
     icon: <BsJournalBookmarkFill />,

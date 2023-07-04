@@ -1,0 +1,92 @@
+@import "../../foundation/index";
+.custom__table__outer__wrapper {
+  max-width: 100%;
+  .custom__table__wrapper {
+    overflow-x: auto;
+    .custom__table {
+      border-collapse: collapse;
+      width: 100%;
+      th,
+      td {
+        padding: 12px 16px;
+        text-align: left;
+      }
+      th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tbody tr:hover {
+        background-color: #ebebeb;
+      }
+    }
+  }
+  .custom__table__pagination__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .pagination__btn.disabled {
+      cursor: not-allowed;
+      color: #fff;
+      background-color: rgb(0, 159, 253, 0.7);
+      border: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    .pagination__btn {
+      display: inline-block;
+      padding: 4px 18px;
+      margin: 0 5px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(0, 159, 253, 0.7);
+      background-color: #fff;
+      border: $border-2;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      margin-top: 10px;
+
+      .pagination__btn {
+        margin: 5px;
+        // font-size: 12px;
+        // padding: 6px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .pagination__btn.disabled {
+        font-size: 1.2rem;
+      }
+      .pagination__btn {
+        font-size: 0.9rem;
+        padding: 4px 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .custom__table {
+    width: auto;
+  }
+
+  .custom__table td,
+  .custom__table th {
+    white-space: nowrap;
+  }
+}
