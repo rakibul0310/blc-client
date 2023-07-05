@@ -8,12 +8,17 @@ import {
 const OrderHistory = () => {
   return (
     <div className="payment__history__container">
-      <CustomTable
-        tableHeades={tableHeades}
-        tableDatas={tableDatas}
-        perPageShow={5}
-        showPagination={true}
-      />
+      <div className="heading">
+        <h3>All Transactions</h3>
+      </div>
+      <div className="payment__history__table__container">
+        <CustomTable
+          tableHeades={tableHeades}
+          tableDatas={tableDatas}
+          perPageShow={5}
+          showPagination={true}
+        />
+      </div>
     </div>
   );
 };

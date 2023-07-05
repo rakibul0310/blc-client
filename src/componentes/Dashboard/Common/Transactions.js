@@ -2,8 +2,10 @@ import React from "react";
 import CustomIcon from "../../Common/CustomIcon";
 import { GiPayMoney } from "react-icons/gi";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const Transactions = () => {
+  const navigate = useNavigate();
   const data = [
     {
       title: "Complete Java Course",
@@ -47,7 +49,10 @@ const Transactions = () => {
         ))}
 
         <div className="view__all__btn__container">
-          <button className="btn__view__all__arrow">
+          <button
+            className="btn__view__all__arrow"
+            onClick={() => navigate("/dashboard/payment-history")}
+          >
             View all
             <CustomIcon className="btn__arrow">
               <AiOutlineArrowRight />

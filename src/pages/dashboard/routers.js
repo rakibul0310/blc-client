@@ -1,6 +1,6 @@
 import React from "react";
 import Page404 from "../../componentes/Common/Page404";
-const OrderHistory = React.lazy(() => import("./studentPages/OrderHistory"));
+const OrderHistory = React.lazy(() => import("./common/OrderHistory"));
 const MyCourses = React.lazy(() => import("./common/Courses/MyCourses"));
 const AllCourses = React.lazy(() =>
   import("../dashboard/common/Courses/AllCourses")
@@ -87,6 +87,14 @@ export const routers = [
     permission: ["student", "teacher", "admin"],
     component: AllCourses,
   },
+  // Transactions
+  {
+    path: "/payment-history",
+    exact: true,
+    name: "Payment History",
+    permission: ["student", "teacher", "admin"],
+    component: OrderHistory,
+  },
 
   // User Dashboard
   {
@@ -96,11 +104,22 @@ export const routers = [
     permission: ["student"],
     component: StudentHome,
   },
+
+  // Teacher Dashboard
   {
-    path: "/order-history",
+    path: "/",
     exact: true,
-    name: "Order History",
-    permission: ["student"],
-    component: OrderHistory,
+    name: "Dashboard",
+    permission: ["teacher"],
+    component: StudentHome,
+  },
+
+  // Admin Dashboard
+  {
+    path: "/",
+    exact: true,
+    name: "Dashboard",
+    permission: ["admin"],
+    component: StudentHome,
   },
 ];

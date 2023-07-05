@@ -74,7 +74,7 @@ export let dashboardMenus = [
     id: "f7df8sfd7fk5",
     menu: "Order History",
     icon: <AiOutlineWallet />,
-    route: "/dashboard/order-history",
+    route: "/dashboard/payment-history",
     permission: ["student"],
   },
   {
@@ -86,9 +86,9 @@ export let dashboardMenus = [
   },
   {
     id: "f7df8sfd7fk",
-    menu: "Payment History",
+    menu: "All Payment History",
     icon: <AiOutlineWallet />,
-    route: "/dashboard/all-payment-history",
+    route: "/dashboard/payment-history",
     permission: ["admin"],
   },
   {

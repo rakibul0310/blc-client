@@ -21,14 +21,14 @@ const UpcominTask = () => {
           <h4>Lesson-3: Introduction to C++</h4>
           <span>By Jhon D.</span>
         </div>
-        <div className="view__all__btn__container">
+        {/* <div className="view__all__btn__container">
           <button className="btn__view__all__arrow">
             View all Tasks
             <CustomIcon className="btn__arrow">
               <AiOutlineArrowRight />
             </CustomIcon>
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

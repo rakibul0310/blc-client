@@ -3,8 +3,10 @@ import CustomIcon from "../../Common/CustomIcon";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
 import { ProgressBar } from "react-progressbar-fancy";
+import { useNavigate } from "react-router-dom";
 
 const MyCourses = ({ data, limit }) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="my__courses__container">
@@ -69,8 +71,11 @@ const MyCourses = ({ data, limit }) => {
           </div>
         </div> */}
         <div className="view__all__btn__container">
-          <button className="btn__view__all__arrow">
-            View all Icon
+          <button
+            className="btn__view__all__arrow"
+            onClick={() => navigate("/dashboard/courses/my-courses")}
+          >
+            View all
             <CustomIcon className="btn__arrow">
               <AiOutlineArrowRight />
             </CustomIcon>
