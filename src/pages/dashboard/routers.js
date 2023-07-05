@@ -1,5 +1,6 @@
 import React from "react";
 import Page404 from "../../componentes/Common/Page404";
+const Bookmarks = React.lazy(() => import("./studentPages/Bookmarks"));
 const OrderHistory = React.lazy(() => import("./common/OrderHistory"));
 const MyCourses = React.lazy(() => import("./common/Courses/MyCourses"));
 const AllCourses = React.lazy(() =>
@@ -103,6 +104,13 @@ export const routers = [
     name: "Dashboard",
     permission: ["student"],
     component: StudentHome,
+  },
+  {
+    path: "/bookmarks",
+    exact: true,
+    name: "Bookmarks",
+    permission: ["student"],
+    component: Bookmarks,
   },
 
   // Teacher Dashboard

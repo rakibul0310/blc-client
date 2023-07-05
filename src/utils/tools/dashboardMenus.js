@@ -136,18 +136,18 @@ export let dashboardMenus = [
         route: "/dashboard/support/ticket-history",
         permission: ["student"],
       },
-      {
-        id: "f7s8f8fd",
-        menu: "Contact Us",
-        route: "/dashboard/support/contact-us",
-        permission: ["student"],
-      },
-      {
-        id: "w83grt32b",
-        menu: "ContactUs History",
-        route: "/dashboard/support/contact-us-history",
-        permission: ["student"],
-      },
+      // {
+      //   id: "f7s8f8fd",
+      //   menu: "Contact Us",
+      //   route: "/dashboard/support/contact-us",
+      //   permission: ["student"],
+      // },
+      // {
+      //   id: "w83grt32b",
+      //   menu: "ContactUs History",
+      //   route: "/dashboard/support/contact-us-history",
+      //   permission: ["student"],
+      // },
     ],
   },
 ];
