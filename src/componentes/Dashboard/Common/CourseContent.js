@@ -1,5 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
+import { coursesData } from "../../../fakeData/coursesData";
+import ContentList from "./ContentList";
 
 const CourseContent = () => {
   return (
@@ -32,6 +34,9 @@ const CourseContent = () => {
               {/* 
                         course outline wase list of content
                     */}
+              {coursesData.map((d) => (
+                <ContentList key={d.id} lesson={d?.lesson} />
+              ))}
             </div>
           </div>
         </div>
