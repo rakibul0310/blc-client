@@ -1,5 +1,12 @@
 import React from "react";
 import Page404 from "../../componentes/Common/Page404";
+const SupportTicket = React.lazy(() =>
+  import("./common/Supports/SupportTicket")
+);
+const TicketHistory = React.lazy(() =>
+  import("./common/Supports/TicketHistory")
+);
+const Updates = React.lazy(() => import("./common/Supports/Updates"));
 const MyCourse = React.lazy(() => import("./studentPages/MyCourse"));
 const Bookmarks = React.lazy(() => import("./studentPages/Bookmarks"));
 const OrderHistory = React.lazy(() => import("./common/OrderHistory"));
@@ -96,6 +103,28 @@ export const routers = [
     name: "Payment History",
     permission: ["student", "teacher", "admin"],
     component: OrderHistory,
+  },
+  // Supports
+  {
+    path: "/support/support-ticket",
+    exact: true,
+    name: "Support Ticket",
+    permission: ["student", "teacher", "admin"],
+    component: SupportTicket,
+  },
+  {
+    path: "/support/ticket-history",
+    exact: true,
+    name: "Support Ticket History",
+    permission: ["student", "teacher"],
+    component: TicketHistory,
+  },
+  {
+    path: "/support/updates",
+    exact: true,
+    name: "Updates",
+    permission: ["student", "teacher", "admin"],
+    component: Updates,
   },
 
   // User Dashboard

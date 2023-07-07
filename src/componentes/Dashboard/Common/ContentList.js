@@ -4,8 +4,8 @@ import { BiLockAlt } from "react-icons/bi";
 
 const ContentList = ({ status, lesson, time }) => {
   return (
-    <div>
-      <div>
+    <div className="content_list_container">
+      <div className="list_title_wrapper">
         <BiLockAlt />
         {/* <BsFillUnlockFill /> */}
         {lesson ? <h3>{lesson}</h3> : <h3>Complete Javascriopt course</h3>}

@@ -1,0 +1,97 @@
+@import "../../../../foundation/index";
+
+.supportticket_page_wrapper {
+  margin-top: 20px;
+  .supporttickett_form_card {
+    padding: 25px;
+    min-height: 250px;
+    .section_title {
+      text-align: start;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 18px;
+        color: $text-p-color;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .supportticket_page_content {
+      form {
+        .form_group {
+          display: flex;
+          margin: 15px 0;
+          @include breakpoints(portraitTablet) {
+            display: inherit;
+            margin: 0px;
+          }
+
+          .purpose,
+          .ticket_reference {
+            width: 50%;
+            @include breakpoints(portraitTablet) {
+              width: auto;
+              margin: 10px 0;
+            }
+          }
+          .purpose {
+            margin-right: 20px !important;
+            @include breakpoints(portraitTablet) {
+              margin-right: 0px !important;
+            }
+          }
+          .left {
+            margin-right: 20px !important;
+          }
+          .right {
+            margin-right: 20px !important;
+          }
+          label {
+            font-size: 13px;
+            font-weight: 600;
+            color: $text-p-color;
+            @include breakpoints(tablet) {
+              font-size: 14px;
+            }
+          }
+          .input_field,
+          select,
+          .question_field {
+            width: 100%;
+            padding: 10px 8px;
+            color: $text-p-color;
+            font-size: 15px;
+            border: $border-header;
+            outline: none;
+            margin: 10px 0;
+            border-radius: 5px;
+            resize: none;
+            font-family: $font-family;
+            background: $bg-body;
+          }
+        }
+        .text_area {
+          margin-right: 20px;
+        }
+        .submit_btn {
+          background: $bg-thin-green;
+          box-shadow: $box-shadow-sidebar-menu;
+          padding: 10px 12px;
+          width: 100px;
+          border-radius: 5px;
+          border: none;
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            opacity: 0.8;
+          }
+          @include breakpoints(portraitTablet) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

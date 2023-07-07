@@ -1,0 +1,48 @@
+@import "../../../../foundation/index";
+.course_content_container {
+  overflow-y: auto;
+  .course_contant_wrapper {
+    display: flex;
+    @include breakpoints(tablet) {
+      flex-direction: column;
+    }
+    .player_wrapper {
+      .player_title_wrapper {
+        // display: flex;
+      }
+    }
+    .course_content_side_bar {
+      width: 100%;
+      max-height: 75vh;
+      overflow-y: auto;
+      margin: 0 2rem;
+      padding: 0 1rem;
+      background-color: $bg-gray-white;
+      @include breakpoints(tablet) {
+        margin: 1rem 0;
+      }
+      // scroll bar
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: $bg-white;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #dcdada;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #dcdada;
+      }
+      .content_list_wrapper {
+        .course_title_wrapper {
+          .list_wrapper {
+          }
+        }
+      }
+    }
+  }
+}
