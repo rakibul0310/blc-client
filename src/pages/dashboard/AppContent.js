@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { routers } from "./routers";
 import { Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { userData } from "../../features/slices/commonSlices/userInfoSlice";
 
 const AppContent = () => {
+  const dispatch = useDispatch();
+  const userInfo = useSelector((state) => state.userInfo);
+
+  useEffect(() => {
+    dispatch(userData());
+  }, []);
+  const preRoutes = routers.filter((r) =>
+    r.permission.includes(userInfo.data.role)
+  );
   return (
     <>
       <Suspense
@@ -25,7 +36,7 @@ const AppContent = () => {
       >
         <Routes>
           <>
-            {routers?.map((route, idx) => {
+            {preRoutes?.map((route, idx) => {
               return (
                 route.component && (
                   <Route

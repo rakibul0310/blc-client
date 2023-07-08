@@ -6,10 +6,20 @@ import { RiArrowDropRightLine } from "react-icons/ri";
 import CustomIcon from "../Common/CustomIcon";
 import { useLocation } from "react-router-dom";
 import { useBreakpoints } from "react-device-breakpoints";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { userData } from "../../features/slices/commonSlices/userInfoSlice";
 
 const MenuAccrodion = ({ setSidebarToggle }) => {
   const [collapse, setCollapse] = useState(false);
   const activePath = useLocation();
+  const dispatch = useDispatch();
+
+  const userInfo = useSelector((state) => state.userInfo);
+
+  useEffect(() => {
+    dispatch(userData());
+  }, []);
 
   const toggle = (index) => {
     if (collapse === index) {
@@ -19,10 +29,13 @@ const MenuAccrodion = ({ setSidebarToggle }) => {
   };
 
   const device = useBreakpoints();
+  const protectedMenus = dashboardMenus.filter((m) =>
+    m.permission.includes(userInfo.data.role)
+  );
 
   return (
     <>
-      {dashboardMenus.map((d, i) => (
+      {protectedMenus.map((d, i) => (
         <li
           key={d.id}
           className={`sidebar__menu__list ${d.dropdown ? "submenu" : ""}`}
