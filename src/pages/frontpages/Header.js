@@ -3,11 +3,19 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { RxCrossCircled } from "react-icons/rx";
 import CustomLink from "../../componentes/Common/CustomLink";
 import CustomIcon from "../../componentes/Common/CustomIcon";
+import { useDispatch, useSelector } from "react-redux";
+import { userData } from "../../features/slices/commonSlices/userInfoSlice";
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
   const [toggle, setToggle] = useState(false);
   let toggleRef = useRef();
+  const dispatch = useDispatch();
+  const userInfo = useSelector((state) => state.userInfo);
+
+  useEffect(() => {
+    dispatch(userData());
+  }, []);
 
   useEffect(() => {
     const handleMenuDropDown = (e) => {
@@ -77,24 +85,37 @@ const Header = () => {
                   Courses
                 </CustomLink>
               </li>
-              <li className="nav__item">
-                <CustomLink className="nav__link" href="/dashboard">
-                  Dashboard
-                </CustomLink>
-              </li>
-              <li className="nav__item">
-                <CustomLink className="nav__link nav__link-btn" href="/login">
-                  Login
-                </CustomLink>
-              </li>
-              <li className="nav__item">
-                <CustomLink
-                  className="nav__link nav__link-btn"
-                  href="/register"
-                >
-                  Register
-                </CustomLink>
-              </li>
+              {userInfo.data.token && (
+                <li className="nav__item">
+                  <CustomLink className="nav__link" href="/dashboard">
+                    Dashboard
+                  </CustomLink>
+                </li>
+              )}
+              {!userInfo.data.token && (
+                <li className="nav__item">
+                  <CustomLink className="nav__link nav__link-btn" href="/login">
+                    Login
+                  </CustomLink>
+                </li>
+              )}
+              {!userInfo.data.token && (
+                <li className="nav__item">
+                  <CustomLink
+                    className="nav__link nav__link-btn"
+                    href="/register"
+                  >
+                    Register
+                  </CustomLink>
+                </li>
+              )}
+              {userInfo.data.token && (
+                <li className="nav__item">
+                  <CustomLink className="nav__link nav__link-btn">
+                    Logout
+                  </CustomLink>
+                </li>
+              )}
             </ul>
           </div>
         </nav>

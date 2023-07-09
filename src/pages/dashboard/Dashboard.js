@@ -7,6 +7,8 @@ import { useEffect } from "react";
 import StudentHome from "./studentPages/StudentHome";
 import { useNavigate } from "react-router-dom";
 import AppContent from "./AppContent";
+import { useDispatch, useSelector } from "react-redux";
+import { userData } from "../../features/slices/commonSlices/userInfoSlice";
 
 const Dashboard = () => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
@@ -14,6 +16,12 @@ const Dashboard = () => {
 
   const device = useBreakpoints();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const userInfo = useSelector((state) => state.userInfo);
+
+  useEffect(() => {
+    dispatch(userData());
+  }, []);
 
   useEffect(() => {
     if (device.isTablet) {
@@ -47,6 +55,7 @@ const Dashboard = () => {
           <Sidebar
             sidebarToggle={sidebarToggle}
             setSidebarToggle={setSidebarToggle}
+            userInfo={userInfo}
           />
         </div>
         {/* header and main content container  */}

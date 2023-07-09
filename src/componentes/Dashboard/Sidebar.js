@@ -4,7 +4,7 @@ import MenuAccrodion from "./MenuAccrodion";
 import { useEffect } from "react";
 import { useBreakpoints } from "react-device-breakpoints";
 
-const Sidebar = ({ sidebarToggle, setSidebarToggle }) => {
+const Sidebar = ({ sidebarToggle, setSidebarToggle, userInfo }) => {
   let toggleRef = useRef();
 
   const device = useBreakpoints();
@@ -31,8 +31,8 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle }) => {
         </CustomLink>
       </div>
       <div className="user__info__container">
-        <h2>Jhon Murari</h2>
-        <span>Email: jhon@murari.com</span>
+        <h2>{userInfo.data.name}</h2>
+        <span>{userInfo.data.email}</span>
       </div>
       <div className="sidebar__menu__container">
         <ul className="sidebar__menu__lists">

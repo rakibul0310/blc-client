@@ -1,5 +1,6 @@
 [
   {
+    "course_id": "",
     "title": "The Complete Python Bootcamp From Zero to Hero in Python",
     "regularPrice": 249,
     "offerPrice": 74,
@@ -15,20 +16,87 @@
     "duration": "12 hours",
     "level": "All",
     "courseOutline": [
-      "Course overview",
-      "Python setup",
-      "Python object and data structure basics",
-      "Python Comparison operators",
-      "Python Statements",
-      "Quiz 1",
-      "Methods and functions",
-      "Milestone project -1",
-      "Object-oriented programming",
-      "Modules and packages",
-      "Quiz 2"
+      {
+        "title": "Course overview",
+        "course_id": "BLC001",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Python setup",
+        "course_id": "BLC001",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Python object and data structure basics",
+        "course_id": "BLC001",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Python Comparison operators",
+        "course_id": "BLC001",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Python Statements",
+        "course_id": "BLC001",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC001",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Methods and functions",
+        "course_id": "BLC001",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Milestone project -1",
+        "course_id": "BLC001",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Object-oriented programming",
+        "course_id": "BLC001",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Modules and packages",
+        "course_id": "BLC001",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC001",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC002",
     "title": "Introduction to JavaScript: The Fundamentals",
     "regularPrice": 199,
     "offerPrice": 59,
@@ -44,21 +112,94 @@
     "duration": "10 hours",
     "level": "Beginner",
     "courseOutline": [
-      "Course overview",
-      "Introduction to JavaScript",
-      "Variables and data types",
-      "Operators and expressions",
-      "Conditional statements",
-      "Quiz 1",
-      "Arrays and loops",
-      "Functions and scope",
-      "DOM manipulation",
-      "Event handling",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC002",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to JavaScript",
+        "course_id": "BLC002",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Variables and data types",
+        "course_id": "BLC002",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Operators and expressions",
+        "course_id": "BLC002",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Conditional statements",
+        "course_id": "BLC002",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC002",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Arrays and loops",
+        "course_id": "BLC002",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Functions and scope",
+        "course_id": "BLC002",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "DOM manipulation",
+        "course_id": "BLC002",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Event handling",
+        "course_id": "BLC002",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC002",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC002",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC003",
     "title": "Java Programming: From Basics to Advanced",
     "regularPrice": 299,
     "offerPrice": 99,
@@ -74,21 +215,94 @@
     "duration": "15 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to Java",
-      "Variables and data types",
-      "Operators and expressions",
-      "Control flow statements",
-      "Quiz 1",
-      "Arrays and collections",
-      "Object-oriented programming",
-      "Inheritance and polymorphism",
-      "Exception handling",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC003",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to Java",
+        "course_id": "BLC003",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Variables and data types",
+        "course_id": "BLC003",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Operators and expressions",
+        "course_id": "BLC003",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Control flow statements",
+        "course_id": "BLC003",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC003",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Arrays and collections",
+        "course_id": "BLC003",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Object-oriented programming",
+        "course_id": "BLC003",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Inheritance and polymorphism",
+        "course_id": "BLC003",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Exception handling",
+        "course_id": "BLC003",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC003",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC003",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC004",
     "title": "Mastering C++: Advanced Techniques and Applications",
     "regularPrice": 279,
     "offerPrice": 89,
@@ -104,20 +318,87 @@
     "duration": "14 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to C++",
-      "Variables and data types",
-      "Control structures",
-      "Functions and arrays",
-      "Quiz 1",
-      "Pointers and references",
-      "Object-oriented programming",
-      "File handling",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC004",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to C++",
+        "course_id": "BLC004",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Variables and data types",
+        "course_id": "BLC004",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Control structures",
+        "course_id": "BLC004",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Functions and arrays",
+        "course_id": "BLC004",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC004",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Pointers and references",
+        "course_id": "BLC004",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Object-oriented programming",
+        "course_id": "BLC004",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "File handling",
+        "course_id": "BLC004",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC004",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC004",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC005",
     "title": "Data Science and Machine Learning with Python",
     "regularPrice": 349,
     "offerPrice": 119,
@@ -133,21 +414,94 @@
     "duration": "20 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to data science",
-      "Python for data science",
-      "NumPy and pandas",
-      "Data visualization",
-      "Quiz 1",
-      "Machine learning basics",
-      "Supervised learning",
-      "Unsupervised learning",
-      "Deep learning",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC005",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to data science",
+        "course_id": "BLC005",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Python for data science",
+        "course_id": "BLC005",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "NumPy and pandas",
+        "course_id": "BLC005",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Data visualization",
+        "course_id": "BLC005",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC005",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Machine learning basics",
+        "course_id": "BLC005",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Supervised learning",
+        "course_id": "BLC005",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Unsupervised learning",
+        "course_id": "BLC005",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Deep learning",
+        "course_id": "BLC005",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC005",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC005",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC006",
     "title": "Web Development: HTML, CSS, and JavaScript",
     "regularPrice": 199,
     "offerPrice": 59,
@@ -163,21 +517,94 @@
     "duration": "12 hours",
     "level": "Beginner",
     "courseOutline": [
-      "Course overview",
-      "HTML basics",
-      "CSS fundamentals",
-      "CSS layout",
-      "JavaScript essentials",
-      "Quiz 1",
-      "DOM manipulation",
-      "Events and event handling",
-      "jQuery",
-      "Responsive web design",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC006",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "HTML basics",
+        "course_id": "BLC006",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS fundamentals",
+        "course_id": "BLC006",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS layout",
+        "course_id": "BLC006",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "JavaScript essentials",
+        "course_id": "BLC006",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC006",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "DOM manipulation",
+        "course_id": "BLC006",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Events and event handling",
+        "course_id": "BLC006",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "jQuery",
+        "course_id": "BLC006",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Responsive web design",
+        "course_id": "BLC006",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC006",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC006",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC007",
     "title": "Python for Data Analysis and Visualization",
     "regularPrice": 249,
     "offerPrice": 74,
@@ -193,20 +620,87 @@
     "duration": "10 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to data analysis",
-      "Data manipulation with pandas",
-      "Data visualization with matplotlib",
-      "Plotly and Seaborn",
-      "Quiz 1",
-      "Data cleaning and preprocessing",
-      "Statistical analysis",
-      "Time series analysis",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC007",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to data analysis",
+        "course_id": "BLC007",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Data manipulation with pandas",
+        "course_id": "BLC007",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Data visualization with matplotlib",
+        "course_id": "BLC007",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Plotly and Seaborn",
+        "course_id": "BLC007",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC007",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Data cleaning and preprocessing",
+        "course_id": "BLC007",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Statistical analysis",
+        "course_id": "BLC007",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Time series analysis",
+        "course_id": "BLC007",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC007",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC007",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC008",
     "title": "Mobile App Development with React Native",
     "regularPrice": 299,
     "offerPrice": 99,
@@ -222,21 +716,94 @@
     "duration": "15 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to React Native",
-      "Components and styling",
-      "Navigation and routing",
-      "API integration",
-      "Quiz 1",
-      "State management",
-      "Form handling",
-      "Push notifications",
-      "Deployment",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC008",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to React Native",
+        "course_id": "BLC008",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Components and styling",
+        "course_id": "BLC008",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Navigation and routing",
+        "course_id": "BLC008",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "API integration",
+        "course_id": "BLC008",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC008",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "State management",
+        "course_id": "BLC008",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Form handling",
+        "course_id": "BLC008",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Push notifications",
+        "course_id": "BLC008",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Deployment",
+        "course_id": "BLC008",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC008",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC008",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC009",
     "title": "Introduction to Data Structures and Algorithms",
     "regularPrice": 199,
     "offerPrice": 59,
@@ -252,21 +819,94 @@
     "duration": "10 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to algorithms",
-      "Time complexity and Big O notation",
-      "Arrays and linked lists",
-      "Stacks and queues",
-      "Quiz 1",
-      "Recursion",
-      "Sorting algorithms",
-      "Searching algorithms",
-      "Graph algorithms",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC009",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to algorithms",
+        "course_id": "BLC009",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Time complexity and Big O notation",
+        "course_id": "BLC009",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Arrays and linked lists",
+        "course_id": "BLC009",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Stacks and queues",
+        "course_id": "BLC009",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC009",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Recursion",
+        "course_id": "BLC009",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Sorting algorithms",
+        "course_id": "BLC009",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Searching algorithms",
+        "course_id": "BLC009",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Graph algorithms",
+        "course_id": "BLC009",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC009",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC009",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0010",
     "title": "The Complete Web Development Course: HTML, CSS, JS, Node, and More",
     "regularPrice": 349,
     "offerPrice": 119,
@@ -282,21 +922,94 @@
     "duration": "25 hours",
     "level": "All",
     "courseOutline": [
-      "Course overview",
-      "HTML fundamentals",
-      "CSS basics and advanced",
-      "JavaScript essentials",
-      "DOM manipulation and events",
-      "Quiz 1",
-      "Node.js and Express.js",
-      "Databases with MongoDB",
-      "RESTful API development",
-      "Authentication and authorization",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0010",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "HTML fundamentals",
+        "course_id": "BLC0010",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS basics and advanced",
+        "course_id": "BLC0010",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "JavaScript essentials",
+        "course_id": "BLC0010",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "DOM manipulation and events",
+        "course_id": "BLC0010",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0010",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Node.js and Express.js",
+        "course_id": "BLC0010",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Databases with MongoDB",
+        "course_id": "BLC0010",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "RESTful API development",
+        "course_id": "BLC0010",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Authentication and authorization",
+        "course_id": "BLC0010",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0010",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0010",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0011",
     "title": "Machine Learning and Neural Networks with TensorFlow",
     "regularPrice": 299,
     "offerPrice": 99,
@@ -312,21 +1025,94 @@
     "duration": "15 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to machine learning",
-      "Linear regression",
-      "Logistic regression",
-      "Decision trees and random forests",
-      "Quiz 1",
-      "Neural networks and deep learning",
-      "Convolutional neural networks",
-      "Recurrent neural networks",
-      "Transfer learning",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0011",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to machine learning",
+        "course_id": "BLC0011",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Linear regression",
+        "course_id": "BLC0011",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Logistic regression",
+        "course_id": "BLC0011",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Decision trees and random forests",
+        "course_id": "BLC0011",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0011",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Neural networks and deep learning",
+        "course_id": "BLC0011",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Convolutional neural networks",
+        "course_id": "BLC0011",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Recurrent neural networks",
+        "course_id": "BLC0011",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Transfer learning",
+        "course_id": "BLC0011",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0011",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0011",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0012",
     "title": "Advanced CSS: Layouts, Flexbox, Grid, and Animations",
     "regularPrice": 199,
     "offerPrice": 59,
@@ -342,20 +1128,87 @@
     "duration": "8 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "CSS box model",
-      "CSS selectors and specificity",
-      "CSS layouts with floats",
-      "Flexbox fundamentals",
-      "Quiz 1",
-      "CSS grid layout",
-      "Responsive design",
-      "CSS animations and transitions",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0012",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS box model",
+        "course_id": "BLC0012",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS selectors and specificity",
+        "course_id": "BLC0012",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS layouts with floats",
+        "course_id": "BLC0012",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Flexbox fundamentals",
+        "course_id": "BLC0012",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0012",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS grid layout",
+        "course_id": "BLC0012",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Responsive design",
+        "course_id": "BLC0012",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "CSS animations and transitions",
+        "course_id": "BLC0012",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0012",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0012",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0013",
     "title": "React: Building User Interfaces and Single-Page Applications",
     "regularPrice": 249,
     "offerPrice": 74,
@@ -371,21 +1224,94 @@
     "duration": "12 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Introduction to React",
-      "Components and props",
-      "State and lifecycle",
-      "Event handling",
-      "Quiz 1",
-      "React Router",
-      "Forms and form handling",
-      "React hooks",
-      "Context and Redux",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0013",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to React",
+        "course_id": "BLC0013",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Components and props",
+        "course_id": "BLC0013",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "State and lifecycle",
+        "course_id": "BLC0013",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Event handling",
+        "course_id": "BLC0013",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0013",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "React Router",
+        "course_id": "BLC0013",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Forms and form handling",
+        "course_id": "BLC0013",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "React hooks",
+        "course_id": "BLC0013",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Context and Redux",
+        "course_id": "BLC0013",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0013",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0013",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0014",
     "title": "Ethical Hacking and Penetration Testing",
     "regularPrice": 299,
     "offerPrice": 99,
@@ -401,21 +1327,94 @@
     "duration": "18 hours",
     "level": "Advanced",
     "courseOutline": [
-      "Course overview",
-      "Introduction to ethical hacking",
-      "Information gathering",
-      "Scanning and enumeration",
-      "Vulnerability assessment",
-      "Quiz 1",
-      "Exploitation techniques",
-      "Web application hacking",
-      "Wireless network security",
-      "System hacking",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0014",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to ethical hacking",
+        "course_id": "BLC0014",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Information gathering",
+        "course_id": "BLC0014",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Scanning and enumeration",
+        "course_id": "BLC0014",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Vulnerability assessment",
+        "course_id": "BLC0014",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0014",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Exploitation techniques",
+        "course_id": "BLC0014",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Web application hacking",
+        "course_id": "BLC0014",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Wireless network security",
+        "course_id": "BLC0014",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "System hacking",
+        "course_id": "BLC0014",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0014",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0014",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0015",
     "title": "Introduction to Data Science: Python and R",
     "regularPrice": 249,
     "offerPrice": 74,
@@ -431,21 +1430,94 @@
     "duration": "14 hours",
     "level": "Beginner",
     "courseOutline": [
-      "Course overview",
-      "Introduction to data science",
-      "Python for data science",
-      "Data cleaning and preprocessing",
-      "Data visualization with Matplotlib and Seaborn",
-      "Quiz 1",
-      "Introduction to R",
-      "Exploratory data analysis with R",
-      "Statistical analysis with R",
-      "Machine learning with Python and R",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0015",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to data science",
+        "course_id": "BLC0015",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Python for data science",
+        "course_id": "BLC0015",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Data cleaning and preprocessing",
+        "course_id": "BLC0015",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Data visualization with Matplotlib and Seaborn",
+        "course_id": "BLC0015",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0015",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to R",
+        "course_id": "BLC0015",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Exploratory data analysis with R",
+        "course_id": "BLC0015",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Statistical analysis with R",
+        "course_id": "BLC0015",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Machine learning with Python and R",
+        "course_id": "BLC0015",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0015",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0015",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0016",
     "title": "Full-Stack Web Development with MERN: MongoDB, Express, React, Node",
     "regularPrice": 399,
     "offerPrice": 129,
@@ -461,21 +1533,94 @@
     "duration": "22 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "MongoDB and Mongoose",
-      "Express.js fundamentals",
-      "Building RESTful APIs",
-      "React.js basics",
-      "Quiz 1",
-      "React.js advanced",
-      "State management with Redux",
-      "Authentication and authorization",
-      "Node.js and Express.js advanced",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0016",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "MongoDB and Mongoose",
+        "course_id": "BLC0016",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Express.js fundamentals",
+        "course_id": "BLC0016",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Building RESTful APIs",
+        "course_id": "BLC0016",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "React.js basics",
+        "course_id": "BLC0016",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0016",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "React.js advanced",
+        "course_id": "BLC0016",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "State management with Redux",
+        "course_id": "BLC0016",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Authentication and authorization",
+        "course_id": "BLC0016",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Node.js and Express.js advanced",
+        "course_id": "BLC0016",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0016",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0016",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0017",
     "title": "Java Web Development: Servlets, JSP, Hibernate, Spring",
     "regularPrice": 349,
     "offerPrice": 119,
@@ -491,21 +1636,94 @@
     "duration": "18 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "Java web development basics",
-      "Servlets and JSP",
-      "JavaServer Faces (JSF)",
-      "Hibernate ORM",
-      "Quiz 1",
-      "Spring framework fundamentals",
-      "Spring MVC",
-      "Spring Security",
-      "RESTful web services",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0017",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Java web development basics",
+        "course_id": "BLC0017",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Servlets and JSP",
+        "course_id": "BLC0017",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "JavaServer Faces (JSF)",
+        "course_id": "BLC0017",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Hibernate ORM",
+        "course_id": "BLC0017",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0017",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Spring framework fundamentals",
+        "course_id": "BLC0017",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Spring MVC",
+        "course_id": "BLC0017",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Spring Security",
+        "course_id": "BLC0017",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "RESTful web services",
+        "course_id": "BLC0017",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0017",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0017",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0018",
     "title": "AWS Certified Solutions Architect - Associate",
     "regularPrice": 299,
     "offerPrice": 99,
@@ -521,21 +1739,94 @@
     "duration": "14 hours",
     "level": "Intermediate",
     "courseOutline": [
-      "Course overview",
-      "AWS basics and core services",
-      "Compute services: EC2, Lambda, ECS",
-      "Storage services: S3, EBS, EFS",
-      "Database services: RDS, DynamoDB",
-      "Quiz 1",
-      "Networking and content delivery",
-      "Identity and access management",
-      "Monitoring and logging",
-      "Security and encryption",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0018",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "AWS basics and core services",
+        "course_id": "BLC0018",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Compute services: EC2, Lambda, ECS",
+        "course_id": "BLC0018",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Storage services: S3, EBS, EFS",
+        "course_id": "BLC0018",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Database services: RDS, DynamoDB",
+        "course_id": "BLC0018",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0018",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Networking and content delivery",
+        "course_id": "BLC0018",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Identity and access management",
+        "course_id": "BLC0018",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Monitoring and logging",
+        "course_id": "BLC0018",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Security and encryption",
+        "course_id": "BLC0018",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0018",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0018",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0019",
     "title": "Data Visualization with Tableau",
     "regularPrice": 249,
     "offerPrice": 74,
@@ -551,21 +1842,94 @@
     "duration": "10 hours",
     "level": "Beginner",
     "courseOutline": [
-      "Course overview",
-      "Introduction to Tableau",
-      "Connecting to data sources",
-      "Creating visualizations",
-      "Building dashboards",
-      "Quiz 1",
-      "Advanced chart types",
-      "Working with calculations",
-      "Mapping and spatial analysis",
-      "Interactive data storytelling",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0019",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to Tableau",
+        "course_id": "BLC0019",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Connecting to data sources",
+        "course_id": "BLC0019",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Creating visualizations",
+        "course_id": "BLC0019",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Building dashboards",
+        "course_id": "BLC0019",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0019",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Advanced chart types",
+        "course_id": "BLC0019",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Working with calculations",
+        "course_id": "BLC0019",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Mapping and spatial analysis",
+        "course_id": "BLC0019",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Interactive data storytelling",
+        "course_id": "BLC0019",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0019",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0019",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   },
   {
+    "course_id": "BLC0020",
     "title": "Introduction to Cybersecurity",
     "regularPrice": 199,
     "offerPrice": 59,
@@ -581,18 +1945,90 @@
     "duration": "8 hours",
     "level": "Beginner",
     "courseOutline": [
-      "Course overview",
-      "Introduction to cybersecurity",
-      "Common security threats",
-      "Network security",
-      "Operating system security",
-      "Quiz 1",
-      "Cryptography",
-      "Web security",
-      "Wireless network security",
-      "Ethical hacking",
-      "Quiz 2",
-      "Final project"
+      {
+        "title": "Course overview",
+        "course_id": "BLC0019",
+        "lessonNo": 1,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Introduction to cybersecurity",
+        "course_id": "BLC0019",
+        "lessonNo": 2,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Common security threats",
+        "course_id": "BLC0019",
+        "lessonNo": 3,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Network security",
+        "course_id": "BLC0019",
+        "lessonNo": 4,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Operating system security",
+        "course_id": "BLC0019",
+        "lessonNo": 5,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 1",
+        "course_id": "BLC0019",
+        "lessonNo": 6,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Cryptography",
+        "course_id": "BLC0019",
+        "lessonNo": 7,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Web security",
+        "course_id": "BLC0019",
+        "lessonNo": 8,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Wireless network security",
+        "course_id": "BLC0019",
+        "lessonNo": 9,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Ethical hacking",
+        "course_id": "BLC0019",
+        "lessonNo": 10,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Quiz 2",
+        "course_id": "BLC0019",
+        "lessonNo": 11,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      },
+      {
+        "title": "Final project",
+        "course_id": "BLC0019",
+        "lessonNo": 12,
+        "videoLink": "https://www.youtube.com/watch?v=1WpKsY9LBlY",
+        "quiz_id": ""
+      }
     ]
   }
 ]
