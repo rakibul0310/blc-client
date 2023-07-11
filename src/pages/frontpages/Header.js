@@ -14,7 +14,8 @@ const Header = () => {
   const userInfo = useSelector((state) => state.userInfo);
 
   useEffect(() => {
-    dispatch(userData());
+    const token = JSON.parse(localStorage.getItem("blcToken"));
+    dispatch(userData(token));
   }, []);
 
   useEffect(() => {

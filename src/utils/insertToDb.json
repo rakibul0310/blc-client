@@ -2,6 +2,7 @@
   {
     "course_id": "",
     "title": "The Complete Python Bootcamp From Zero to Hero in Python",
+    "description": "The Complete Python Bootcamp From Zero to Hero in Python is a comprehensive course that covers everything you need to know to become proficient in Python programming. Whether you are a beginner with no prior coding experience or an experienced programmer looking to expand your skills, this bootcamp is designed to take you from zero to hero in Python. With over 12 hours of content, you'll learn the fundamentals of Python, including object and data structure basics, comparison operators, statements, methods and functions, object-oriented programming, and more. The course also includes hands-on projects and quizzes to test your knowledge and reinforce your learning. Taught by John Mick, an experienced Python developer, this bootcamp provides a solid foundation for anyone looking to master Python.",
     "regularPrice": 249,
     "offerPrice": 74,
     "coverImg": "https://www.pylenin.com/content/images/size/w1200/2021/08/Bootcamp-1.png",
@@ -98,6 +99,7 @@
   {
     "course_id": "BLC002",
     "title": "Introduction to JavaScript: The Fundamentals",
+    "description": "Introduction to JavaScript: The Fundamentals is a beginner-level course that provides a comprehensive introduction to JavaScript programming. Designed for individuals with no prior coding experience, this course covers the fundamental concepts of JavaScript, giving you a solid foundation to build upon. Taught by Sarah Johnson, an experienced JavaScript developer, this course will guide you through 25 lessons and approximately 10 hours of content. You'll learn about variables and data types, operators and expressions, conditional statements, arrays and loops, functions and scope, DOM manipulation, event handling, and more. The course includes quizzes to reinforce your understanding and a final project to apply your newly acquired skills. By the end of this course, you'll have a solid understanding of JavaScript and be ready to take your programming journey to the next level.",
     "regularPrice": 199,
     "offerPrice": 59,
     "coverImg": "https://blob.sololearn.com/assets/introduction-javascript-cover.png",
@@ -201,9 +203,10 @@
   {
     "course_id": "BLC003",
     "title": "Java Programming: From Basics to Advanced",
+    "description": "Java Programming: From Basics to Advanced is a comprehensive course that takes you from the fundamentals of Java programming to advanced concepts. Whether you're a beginner looking to learn Java or an experienced developer aiming to enhance your skills, this course has you covered. Taught by Michael Lee, a seasoned Java programmer, this course consists of 35 lessons and approximately 15 hours of content. You'll start with an introduction to Java and then delve into topics such as variables and data types, operators and expressions, control flow statements, arrays and collections, object-oriented programming, inheritance and polymorphism, exception handling, and more. The course includes quizzes to test your knowledge and a final project to apply what you've learned. By the end of this course, you'll have a strong understanding of Java programming and be well-equipped to tackle complex Java projects.",
     "regularPrice": 299,
     "offerPrice": 99,
-    "coverImg": "httpshttps://media.geeksforgeeks.org/wp-content/cdn-uploads/20230305131111/Java-programming.png",
+    "coverImg": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230305131111/Java-programming.png",
     "author": "Michael Lee",
     "avatar": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
     "published": "03-07-2020",
@@ -304,6 +307,7 @@
   {
     "course_id": "BLC004",
     "title": "Mastering C++: Advanced Techniques and Applications",
+    "description": "Mastering C++: Advanced Techniques and Applications is an intermediate-level course designed to help you elevate your C++ programming skills to an advanced level. Taught by Robert Anderson, an experienced C++ developer, this course covers advanced techniques and applications to enhance your C++ programming abilities. With a total of 30 lessons and approximately 14 hours of content, you'll dive into topics such as introduction to C++, variables and data types, control structures, functions and arrays, pointers and references, object-oriented programming, file handling, and more. The course includes quizzes to test your understanding and a final project to apply your knowledge to real-world scenarios. By the end of this course, you'll have a strong grasp of advanced C++ concepts and be ready to tackle complex projects with confidence.",
     "regularPrice": 279,
     "offerPrice": 89,
     "coverImg": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230304231205/C-Language2.png",
@@ -400,6 +404,7 @@
   {
     "course_id": "BLC005",
     "title": "Data Science and Machine Learning with Python",
+    "description": "Data Science and Machine Learning with Python is an intermediate-level course that focuses on the practical application of data science and machine learning using Python. Taught by Emily Davis, a data scientist with extensive industry experience, this course provides a comprehensive overview of the key concepts and techniques used in data science and machine learning. With a total of 40 lessons and approximately 20 hours of content, you'll learn about the fundamentals of data science, Python programming for data science, NumPy and pandas for data manipulation, data visualization, machine learning basics, supervised learning, unsupervised learning, deep learning, and more. The course includes quizzes to reinforce your knowledge and a final project to apply your skills to a real-world scenario. By the end of this course, you'll have a solid foundation in data science and machine learning with Python and be ready to tackle data-driven challenges.",
     "regularPrice": 349,
     "offerPrice": 119,
     "coverImg": "https://miro.medium.com/v2/resize:fit:1200/0*0KRgUt89FqQzWjtc.jpg",
@@ -503,6 +508,7 @@
   {
     "course_id": "BLC006",
     "title": "Web Development: HTML, CSS, and JavaScript",
+    "description": "Web Development: HTML, CSS, and JavaScript is a beginner-level course that provides a comprehensive introduction to web development. Taught by David Wilson, a web development expert, this course covers the essential technologies used in web development, including HTML, CSS, and JavaScript. With a total of 30 lessons and approximately 12 hours of content, you'll learn the basics of HTML, including tags, attributes, and document structure. You'll then explore CSS fundamentals, including styling, layout, and responsiveness. The course also covers JavaScript essentials, including variables, functions, and DOM manipulation. You'll learn how to handle events, use jQuery for simplified JavaScript coding, and implement responsive web design principles. The course includes quizzes to reinforce your understanding and a final project to apply your skills to a real-world scenario. By the end of this course, you'll have a solid foundation in web development and be ready to create your own websites and web applications.",
     "regularPrice": 199,
     "offerPrice": 59,
     "coverImg": "https://alihafezi.com/wp-content/uploads/2019/06/HTML-CSS-Javascript.jpg",
@@ -606,6 +612,7 @@
   {
     "course_id": "BLC007",
     "title": "Python for Data Analysis and Visualization",
+    "description": "Python for Data Analysis and Visualization is an intermediate-level course that focuses on using Python for analyzing and visualizing data. Taught by Sophia Adams, a data analysis expert, this course provides a comprehensive overview of the key techniques and tools used in data analysis and visualization with Python. With a total of 25 lessons and approximately 10 hours of content, you'll learn about the fundamentals of data analysis, data manipulation with pandas, data visualization with matplotlib, and advanced visualization techniques using Plotly and Seaborn. The course also covers data cleaning and preprocessing, statistical analysis, and time series analysis. Quizzes are included to reinforce your understanding, and a final project allows you to apply your skills to a real-world data analysis scenario. By the end of this course, you'll have a strong foundation in Python for data analysis and visualization and be able to effectively extract insights and communicate findings from various datasets.",
     "regularPrice": 249,
     "offerPrice": 74,
     "coverImg": "https://miro.medium.com/v2/resize:fit:1200/0*0KRgUt89FqQzWjtc.jpg",
@@ -702,6 +709,7 @@
   {
     "course_id": "BLC008",
     "title": "Mobile App Development with React Native",
+    "description": "Mobile App Development with React Native is an intermediate-level course that focuses on building mobile applications using React Native framework. Taught by Daniel Roberts, a mobile app development expert, this course provides a comprehensive introduction to React Native and covers the key concepts and techniques involved in developing mobile apps. With a total of 35 lessons and approximately 15 hours of content, you'll learn about React Native components and styling, navigation and routing, API integration, state management, form handling, push notifications, and deployment. The course includes quizzes to reinforce your understanding, and a final project allows you to apply your skills to create a fully functional mobile app. By the end of this course, you'll have the knowledge and confidence to build and deploy your own mobile apps using React Native.",
     "regularPrice": 299,
     "offerPrice": 99,
     "coverImg": "https://ixorasolution.com/wp-content/uploads/Mobile-app-development-with-react-native-1300x731.jpg",
@@ -805,6 +813,7 @@
   {
     "course_id": "BLC009",
     "title": "Introduction to Data Structures and Algorithms",
+    "description": "Introduction to Data Structures and Algorithms is an intermediate-level course that provides a solid foundation in fundamental data structures and algorithms. Taught by Olivia Thompson, an experienced computer science instructor, this course covers key topics such as algorithms, time complexity and Big O notation, arrays and linked lists, stacks and queues, recursion, sorting algorithms, searching algorithms, and graph algorithms. With a total of 25 lessons and approximately 10 hours of content, you'll gain a deep understanding of these essential concepts and their practical applications. The course includes quizzes to test your knowledge, and a final project allows you to apply your skills to solve a real-world problem. By the end of this course, you'll have the knowledge and skills to analyze and optimize algorithms and effectively use data structures in your software development projects.",
     "regularPrice": 199,
     "offerPrice": 59,
     "coverImg": "https://www.springboard.com/blog/wp-content/uploads/2020/07/what-are-data-structures-and-algorithms.png",
@@ -908,6 +917,7 @@
   {
     "course_id": "BLC0010",
     "title": "The Complete Web Development Course: HTML, CSS, JS, Node, and More",
+    "description": "The Complete Web Development Course: HTML, CSS, JS, Node, and More is a comprehensive course that covers all the essential technologies and skills needed to become a proficient web developer. Created by Nathan Clark, a seasoned web development instructor, this course offers a deep dive into HTML fundamentals, CSS basics and advanced techniques, JavaScript essentials, DOM manipulation and events, Node.js and Express.js, databases with MongoDB, RESTful API development, and authentication and authorization. With a total of 45 lessons and approximately 25 hours of content, you'll gain hands-on experience and practical knowledge to build dynamic and interactive web applications. The course is suitable for all levels, whether you're a beginner or an experienced developer looking to expand your skill set. Each section includes quizzes to reinforce your learning, and a final project allows you to showcase your abilities. By the end of this course, you'll have the confidence and expertise to develop professional-quality web applications using a wide range of tools and technologies.",
     "regularPrice": 349,
     "offerPrice": 119,
     "coverImg": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/FSIjaoI2QtKWZL65cogd",
@@ -1011,6 +1021,7 @@
   {
     "course_id": "BLC0011",
     "title": "Machine Learning and Neural Networks with TensorFlow",
+    "description": "Machine Learning and Neural Networks with TensorFlow is an intermediate-level course designed to provide a comprehensive understanding of machine learning concepts and the practical implementation of neural networks using TensorFlow. Created by William Brown, a seasoned machine learning expert, this course covers a range of topics including introduction to machine learning, linear regression, logistic regression, decision trees and random forests, neural networks and deep learning, convolutional neural networks, recurrent neural networks, and transfer learning. With a total of 35 lessons and a duration of approximately 15 hours, you'll learn how to build and train machine learning models using TensorFlow, a popular deep learning framework. The course assumes prior knowledge of Python programming and basic machine learning concepts. Each section includes quizzes to test your understanding, and a final project allows you to apply your knowledge to a real-world scenario. By the end of this course, you'll have the skills and knowledge to develop and deploy machine learning models using TensorFlow.",
     "regularPrice": 299,
     "offerPrice": 99,
     "coverImg": "https://www.mrdbourke.com/content/images/2021/05/cover-tensorflow-for-deep-learning.jpg",
@@ -1114,6 +1125,7 @@
   {
     "course_id": "BLC0012",
     "title": "Advanced CSS: Layouts, Flexbox, Grid, and Animations",
+    "description": "Advanced CSS: Layouts, Flexbox, Grid, and Animations is an intermediate-level course taught by Emma Harris. This course focuses on advanced CSS techniques to create modern and responsive layouts. With a total of 20 lessons and a duration of 8 hours, you'll learn about the CSS box model, selectors, and specificity. You'll explore CSS layouts using floats, flexbox fundamentals, and CSS grid layout. The course also covers responsive design techniques to ensure your layouts adapt to different screen sizes. Additionally, you'll learn how to add animations and transitions to enhance the user experience. The course includes quizzes to test your knowledge and a final project to apply what you've learned. By the end of this course, you'll have a solid understanding of advanced CSS concepts and techniques to create visually appealing and responsive web layouts.",
     "regularPrice": 199,
     "offerPrice": 59,
     "coverImg": "https://img-b.udemycdn.com/course/750x422/3304778_ed4b_2.jpg",
@@ -1210,6 +1222,7 @@
   {
     "course_id": "BLC0013",
     "title": "React: Building User Interfaces and Single-Page Applications",
+    "description": "React: Building User Interfaces and Single-Page Applications is an intermediate-level course taught by Benjamin Wilson. This course focuses on React, a popular JavaScript library for building user interfaces and single-page applications. With a total of 30 lessons and a duration of 12 hours, you'll learn the fundamentals of React, including components and props, state and lifecycle management, event handling, and form handling. The course also covers advanced topics such as React Router for navigation, React hooks for functional components, and context and Redux for state management. Throughout the course, you'll work on quizzes to test your understanding and a final project to apply your knowledge. By the end of this course, you'll have the skills to build interactive and dynamic user interfaces using React and create powerful single-page applications.",
     "regularPrice": 249,
     "offerPrice": 74,
     "coverImg": "https://huspi.com/wp-content/uploads/2019/11/HUSPI-Blog-Banner-1-1024x512.png",
@@ -1313,6 +1326,7 @@
   {
     "course_id": "BLC0014",
     "title": "Ethical Hacking and Penetration Testing",
+    "description": "Ethical Hacking and Penetration Testing is an advanced-level course taught by Alexander Scott. This course provides a comprehensive introduction to ethical hacking, teaching you the techniques and methodologies used to identify and address vulnerabilities in computer systems and networks. With a total of 40 lessons and a duration of 18 hours, you'll learn about information gathering, scanning and enumeration, vulnerability assessment, exploitation techniques, web application hacking, wireless network security, system hacking, and more. Throughout the course, you'll work on quizzes to test your understanding and a final project to apply your knowledge in a practical scenario. By the end of this course, you'll have the skills and knowledge to conduct ethical hacking and penetration testing, helping organizations secure their systems and protect against cyber threats.",
     "regularPrice": 299,
     "offerPrice": 99,
     "coverImg": "https://i.ytimg.com/vi/-e_eDYoJbsk/maxresdefault.jpg",
@@ -1416,6 +1430,7 @@
   {
     "course_id": "BLC0015",
     "title": "Introduction to Data Science: Python and R",
+    "description": "Introduction to Data Science: Python and R is a beginner-level course taught by Isabella White. This course provides a comprehensive introduction to data science, covering key concepts and techniques using both Python and R programming languages. With a total of 35 lessons and a duration of 14 hours, you'll learn about data cleaning and preprocessing, data visualization with Matplotlib and Seaborn, exploratory data analysis with R, statistical analysis with R, and machine learning with Python and R. The course emphasizes hands-on learning and includes quizzes to test your understanding. You'll also work on a final project to apply your knowledge in a practical data science scenario. By the end of this course, you'll have a solid foundation in data science and be proficient in using Python and R for data analysis and machine learning tasks.",
     "regularPrice": 249,
     "offerPrice": 74,
     "coverImg": "https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1603467080/Python_vs._R_for_Data_Science__What_s_the_Difference__klxnwh.png",
@@ -1519,6 +1534,7 @@
   {
     "course_id": "BLC0016",
     "title": "Full-Stack Web Development with MERN: MongoDB, Express, React, Node",
+    "description": "Full-Stack Web Development with MERN: MongoDB, Express, React, Node is an intermediate-level course taught by Sophie Turner. This comprehensive course covers the essential technologies and tools used in full-stack web development, focusing on the MERN stack: MongoDB, Express.js, React.js, and Node.js. With a total of 45 lessons and a duration of 22 hours, you'll learn about MongoDB and Mongoose for database management, Express.js for building RESTful APIs, React.js for building dynamic user interfaces, and Node.js for server-side development. The course also covers advanced topics such as state management with Redux and authentication and authorization. Through hands-on projects and quizzes, you'll gain practical experience and reinforce your understanding of the concepts. The course concludes with a final project where you'll apply your knowledge to build a full-stack web application. By the end of this course, you'll have the skills and knowledge to develop robust and scalable web applications using the MERN stack.",
     "regularPrice": 399,
     "offerPrice": 129,
     "coverImg": "https://1.bp.blogspot.com/-6K95g3TFfKk/XteQvGAR5jI/AAAAAAAAfkY/tIw0I7AmNQozerut_JmseOAkANKueQKuACLcBGAsYHQ/w1200-h630-p-k-no-nu/MERN%2BStack%2BMaster%2BCourse%2B-%2BBuilding%2Byour%2Bown%2BInstagram%2B-%2BUdemy%2Bbest%2Bcourse.png",
@@ -1622,6 +1638,7 @@
   {
     "course_id": "BLC0017",
     "title": "Java Web Development: Servlets, JSP, Hibernate, Spring",
+    "description": "Java Web Development: Servlets, JSP, Hibernate, Spring is an intermediate-level course instructed by Christopher Hall. This comprehensive course focuses on Java web development and covers various technologies and frameworks commonly used in building web applications. With a total of 40 lessons and a duration of 18 hours, you'll learn the basics of Java web development, including Servlets and JSP for server-side programming, JavaServer Faces (JSF) for building user interfaces, Hibernate ORM for database management, and the Spring framework for creating enterprise-grade applications. The course also covers Spring MVC for building web applications, Spring Security for implementing authentication and authorization, and RESTful web services for building APIs. Through quizzes and a final project, you'll apply your knowledge and reinforce your understanding of the concepts. By the end of this course, you'll have the skills and knowledge to develop robust and scalable Java-based web applications.",
     "regularPrice": 349,
     "offerPrice": 119,
     "coverImg": "https://app.e-box.co.in/course/showBannerImage/1359",
@@ -1725,9 +1742,10 @@
   {
     "course_id": "BLC0018",
     "title": "AWS Certified Solutions Architect - Associate",
+    "description": "AWS Certified Solutions Architect - Associate is an intermediate-level course instructed by Jacob Allen. This course is designed to prepare you for the AWS Certified Solutions Architect - Associate certification exam. With a total of 30 lessons and a duration of 14 hours, you'll learn the foundational concepts and core services of AWS (Amazon Web Services). The course covers various topics including compute services such as EC2, Lambda, and ECS, storage services like S3, EBS, and EFS, and database services including RDS and DynamoDB. You'll also learn about networking and content delivery, identity and access management, monitoring and logging, and security and encryption in the context of AWS. Through quizzes and a final project, you'll assess your knowledge and apply what you've learned. By the end of this course, you'll have the skills and knowledge to design, deploy, and manage scalable and secure solutions on the AWS platform.",
     "regularPrice": 299,
     "offerPrice": 99,
-    "coverImg": "https://example.com/course18_cover.jpghttps://digitalcloud.training/wp-content/uploads/2021/07/AWS-Certified-Solutions-Architect-Associate.png?update_image_id_1679347453",
+    "coverImg": "https://digitalcloud.training/wp-content/uploads/2021/07/AWS-Certified-Solutions-Architect-Associate.png?update_image_id_1679347453",
     "author": "Jacob Allen",
     "avatar": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
     "published": "21-12-2021",
@@ -1828,6 +1846,7 @@
   {
     "course_id": "BLC0019",
     "title": "Data Visualization with Tableau",
+    "description": "Data Visualization with Tableau is a beginner-level course instructed by Mia Young. In this course, you'll learn how to effectively visualize and communicate data using Tableau, a popular data visualization tool. With a total of 25 lessons and a duration of 10 hours, you'll start with an overview of the course and an introduction to Tableau. You'll then learn how to connect to various data sources and create visualizations using Tableau's intuitive interface. The course covers topics such as building dashboards, working with advanced chart types, utilizing calculations, and performing mapping and spatial analysis. Additionally, you'll explore interactive data storytelling techniques to engage and inform your audience. Throughout the course, there are quizzes to test your understanding, and a final project to apply what you've learned. By the end of this course, you'll have the skills to create compelling and insightful visualizations using Tableau.",
     "regularPrice": 249,
     "offerPrice": 74,
     "coverImg": "https://www.zionandzion.com/wordpress/wp-content/uploads/2020/03/Automate-A-Database-Extract-For-Data-Visualization-SOCIAL-1.jpg",
@@ -1931,6 +1950,7 @@
   {
     "course_id": "BLC0020",
     "title": "Introduction to Cybersecurity",
+    "description": "Introduction to Cybersecurity is a beginner-level course instructed by Joshua Mitchell. This course provides a comprehensive introduction to the field of cybersecurity, covering fundamental concepts, common security threats, and security measures. With a total of 20 lessons and a duration of 8 hours, you'll start with an overview of the course and an introduction to cybersecurity. You'll then explore topics such as common security threats, network security, operating system security, and cryptography. The course also covers web security, wireless network security, and ethical hacking. Throughout the course, there are quizzes to test your understanding, and a final project to apply what you've learned. By the end of this course, you'll have a solid foundation in cybersecurity and be familiar with various security principles and practices.",
     "regularPrice": 199,
     "offerPrice": 59,
     "coverImg": "https://www.whizlabs.com/blog/wp-content/uploads/2020/05/introduction-to-cybersecurity.png",

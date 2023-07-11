@@ -1,0 +1,49 @@
+@import "../../../foundation/index";
+
+.main__course__container {
+  padding: 10rem 4%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @include breakpoints(tablet) {
+    flex-direction: column;
+  }
+
+  .left__containt {
+    width: 60%;
+    margin: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    @include breakpoints(tablet) {
+      width: 100%;
+      margin: 0;
+    }
+    .coverimg__container {
+      img {
+        width: 100%;
+      }
+    }
+    .details__container {
+      .info__container {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .right__containt {
+    .course__rating__container {
+      display: flex;
+      margin-bottom: 1rem;
+      .rating__star {
+        margin-right: 0.6rem;
+      }
+    }
+    .button__container {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CourseCard from "../../../componentes/Common/CourseCard";
-import { coursesData } from "../../../fakeData/coursesData";
+// import { coursesData } from "../../../fakeData/coursesData";
 import Header from "../Header";
 import Footer from "../../../componentes/Footer/Footer";
+import { useDispatch, useSelector } from "react-redux";
+import { coursesData } from "../../../features/slices/commonSlices/coursesSlice";
 
 const Courses = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(coursesData());
+  }, []);
+
+  const courses = useSelector((state) => state.courses.data.courses);
+
   return (
     <>
       <Header />
@@ -13,8 +22,7 @@ const Courses = () => {
           <h2>All Courses</h2>
         </div>
         <div className="courses__container">
-          {coursesData &&
-            coursesData.map((c) => <CourseCard key={c.id} {...c} />)}
+          {courses && courses?.map((c, i) => <CourseCard key={i} {...c} />)}
         </div>
       </section>
       <Footer />

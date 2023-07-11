@@ -8,6 +8,7 @@ import Login from "./pages/frontPages/Login/Login";
 import About from "./pages/frontPages/about/About";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Course from "./pages/frontPages/Course/Course";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/course/:id" element={<Course />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
       <ToastContainer

@@ -2,11 +2,11 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { commonServices } from "../../../services/commonServices";
 
 // user data thunk action
-export const userData = createAsyncThunk(
-  "userInfo/userData",
-  async (token, thunkApi) => {
+export const coursesData = createAsyncThunk(
+  "courses/coursesData",
+  async (thunkApi) => {
     try {
-      return await commonServices.userInfo(token);
+      return await commonServices.getCourses();
     } catch (error) {
       let msg = "";
       if (error.response.data.message) {
@@ -21,8 +21,8 @@ export const userData = createAsyncThunk(
 );
 
 // Then, handle actions in user information reducers:
-export const userInfoSlice = createSlice({
-  name: "userInfo",
+export const coursesSlice = createSlice({
+  name: "courses",
   initialState: {
     isLoading: false,
     data: {},
@@ -33,15 +33,15 @@ export const userInfoSlice = createSlice({
      ? details: info reducer
   */
   extraReducers: (builder) => {
-    builder.addCase(userData.pending, (state) => {
+    builder.addCase(coursesData.pending, (state) => {
       state.isLoading = true;
     });
-    builder.addCase(userData.fulfilled, (state, action) => {
+    builder.addCase(coursesData.fulfilled, (state, action) => {
       state.isLoading = false;
       state.data = action.payload;
       state.error = null;
     });
-    builder.addCase(userData.rejected, (state, action) => {
+    builder.addCase(coursesData.rejected, (state, action) => {
       state.isLoading = false;
       state.data = {};
       state.error = action.payload;
@@ -49,4 +49,4 @@ export const userInfoSlice = createSlice({
   },
 });
 
-export default userInfoSlice.reducer;
+export default coursesSlice.reducer;

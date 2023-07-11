@@ -1,6 +1,12 @@
 .course {
   box-shadow: 1px 1px 10px #cecbcb;
   border-radius: 5px;
+  min-height: 415px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
   .card__body {
     padding: 2%;
     .course__rating__container {
@@ -41,6 +47,9 @@
       padding: 2%;
       border-top: 1px solid #1f1f1f45;
       border-bottom: 1px solid #1f1f1f45;
+      position: absolute;
+      bottom: 7px;
+      width: 94%;
       .course__teacher-info__container {
         display: flex;
         justify-content: space-between;

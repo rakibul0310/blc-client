@@ -1,0 +1,70 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.loading-text span {
+  position: relative;
+  animation: wave 2s infinite;
+}
+
+.loading-waves {
+  display: flex;
+  justify-content: center;
+}
+
+.wave {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: waveMove 1.5s infinite;
+}
+
+.wave1 {
+  background-color: #fca5a5;
+  animation-delay: 0.1s;
+}
+
+.wave2 {
+  background-color: #feda75;
+  animation-delay: 0.3s;
+}
+
+.wave3 {
+  background-color: #a0e9fd;
+  animation-delay: 0.5s;
+}
+
+@keyframes wave {
+  0%,
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes waveMove {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}

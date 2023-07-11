@@ -1,13 +1,17 @@
 import React from "react";
-import Button from "../../componentes/Common/Button";
-import topCourse1 from "../../assets/topCourses/top_course1.jpg";
-import topCourse2 from "../../assets/topCourses/top_course2.jpg";
-import topCourse3 from "../../assets/topCourses/top_course3.jpg";
-import topCourse4 from "../../assets/topCourses/top_course4.jpg";
-import avater from "../../assets/avater/avater1.jpg";
 import CourseCard from "../../componentes/Common/CourseCard";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { coursesData } from "../../features/slices/commonSlices/coursesSlice";
+import CustomLink from "../../componentes/Common/CustomLink";
 
 const TopCourses = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(coursesData());
+  }, []);
+
+  const courses = useSelector((state) => state.courses.data.courses);
   return (
     <section className="top__courses__section">
       <div className="top__courses__heading">
@@ -18,14 +22,14 @@ const TopCourses = () => {
           </p>
         </div>
         <div className="top__courses__btn__container">
-          <Button className="btn__all-courses">All Courses</Button>
+          <CustomLink className="btn__all-courses" href="/courses">
+            All Courses
+          </CustomLink>
         </div>
       </div>
       <div className="top__courses__container">
-        <CourseCard coverImg={topCourse1} avater={avater} />
-        <CourseCard coverImg={topCourse2} avater={avater} />
-        <CourseCard coverImg={topCourse3} avater={avater} />
-        <CourseCard coverImg={topCourse4} avater={avater} />
+        {courses &&
+          courses?.slice(0, 4)?.map((c, i) => <CourseCard key={i} {...c} />)}
       </div>
     </section>
   );

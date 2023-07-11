@@ -16,7 +16,7 @@ const Login = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    if (loginInfo?.data?.user?.token) {
+    if (loginInfo?.data && loginInfo?.data?.user?.token) {
       localStorage.setItem(
         "blcToken",
         JSON.stringify(loginInfo?.data?.user?.token)
@@ -26,7 +26,12 @@ const Login = () => {
     if (loginInfo.error) {
       setError(loginInfo.error);
     }
-  }, [loginInfo?.data?.user?.token, loginInfo.error, navigate, error]);
+  }, [
+    loginInfo?.data,
+    loginInfo?.data?.user?.token,
+    navigate,
+    loginInfo.error,
+  ]);
 
   const handleLogin = async (e) => {
     e.preventDefault();

@@ -18,23 +18,25 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const userInfo = useSelector((state) => state.userInfo);
+  const loginInfo = useSelector((state) => state.auth);
 
   useEffect(() => {
-    dispatch(userData());
-  }, []);
+    const token = localStorage.getItem("blcToken");
+    if (!token && !loginInfo?.data?.user?.token) {
+      navigate("/login");
+    }
+  }, [navigate, loginInfo?.data?.user?.token]);
+
+  useEffect(() => {
+    console.log("dispatched");
+    dispatch(userData(loginInfo?.data?.user?.token));
+  }, [dispatch, loginInfo?.data?.user?.token]);
 
   useEffect(() => {
     if (device.isTablet) {
       setSidebarToggle(true);
     }
   }, [device.isTablet]);
-
-  useEffect(() => {
-    const token = localStorage.getItem("blcToken");
-    if (!token) {
-      navigate("/login");
-    }
-  }, [navigate]);
 
   return (
     <>

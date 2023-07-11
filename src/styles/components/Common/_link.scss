@@ -1,6 +1,12 @@
+@import "../../foundation/index";
+
 .link {
   text-decoration: none;
   &:focus {
     outline: none;
   }
+}
+
+.course_link {
+  color: $text-black;
 }
