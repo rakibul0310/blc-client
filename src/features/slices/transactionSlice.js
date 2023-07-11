@@ -1,12 +1,12 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { paymentServices } from "../../services/paymentServices";
+import { transactionServices } from "../../services/transactionServices";
 
 // login thunk action
-export const makePayment = createAsyncThunk(
-  "payment/makePayment",
-  async (service, thunkApi) => {
+export const addTransaction = createAsyncThunk(
+  "transaction/makeTransaction",
+  async (data, thunkApi) => {
     try {
-      return await paymentServices.makePaymentIntent(service);
+      return await transactionServices.makeTransaction(data);
     } catch (error) {
       let msg = "";
       if (error.response.data.message) {
@@ -21,8 +21,8 @@ export const makePayment = createAsyncThunk(
 );
 
 // Then, handle actions in auth reducers:
-export const paymentSlice = createSlice({
-  name: "payment",
+export const transactionSlice = createSlice({
+  name: "transaction",
   initialState: {
     isLoading: false,
     data: {},
@@ -30,18 +30,18 @@ export const paymentSlice = createSlice({
   },
 
   /*
-     ? details: payment reducer
+     ? details: transaction reducer
   */
   extraReducers: (builder) => {
-    builder.addCase(makePayment.pending, (state) => {
+    builder.addCase(addTransaction.pending, (state) => {
       state.isLoading = true;
     });
-    builder.addCase(makePayment.fulfilled, (state, action) => {
+    builder.addCase(addTransaction.fulfilled, (state, action) => {
       state.isLoading = false;
       state.data = action.payload;
       state.error = null;
     });
-    builder.addCase(makePayment.rejected, (state, action) => {
+    builder.addCase(addTransaction.rejected, (state, action) => {
       state.isLoading = false;
       state.data = {};
       state.error = action.payload;
@@ -49,4 +49,4 @@ export const paymentSlice = createSlice({
   },
 });
 
-export default paymentSlice.reducer;
+export default transactionSlice.reducer;
