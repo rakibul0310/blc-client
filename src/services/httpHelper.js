@@ -1,9 +1,9 @@
 export const baseURL = "http://localhost:1000";
 
-export const authHeader = (token) => {
-  return {
-    headers: {
-      authorization: token,
-    },
-  };
+const token = JSON.parse(localStorage.getItem("blcToken"));
+
+export const authHeader = {
+  headers: {
+    authorization: token,
+  },
 };

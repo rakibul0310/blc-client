@@ -1715,6 +1715,18 @@
     "on-change" "^4.0.0"
     "semver-compare" "^1.0.0"
 
+"@stripe/react-stripe-js@^2.1.1":
+  "integrity" "sha512-aHm6cWOqmOyq3eKKlR42hgvrcZhzc9ijL+BeXJ5H3uaWUKKcooSsBys0tiKl0gLxYQHUjUCvrRSX8fYaPBmAKg=="
+  "resolved" "https://registry.npmjs.org/@stripe/react-stripe-js/-/react-stripe-js-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "prop-types" "^15.7.2"
+
+"@stripe/stripe-js@^1.44.1", "@stripe/stripe-js@^1.54.1":
+  "integrity" "sha512-smEXPu1GKMcAj9g2luT16+oXfg2jAwyc68t2Dm5wdtYl3p8PqQaZEiI8tQmboaQAjgF8pIGma6byz1T1vgmpbA=="
+  "resolved" "https://registry.npmjs.org/@stripe/stripe-js/-/stripe-js-1.54.1.tgz"
+  "version" "1.54.1"
+
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   "integrity" "sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ=="
   "resolved" "https://registry.npmjs.org/@surma/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-2.2.3.tgz"
@@ -7932,7 +7944,7 @@
   "resolved" "https://registry.npmjs.org/react-device-breakpoints/-/react-device-breakpoints-2.0.3.tgz"
   "version" "2.0.3"
 
-"react-dom@^16.0.0", "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^16.8.6", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16", "react-dom@>=16.8", "react-dom@>=16.8.0", "react-dom@>=17.0.0":
+"react-dom@^16.0.0", "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8.6", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16", "react-dom@>=16.8", "react-dom@>=16.8.0", "react-dom@>=17.0.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"

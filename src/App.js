@@ -9,6 +9,7 @@ import About from "./pages/frontPages/about/About";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Course from "./pages/frontPages/Course/Course";
+import Payment from "./pages/paymentPages/Payment";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/course/:id" element={<Course />} />
+        <Route path="/payment/:id" element={<Payment />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
       <ToastContainer

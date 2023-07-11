@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import { useDispatch, useSelector } from "react-redux";
+import { makePayment } from "../../features/slices/paymentSlice";
 
 const CheckoutForm = ({ order }) => {
   const stripe = useStripe();
@@ -9,91 +11,111 @@ const CheckoutForm = ({ order }) => {
   const [processing, setProcessing] = useState(false);
   const [transactionId, setTransactionId] = useState("");
   const [clientSecret, setClientSecret] = useState("");
+  const dispatch = useDispatch();
+  const paymentDetails = useSelector((state) => state.payment.data);
 
-  const { _id, price, email, name } = order;
+  // const { _id, price, email, name } = order;
 
   useEffect(() => {
-    fetch("https://powertrain.onrender.com/create-payment-intent", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
-      body: JSON.stringify({ price }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data?.clientSecret) {
-          setClientSecret(data.clientSecret);
+    console.log("oooo", order);
+    dispatch(
+      makePayment(
+        {
+          price: order?.offerPrice,
         }
-      });
-  }, [price]);
+      )
+    );
+  }, []);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    if (!stripe || !elements) {
-      return;
+  useEffect(() => {
+    if (paymentDetails) {
+      console.log(paymentDetails);
+      setClientSecret(paymentDetails.clientSecret);
     }
+  }, [paymentDetails.clientSecret, paymentDetails]);
 
-    const card = elements.getElement(CardElement);
+  // useEffect(() => {
+  //   fetch("https://powertrain.onrender.com/create-payment-intent", {
+  //     method: "POST",
+  //     headers: {
+  //       "content-type": "application/json",
+  //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //     },
+  //     body: JSON.stringify({ price }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       if (data?.clientSecret) {
+  //         setClientSecret(data.clientSecret);
+  //       }
+  //     });
+  // }, [price]);
 
-    if (card === null) {
-      return;
-    }
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
 
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: "card",
-      card,
-    });
+  //   if (!stripe || !elements) {
+  //     return;
+  //   }
 
-    setCardError(error?.message || "");
-    setSuccess("");
-    setProcessing(true);
-    // confirm card payment
-    const { paymentIntent, error: intentError } =
-      await stripe.confirmCardPayment(clientSecret, {
-        payment_method: {
-          card: card,
-          billing_details: {
-            name: name,
-            email: email,
-          },
-        },
-      });
+  //   const card = elements.getElement(CardElement);
 
-    if (intentError) {
-      setCardError(intentError?.message);
-      setProcessing(false);
-    } else {
-      setCardError("");
-      setTransactionId(paymentIntent.id);
-      console.log(paymentIntent);
-      setSuccess("Congrats! Your payment is completed.");
+  //   if (card === null) {
+  //     return;
+  //   }
 
-      //store payment on database
-      const payment = {
-        order: _id,
-        transactionId: paymentIntent.id,
-      };
-      fetch(`https://powertrain.onrender.com/order/${_id}`, {
-        method: "PATCH",
-        headers: {
-          "content-type": "application/json",
-          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-        body: JSON.stringify(payment),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          setProcessing(false);
-          console.log(data);
-        });
-    }
-  };
+  //   const { error, paymentMethod } = await stripe.createPaymentMethod({
+  //     type: "card",
+  //     card,
+  //   });
+
+  //   setCardError(error?.message || "");
+  //   setSuccess("");
+  //   setProcessing(true);
+  //   // confirm card payment
+  //   const { paymentIntent, error: intentError } =
+  //     await stripe.confirmCardPayment(clientSecret, {
+  //       payment_method: {
+  //         card: card,
+  //         billing_details: {
+  //           name: name,
+  //           email: email,
+  //         },
+  //       },
+  //     });
+
+  //   if (intentError) {
+  //     setCardError(intentError?.message);
+  //     setProcessing(false);
+  //   } else {
+  //     setCardError("");
+  //     setTransactionId(paymentIntent.id);
+  //     console.log(paymentIntent);
+  //     setSuccess("Congrats! Your payment is completed.");
+
+  //     //store payment on database
+  //     const payment = {
+  //       order: _id,
+  //       transactionId: paymentIntent.id,
+  //     };
+  //     fetch(`https://powertrain.onrender.com/order/${_id}`, {
+  //       method: "PATCH",
+  //       headers: {
+  //         "content-type": "application/json",
+  //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //       },
+  //       body: JSON.stringify(payment),
+  //     })
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         setProcessing(false);
+  //         console.log(data);
+  //       });
+  //   }
+  // };
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={"handleSubmit"}>
         <CardElement
           options={{
             style: {

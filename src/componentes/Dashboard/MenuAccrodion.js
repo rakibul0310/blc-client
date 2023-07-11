@@ -18,8 +18,7 @@ const MenuAccrodion = ({ setSidebarToggle }) => {
   const userInfo = useSelector((state) => state.userInfo);
 
   useEffect(() => {
-    const token = JSON.parse(localStorage.getItem("blcToken"));
-    dispatch(userData(token));
+    dispatch(userData());
   }, []);
 
   const toggle = (index) => {

@@ -7,7 +7,7 @@ import { courseData } from "../../../features/slices/commonSlices/courseSlice";
 import Button from "../../../componentes/Common/Button";
 import Header from "../Header";
 import Footer from "../../../componentes/Footer/Footer";
-import Loading from "../../../componentes/Common/Loading";
+import CustomLink from "../../../componentes/Common/CustomLink";
 
 const Course = () => {
   const params = useParams();
@@ -16,7 +16,7 @@ const Course = () => {
 
   useEffect(() => {
     dispatch(courseData(params.id));
-  });
+  }, []);
 
   return (
     <>
@@ -52,7 +52,9 @@ const Course = () => {
             </div>
           </div>
           <div className="button__container">
-            <Button className="btn">Buy Now ${course?.offerPrice}</Button>
+            <CustomLink href={`/payment/${course?._id}`}>
+              <Button className="btn">Buy Now ${course?.offerPrice}</Button>
+            </CustomLink>
           </div>
           <div className="list_wrapper">
             {course?.courseOutline?.map((d, i) => (
