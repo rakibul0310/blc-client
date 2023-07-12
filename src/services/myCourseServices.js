@@ -10,6 +10,12 @@ const addMyCourse = async (data) => {
   return res.data;
 };
 
+const getMyCourse = async () => {
+  const res = await axios.get(baseURL + "/secure/api/my-courses", authHeader);
+  return res.data;
+};
+
 export const myCoursesServices = {
   addMyCourse,
+  getMyCourse,
 };

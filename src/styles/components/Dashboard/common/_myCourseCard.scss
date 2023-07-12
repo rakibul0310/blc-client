@@ -1,0 +1,39 @@
+.my__course {
+  box-shadow: 1px 1px 10px #cecbcb;
+  border-radius: 5px;
+  min-height: 315px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  .my__card__body {
+    padding: 2%;
+    .my__course__rating__container {
+      display: flex;
+      align-items: center;
+    }
+    .my__course__title__container {
+      h4 {
+        font-size: small;
+        font-family: "poppins", sans-serif;
+        font-weight: 600;
+        margin: 0.8rem 0;
+      }
+    }
+    .my__course__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      padding: 2%;
+      position: absolute;
+      bottom: 7px;
+      width: 94%;
+      .my__course__progress__container {
+        margin: 1rem 0;
+        width: 100%;
+      }
+    }
+  }
+}

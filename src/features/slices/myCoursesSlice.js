@@ -20,6 +20,24 @@ export const createMyCourse = createAsyncThunk(
   }
 );
 
+export const findMyCourse = createAsyncThunk(
+  "myCourses/findMyCourses",
+  async (thunkApi) => {
+    try {
+      return await myCoursesServices.getMyCourse();
+    } catch (error) {
+      let msg = "";
+      if (error.response.data.message) {
+        msg = error.response.data.message;
+      } else {
+        msg = error.message;
+      }
+
+      return thunkApi.rejectWithValue(msg);
+    }
+  }
+);
+
 // Then, handle actions in auth reducers:
 export const myCourseSlice = createSlice({
   name: "myCourses",
@@ -42,6 +60,22 @@ export const myCourseSlice = createSlice({
       state.error = null;
     });
     builder.addCase(createMyCourse.rejected, (state, action) => {
+      state.isLoading = false;
+      state.data = {};
+      state.error = action.payload;
+    });
+    /*
+       ? details: get my courses reducer
+    */
+    builder.addCase(findMyCourse.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(findMyCourse.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.data = action.payload;
+      state.error = null;
+    });
+    builder.addCase(findMyCourse.rejected, (state, action) => {
       state.isLoading = false;
       state.data = {};
       state.error = action.payload;
