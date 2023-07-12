@@ -1,0 +1,92 @@
+@import "../../../foundation//index";
+.payment__main__container {
+  margin: 10rem 4%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .payment__container {
+    .service__details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 1rem 0;
+      .service__title {
+        font-size: 1.7rem;
+        text-align: center;
+        color: #2a2a72;
+      }
+      .service__price,
+      .service__id {
+        font-weight: 600;
+      }
+
+      .service__price {
+        color: $bg-danger;
+        font-size: 1.4rem;
+      }
+      .service__id {
+        color: green;
+      }
+    }
+  }
+  .payment__card__main__container {
+    width: 100%;
+    .payment__card__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5rem;
+    }
+  }
+}
+
+.payment__form {
+  border: #f6f9fc solid 1px;
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 20px 0;
+  width: 50%;
+  background-color: $bg-gray-white;
+  box-shadow: 0 30px 50px -20px rgb(50 50 93 / 25%),
+    0 30px 60px -30px rgb(0 0 0 / 30%);
+  @include breakpoints(tablet) {
+    width: 100%;
+  }
+  label {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .card__element {
+    width: 40%;
+    margin: 1.5rem;
+    @include breakpoints(tablet) {
+      width: 90%;
+    }
+  }
+
+  button {
+    margin-top: 1.5rem;
+  }
+}
+
+.error__text {
+  color: $bg-danger;
+}
+
+.success__container {
+  .success__text {
+    color: $green-light;
+    text-align: center;
+  }
+  .transaction {
+    font-weight: 600;
+    .transaction__id {
+      color: $bg-danger;
+    }
+  }
+}

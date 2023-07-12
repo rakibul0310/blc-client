@@ -15,7 +15,12 @@ const Courses = () => {
 
   const courses = useSelector((state) => state.courses);
   if (courses.isLoading) {
-    return <Loading />;
+    return (
+      <>
+        <Header />
+        <Loading />
+      </>
+    );
   }
 
   return (

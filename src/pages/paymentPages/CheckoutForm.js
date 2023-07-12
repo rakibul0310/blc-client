@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { makePayment } from "../../features/slices/paymentSlice";
 import { addTransaction } from "../../features/slices/transactionSlice";
 import { createMyCourse } from "../../features/slices/myCoursesSlice";
+import "../../styles/pages/FrontPage/Payment/_index.scss";
 
 const CheckoutForm = ({ order }) => {
   const stripe = useStripe();
@@ -113,8 +114,11 @@ const CheckoutForm = ({ order }) => {
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="payment__form">
+        <label htmlFor="card__element">Card Details</label>
         <CardElement
+          className="card__element"
+          id="card__element"
           options={{
             style: {
               base: {
@@ -138,13 +142,13 @@ const CheckoutForm = ({ order }) => {
           Pay
         </button>
       </form>
-      {cardError && <p className="text-red-500">{cardError}</p>}
+      {cardError && <p className="error__text">{cardError}</p>}
       {success && (
-        <div className="text-green-500">
-          <p>{success} </p>
-          <p>
+        <div className="success__container">
+          <p className="success__text">{success} </p>
+          <p className="transaction">
             Your transaction Id:{" "}
-            <span className="text-orange-500 font-bold">{transactionId}</span>{" "}
+            <span className="transaction__id">{transactionId}</span>{" "}
           </p>
         </div>
       )}
