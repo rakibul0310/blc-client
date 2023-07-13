@@ -14,7 +14,7 @@ import { useState } from "react";
 const CourseContent = () => {
   const { id } = useParams();
   const device = useBreakpoints();
-  const [currentLesson, setCurrentLesson] = useState("");
+  const [currentLesson, setCurrentLesson] = useState({});
   const [currentVideo, setCurrentVideo] = useState("");
   const dispatch = useDispatch();
   const myCourse = useSelector((state) => state.myCourse);
@@ -22,6 +22,25 @@ const CourseContent = () => {
   useEffect(() => {
     dispatch(findMyCourseByid(id));
   }, []);
+
+  useEffect(() => {
+    if (myCourse.data?.courseOutline) {
+      // const current = myCourse?.data?.courseOutline?.filter(
+      //   (c) => c.status === true
+      // );
+      // if (current?.length > 0) {
+      //   current?.map(
+      //     (c) =>
+      //       (c?.lessonNo > currentLesson?.lessonNo || !currentLesson) &&
+      //       setCurrentLesson(c) &&
+      //       setCurrentVideo(c?.videoLink)
+      //   );
+      // } else {
+      // }
+      setCurrentVideo(myCourse?.data?.courseOutline[0]?.videoLink);
+      setCurrentLesson(myCourse?.data?.courseOutline[0]);
+    }
+  }, [myCourse?.data]);
 
   if (myCourse.isLoading) {
     return (
@@ -38,7 +57,7 @@ const CourseContent = () => {
         {/* // player  */}
         <div className="player_wrapper">
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+            url={currentVideo}
             controls={true}
             width={device.isTablet ? "360px" : "640px"}
             // height={}
@@ -48,7 +67,7 @@ const CourseContent = () => {
             // onEnded={()=>}
           />
           <div className="player_title_wrapper">
-            <h3>{myCourse?.data?.title}</h3>
+            <h3>{currentLesson?.title}</h3>
             <button className="btn">Bookmark</button>
           </div>
         </div>

@@ -9,7 +9,15 @@ const makeTransaction = async (data) => {
   );
   return res.data;
 };
+const getTransaction = async () => {
+  const res = await axios.get(
+    baseURL + "/secure/api/my-transaction",
+    authHeader
+  );
+  return res.data;
+};
 
 export const transactionServices = {
   makeTransaction,
+  getTransaction,
 };

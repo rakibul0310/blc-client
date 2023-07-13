@@ -19,6 +19,24 @@ export const addTransaction = createAsyncThunk(
   }
 );
 
+export const getTransactionHistory = createAsyncThunk(
+  "transaction/getTransactionHistory",
+  async (thunkApi) => {
+    try {
+      return await transactionServices.getTransaction();
+    } catch (error) {
+      let msg = "";
+      if (error.response.data.message) {
+        msg = error.response.data.message;
+      } else {
+        msg = error.message;
+      }
+
+      return thunkApi.rejectWithValue(msg);
+    }
+  }
+);
+
 // Then, handle actions in auth reducers:
 export const transactionSlice = createSlice({
   name: "transaction",
@@ -41,6 +59,20 @@ export const transactionSlice = createSlice({
       state.error = null;
     });
     builder.addCase(addTransaction.rejected, (state, action) => {
+      state.isLoading = false;
+      state.data = {};
+      state.error = action.payload;
+    });
+
+    builder.addCase(getTransactionHistory.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(getTransactionHistory.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.data = action.payload;
+      state.error = null;
+    });
+    builder.addCase(getTransactionHistory.rejected, (state, action) => {
       state.isLoading = false;
       state.data = {};
       state.error = action.payload;

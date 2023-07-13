@@ -1,10 +1,29 @@
 import React from "react";
 import { BsFillUnlockFill } from "react-icons/bs";
 import { BiLockAlt } from "react-icons/bi";
+import { useDispatch } from "react-redux";
 
-const ContentList = ({ lesson }) => {
+const ContentList = ({
+  lesson,
+  currentLesson,
+  setCurrentLesson,
+  setCurrentVideo,
+}) => {
+  const dispatch = useDispatch();
+  const handleLessonChange = (e) => {
+    e.preventDefault();
+    // send requiest to change currentLesson's status to true
+    // dispatch()
+    setCurrentLesson(lesson);
+    setCurrentVideo(lesson?.videoLink);
+  };
   return (
-    <div className="content_list_container">
+    <div
+      className="content_list_container"
+      onClick={() =>
+        setCurrentLesson(lesson) && setCurrentVideo(lesson?.videoLink)
+      }
+    >
       <div className="list_title_wrapper">
         <BiLockAlt />
         {/* <BsFillUnlockFill /> */}

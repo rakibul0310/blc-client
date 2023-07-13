@@ -88,6 +88,7 @@ const CheckoutForm = ({ order }) => {
         course_id: order?._id,
         email: userInfo?.email,
         title: order?.title,
+        amount: order?.offerProce,
         status: true,
         transaction_id: paymentIntent.id,
       };
