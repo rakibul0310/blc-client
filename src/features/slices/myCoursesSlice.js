@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { myCoursesServices } from "../../services/myCourseServices";
 
-// login thunk action
 export const createMyCourse = createAsyncThunk(
   "myCourses/createMyCourses",
   async (data, thunkApi) => {

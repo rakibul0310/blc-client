@@ -15,7 +15,16 @@ const getMyCourse = async () => {
   return res.data;
 };
 
+const getMyCourseById = async (id) => {
+  const res = await axios.get(
+    baseURL + "/secure/api/my-courses/" + id,
+    authHeader
+  );
+  return res.data;
+};
+
 export const myCoursesServices = {
   addMyCourse,
   getMyCourse,
+  getMyCourseById,
 };

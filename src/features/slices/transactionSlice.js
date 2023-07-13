@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { transactionServices } from "../../services/transactionServices";
 
-// login thunk action
 export const addTransaction = createAsyncThunk(
   "transaction/makeTransaction",
   async (data, thunkApi) => {

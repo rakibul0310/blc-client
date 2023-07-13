@@ -5,7 +5,10 @@ import CustomLink from "../../Common/CustomLink";
 const MycourseCard = (props) => {
   return (
     <>
-      <CustomLink className="course_link">
+      <CustomLink
+        href={`/dashboard/courses/my-courses/${props._id}`}
+        className="course_link"
+      >
         <div>
           <div className="my__course">
             <img src={props?.coverImg} alt="" width="100%" />

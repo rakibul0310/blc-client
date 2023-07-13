@@ -6,6 +6,7 @@ import courseReducer from "../slices/commonSlices/courseSlice";
 import paymentReducer from "../slices/paymentSlice";
 import transactionReducer from "../slices/transactionSlice";
 import myCoursesReducer from "../slices/myCoursesSlice";
+import myCourseReducer from "../slices/myCourseSlice";
 
 export const store = configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export const store = configureStore({
     payment: paymentReducer,
     transaction: transactionReducer,
     myCourses: myCoursesReducer,
+    myCourse: myCourseReducer,
   },
 });

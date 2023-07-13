@@ -28,7 +28,7 @@ const MyCourses = () => {
         <h2>My Courses</h2>
       </div>
       <div className="courses__container">
-        {myCourse?.data &&
+        {myCourse?.data?.length > 0 &&
           myCourse?.data?.map((c) => <MycourseCard key={c.id} {...c} />)}
       </div>
     </section>

@@ -2,15 +2,19 @@ import React from "react";
 import { BsFillUnlockFill } from "react-icons/bs";
 import { BiLockAlt } from "react-icons/bi";
 
-const ContentList = ({ status, lesson, time }) => {
+const ContentList = ({ lesson }) => {
   return (
     <div className="content_list_container">
       <div className="list_title_wrapper">
         <BiLockAlt />
         {/* <BsFillUnlockFill /> */}
-        {lesson ? <h3>{lesson}</h3> : <h3>Complete Javascriopt course</h3>}
+        {lesson ? (
+          <h3>{lesson.title}</h3>
+        ) : (
+          <h3>Complete Javascriopt course</h3>
+        )}
       </div>
-      {time ? <span>{time}</span> : <span>35 min</span>}
+      {lesson?.time ? <span>{lesson?.time}</span> : <span>35 min</span>}
     </div>
   );
 };
