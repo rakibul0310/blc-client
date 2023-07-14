@@ -26,7 +26,7 @@ const SupportTicket = () => {
     if (Object.keys(formErrors).length > 0) {
       Notification("All field are required", "error");
     } else {
-      // console.log(data);
+      console.log(data);
     }
   };
 
