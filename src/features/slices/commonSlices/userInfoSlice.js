@@ -4,9 +4,10 @@ import { commonServices } from "../../../services/commonServices";
 // user data thunk action
 export const userData = createAsyncThunk(
   "userInfo/userData",
-  async (thunkApi) => {
+  async (token, thunkApi) => {
     try {
-      return await commonServices.userInfo();
+      const data = JSON.parse(localStorage.getItem("blcToken"));
+      return await commonServices.userInfo(token ? token : data);
     } catch (error) {
       let msg = "";
       if (error.response.data.message) {

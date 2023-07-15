@@ -79,7 +79,13 @@ const NavBar = ({ sidebarToggle, setSidebarToggle, setTriggred }) => {
                   <CustomLink href="#">Profile</CustomLink>
                 </li>
                 <li>
-                  <CustomLink href="#">Logout</CustomLink>
+                  <a
+                    href="/"
+                    className="logout-link"
+                    onClick={() => localStorage.removeItem("blcToken")}
+                  >
+                    Logout
+                  </a>
                 </li>
               </ul>
             </div>

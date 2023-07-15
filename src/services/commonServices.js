@@ -1,8 +1,12 @@
 import axios from "axios";
 import { authHeader, baseURL } from "./httpHelper";
 
-const userInfo = async () => {
-  const res = await axios.get(baseURL + "/api/user", authHeader);
+const userInfo = async (token) => {
+  const res = await axios.get(baseURL + "/api/user", {
+    headers: {
+      authorization: token,
+    },
+  });
   return res.data;
 };
 

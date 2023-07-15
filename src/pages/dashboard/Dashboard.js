@@ -30,7 +30,7 @@ const Dashboard = () => {
   useEffect(() => {
     console.log("dispatched");
     if (loginInfo?.data?.user?.token) {
-      dispatch(userData());
+      dispatch(userData(loginInfo?.data?.user?.token));
     }
   }, [dispatch, loginInfo?.data?.user?.token]);
 

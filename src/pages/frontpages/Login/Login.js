@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { userLogin } from "../../../features/slices/authSlice";
 import { useEffect } from "react";
+import { userData } from "../../../features/slices/commonSlices/userInfoSlice";
 
 const Login = () => {
   const loginInfo = useSelector((state) => state.auth);

@@ -33,6 +33,10 @@ const MenuAccrodion = ({ setSidebarToggle }) => {
     m.permission.includes(userInfo.data.role)
   );
 
+  const handleLogOut = () => {
+    localStorage.removeItem("blcToken");
+  };
+
   return (
     <>
       {protectedMenus.map((d, i) => (
@@ -91,14 +95,19 @@ const MenuAccrodion = ({ setSidebarToggle }) => {
         </li>
       ))}
       <li className="sidebar__menu__list">
-        <CustomLink href="/" className="sidebar__menu__link">
+        <a
+          href="/"
+          onClick={() => handleLogOut()}
+          className="sidebar__menu__link logout-link"
+          style={{ cursor: "pointer", textDecoration: "none" }}
+        >
           <div className="icon__text">
             <CustomIcon className="sidebar__menu__icon logout">
               <FiLogOut />
             </CustomIcon>
           </div>
           <span className="sidebar__logout">Logout</span>
-        </CustomLink>
+        </a>
       </li>
     </>
   );

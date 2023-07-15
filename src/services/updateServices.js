@@ -10,7 +10,7 @@ const CreateUpdateService = async (data) => {
   return res.data;
 };
 const getUpdatesService = async () => {
-  const res = await axios.get(baseURL + "/common/api/updates", authHeader);
+  const res = await axios.get(baseURL + "/api/updates", authHeader);
   return res.data;
 };
 

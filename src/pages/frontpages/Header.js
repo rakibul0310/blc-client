@@ -111,9 +111,13 @@ const Header = () => {
               )}
               {userInfo.data.token && (
                 <li className="nav__item">
-                  <CustomLink className="nav__link nav__link-btn">
+                  <a
+                    href="/"
+                    className="nav__link nav__link-btn logout-link"
+                    onClick={() => localStorage.removeItem("blcToken")}
+                  >
                     Logout
-                  </CustomLink>
+                  </a>
                 </li>
               )}
             </ul>
