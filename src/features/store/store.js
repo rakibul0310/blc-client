@@ -9,11 +9,13 @@ import myCoursesReducer from "../slices/myCoursesSlice";
 import myCourseReducer from "../slices/myCourseSlice";
 import supportReducer from "../slices/supportSlice";
 import updateReducer from "../slices/updateSlice";
+import updatePasswordReducer from "../slices/commonSlices/updatePassowrdSlice";
 
 export const store = configureStore({
   reducer: {
     auth: authReducer,
     userInfo: userInfoReducer,
+    updatePassword: updatePasswordReducer,
     courses: coursesReducer,
     course: courseReducer,
     payment: paymentReducer,

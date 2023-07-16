@@ -1,8 +1,17 @@
-import React from "react";
-import avatar from "../../../../assets/avater/avater1.jpg";
+import React, { useEffect } from "react";
+import avatar from "../../../../assets/avater/user_avatar.png";
 import Input from "../../../../componentes/Common/Input";
+import { useDispatch, useSelector } from "react-redux";
+import { userData } from "../../../../features/slices/commonSlices/userInfoSlice";
 
 const MyProfile = () => {
+  const dispatch = useDispatch();
+  const userInfo = useSelector((state) => state.userInfo);
+
+  useEffect(() => {
+    dispatch(userData());
+  }, []);
+
   return (
     <div className="my_profile_page_wrapper">
       <div className="my_profile_card">
@@ -15,7 +24,11 @@ const MyProfile = () => {
           </div>
           <div className="profile_short_info">
             <div className="profile_photo">
-              <img src={avatar} width="100%" alt="img" />
+              <img
+                src={userInfo?.data?.avatar ? userInfo?.data?.avatar : avatar}
+                width="100%"
+                alt="img"
+              />
 
               {/* {isLoading && "Uploading..."} */}
               <form encType="multipart/form-data">
@@ -33,12 +46,12 @@ const MyProfile = () => {
             </div>
             <div className="profile_info">
               <div className="profile_name">
-                <h2>Jhon Murari</h2>
-                <p>Role: </p>
+                <h2>Name: {userInfo?.data?.name}</h2>
+                <p>Role: {userInfo?.data?.role}</p>
               </div>
               <div className="profile_email">
-                <h2>murari@mail.com</h2>
                 <p>Email</p>
+                <h2>{userInfo?.data?.email}</h2>
               </div>
             </div>
           </div>
@@ -52,16 +65,14 @@ const MyProfile = () => {
               <Input
                 label="Name"
                 type="text"
-                // value={data?.data?.name}
-                value="Jhon murari"
+                value={userInfo?.data?.name}
                 disabled={true}
                 inputGroupClass="right"
               />
               <Input
                 label="Email"
                 type="text"
-                // value={data?.data?.email}
-                value="murari@mail.com"
+                value={userInfo?.data?.email}
                 disabled={true}
                 inputGroupClass="left"
               />
@@ -70,18 +81,20 @@ const MyProfile = () => {
               <Input
                 label="Phone No."
                 type="text"
-                // value={data?.data?.mobile}
-                value="0132684985"
+                value={
+                  userInfo?.data?.mobile ? userInfo?.data?.mobile : "------"
+                }
                 disabled={true}
                 inputGroupClass="right"
               />
               <Input
                 label="Join Date"
                 type="text"
-                // value={new Date(
-                //   parseInt(data?.data?.join_date)
-                // )?.toDateString()}
-                value="12/15/20"
+                value={
+                  userInfo?.data?.join_date
+                    ? userInfo?.data?.join_date
+                    : "------"
+                }
                 disabled={true}
                 inputGroupClass="left"
               />
@@ -90,16 +103,18 @@ const MyProfile = () => {
               <Input
                 label="Gender"
                 type="text"
-                // value={data?.data?.gender}
-                value="Male"
+                value={
+                  userInfo?.data?.gender ? userInfo?.data?.gender : "-----"
+                }
                 disabled={true}
                 inputGroupClass="left"
               />
               <Input
                 label="Country"
                 type="text"
-                // value={data?.data?.country}
-                value="Bangladesh"
+                value={
+                  userInfo?.data?.country ? userInfo?.data?.country : "------"
+                }
                 disabled={true}
                 inputGroupClass="right"
               />

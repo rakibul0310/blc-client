@@ -14,8 +14,23 @@ const getCourses = async () => {
   const res = await axios.get(baseURL + "/public/api/courses", authHeader);
   return res.data;
 };
+
 const getCourseById = async (id) => {
   const res = await axios.get(baseURL + "/public/api/course/" + id, authHeader);
+  return res.data;
+};
+
+const updateUserInfoService = async (data) => {
+  const res = await axios.post(baseURL + "/api/user", data, authHeader);
+  return res.data;
+};
+
+const updatePasswordService = async (data) => {
+  const res = await axios.post(
+    baseURL + "/api/change-password",
+    data,
+    authHeader
+  );
   return res.data;
 };
 
@@ -23,4 +38,6 @@ export const commonServices = {
   userInfo,
   getCourses,
   getCourseById,
+  updateUserInfoService,
+  updatePasswordService,
 };

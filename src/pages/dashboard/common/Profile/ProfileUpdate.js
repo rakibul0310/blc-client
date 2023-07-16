@@ -4,9 +4,20 @@ import Input from "../../../../componentes/Common/Input";
 import { useEffect } from "react";
 import { useState } from "react";
 import Button from "../../../../componentes/Common/Button";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  updateUserData,
+  userData,
+} from "../../../../features/slices/commonSlices/userInfoSlice";
+import Loading from "../../../../componentes/Common/Loading";
 
 const ProfileUpdate = () => {
   const [countries, setCountries] = useState([]);
+  const [data, setData] = useState({
+    mobile: "",
+    country: "",
+    gender: "",
+  });
   useEffect(() => {
     fetch("https://restcountries.com/v2/all")
       .then((response) => response.json())
@@ -14,6 +25,41 @@ const ProfileUpdate = () => {
         setCountries(json.map((c) => c.name));
       });
   }, []);
+
+  const dispatch = useDispatch();
+  const userInfo = useSelector((state) => state.userInfo);
+
+  useEffect(() => {
+    dispatch(userData());
+  }, []);
+
+  if (userInfo?.isLoading) {
+    return <Loading />;
+  }
+
+  const handleChange = (e) => {
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let processedData = {};
+    if (data.mobile) {
+      processedData = { ...processedData, mobile: data.mobile };
+    }
+    if (data.country) {
+      processedData = { ...processedData, country: data.country };
+    }
+    if (data.gender) {
+      processedData = { ...processedData, gender: data.gender };
+    }
+
+    dispatch(updateUserData(processedData));
+  };
+
   return (
     <div className="userUpdate_page_wrapper">
       <div className="userupdate_card">
@@ -21,25 +67,23 @@ const ProfileUpdate = () => {
           <h2>update profile</h2>
         </div>
         <div className="userupdate_field">
-          <form onSubmit={"handleSubmit"}>
+          <form onSubmit={handleSubmit}>
             <div className="form_group">
               <Input
                 label="Name"
                 type="text"
-                // value={data.name}
-                value="Jhon murari"
+                value={userInfo?.data?.name}
                 name="name"
-                // onChange={handleChange}
+                onChange={handleChange}
                 inputGroupClass="left"
                 disabled={true}
               />
               <Input
                 label="Mobile"
                 type="text"
-                // value={data.mobile}
-                value="051653203"
+                value={userInfo?.data?.mobile}
                 name="mobile"
-                // onChange={handleChange}
+                onChange={handleChange}
                 inputGroupClass="right"
               />
             </div>
@@ -48,10 +92,9 @@ const ProfileUpdate = () => {
                 <Select
                   className="special_input"
                   label="Country"
-                  //   value={data.country}
-                  value="Bangladesh"
+                  value={userInfo?.data.country}
                   name="country"
-                  //   onChange={handleChange}
+                  onChange={handleChange}
                   options={countries}
                   inputGroupClass="left"
                 />
@@ -63,17 +106,26 @@ const ProfileUpdate = () => {
                   className="special_input"
                   label="Gender"
                   name="gender"
-                  //   value={data.gender}
-                  value="Male"
-                  //   onChange={handleChange}
+                  value={userInfo?.data.gender}
+                  onChange={handleChange}
                   options={["Male", "Female", "Others"]}
                 />
               </div>
             </div>
             <div className="submit_button">
-              <Button type="submit" disabled="{isLoading}">
+              {userInfo?.isLoading ? (
+                <Button type="submit" disabled="{isLoading}">
+                  <span class="loading-icon"></span>
+                  {userInfo?.isLoading ? "Loading..." : "Update"}
+                </Button>
+              ) : (
+                <Button type="submit" disabled="{isLoading}">
+                  {!"isLoading" ? "Loading..." : "Update"}
+                </Button>
+              )}
+              {/* <Button type="submit" disabled="{isLoading}">
                 {!"isLoading" ? "Loading..." : "Update"}
-              </Button>
+              </Button> */}
             </div>
           </form>
         </div>

@@ -35,12 +35,12 @@ export let dashboardMenus = [
         route: "/dashboard/profile/update-password",
         permission: ["student", "teacher"],
       },
-      {
-        id: "sfs4f8se8",
-        menu: "Update Email",
-        route: "/dashboard/profile/update-email",
-        permission: ["student", "teacher"],
-      },
+      // {
+      //   id: "sfs4f8se8",
+      //   menu: "Update Email",
+      //   route: "/dashboard/profile/update-email",
+      //   permission: ["student", "teacher"],
+      // },
     ],
   },
   {
