@@ -1,38 +1,46 @@
 import axios from "axios";
 import { authHeader, baseURL } from "./httpHelper";
 
-const getLearningTimeService = async () => {
-  const res = await axios.get(
-    baseURL + "/secure/api/learning-time",
-    authHeader
-  );
+const getLearningTimeService = async (token) => {
+  const res = await axios.get(baseURL + "/secure/api/learning-time", {
+    headers: {
+      authorization: token,
+    },
+  });
   return res.data;
 };
 
-const getTotalTaskService = async () => {
-  const res = await axios.get(baseURL + "/secure/api/total-task", authHeader);
+const getTotalTaskService = async (token) => {
+  const res = await axios.get(baseURL + "/secure/api/total-task", {
+    headers: {
+      authorization: token,
+    },
+  });
   return res.data;
 };
 
-const getLatestCoursesService = async () => {
-  const res = await axios.get(
-    baseURL + "/secure/api/latest-course",
-    authHeader
-  );
+const getLatestCoursesService = async (token) => {
+  const res = await axios.get(baseURL + "/secure/api/latest-course", {
+    headers: {
+      authorization: token,
+    },
+  });
   return res.data;
 };
-const getUpcomingTaskService = async () => {
-  const res = await axios.get(
-    baseURL + "/secure/api/upcoming-task",
-    authHeader
-  );
+const getUpcomingTaskService = async (token) => {
+  const res = await axios.get(baseURL + "/secure/api/upcoming-task", {
+    headers: {
+      authorization: token,
+    },
+  });
   return res.data;
 };
-const getLatestTransactionsService = async () => {
-  const res = await axios.get(
-    baseURL + "/secure/api/latest-transactions",
-    authHeader
-  );
+const getLatestTransactionsService = async (token) => {
+  const res = await axios.get(baseURL + "/secure/api/latest-transactions", {
+    headers: {
+      authorization: token,
+    },
+  });
   return res.data;
 };
 

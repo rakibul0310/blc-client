@@ -7,10 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 const MyCourses = ({ data, limit }) => {
   const navigate = useNavigate();
+  console.log(data);
   return (
     <>
       <div className="my__courses__container">
-        {data &&
+        {data.length > 0 ? (
           data.slice(0, limit).map((d, i) => (
             <div className="course__container" key={i}>
               <div className="icon__container">
@@ -33,43 +34,20 @@ const MyCourses = ({ data, limit }) => {
                 <CustomIcon className="start__icon">
                   <AiFillStar />
                 </CustomIcon>
-                <span>4.3</span>
+                <span>{d.rating}</span>
               </div>
               <div className="course__btn__container">
                 <button className="btn__view__all">View Course</button>
               </div>
             </div>
-          ))}
-
-        {/* <div className="course__container">
-          <div className="icon__container">Icon</div>
-          <div className="course__title">
-            <h4>History Of Bangladesh</h4>
-            <span>Jhon D.</span>
+          ))
+        ) : (
+          <div className="">
+            <span style={{ width: "80%", textAlign: "center", margin: "1rem" }}>
+              No Course Yet. Enroll Some Courses!
+            </span>
           </div>
-          <div className="course__traking__percentence__container">
-            Precentence
-          </div>
-          <div className="course__rating__container">Icon 4.3</div>
-          <div className="course__btn__container">
-            <button>View Course</button>
-          </div>
-        </div> */}
-
-        {/* <div className="course__container">
-          <div className="icon__container">Icon</div>
-          <div className="course__title">
-            <h4>History Of Bangladesh</h4>
-            <span>Jhon D.</span>
-          </div>
-          <div className="course__traking__percentence__container">
-            Precentence
-          </div>
-          <div className="course__rating__container">Icon 4.3</div>
-          <div className="course__btn__container">
-            <button>View Course</button>
-          </div>
-        </div> */}
+        )}
         <div className="view__all__btn__container">
           <button
             className="btn__view__all__arrow"

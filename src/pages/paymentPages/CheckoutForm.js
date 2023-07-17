@@ -87,6 +87,7 @@ const CheckoutForm = ({ order }) => {
       const transactionDetails = {
         course_id: order?._id,
         email: userInfo?.email,
+        author: order?.authorEmail,
         title: order?.title,
         amount: order?.offerProce,
         status: true,

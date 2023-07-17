@@ -20,7 +20,7 @@ const Analytics = ({
           </div>
           <div className="description__container">
             <span>{analyticsTitle ? analyticsTitle : "Learning Time"}</span>
-            <h4>{analyticsDetails ? analyticsDetails : "2h 37m"}</h4>
+            <h4>{analyticsDetails ? `${analyticsDetails} Hours` : "0 Hour"}</h4>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const Analytics = ({
           </div>
           <div className="description__container">
             <span>{activityTitle ? activityTitle : "My Activities"}</span>
-            <h4>{activityDetails ? activityDetails : "21 Tasks"}</h4>
+            <h4>{activityDetails ? `${activityDetails} Task` : "0 Tasks"}</h4>
           </div>
         </div>
       </div>

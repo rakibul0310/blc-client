@@ -10,6 +10,11 @@ import myCourseReducer from "../slices/myCourseSlice";
 import supportReducer from "../slices/supportSlice";
 import updateReducer from "../slices/updateSlice";
 import updatePasswordReducer from "../slices/commonSlices/updatePassowrdSlice";
+import LearningTimeReducer from "../slices/learningTimeSlice";
+import totalTaskReducer from "../slices/totalTaskSlice";
+import latestCourseReducer from "../slices/latestCourseSlice";
+import upcomingTaskReducer from "../slices/upcomingTaskSlice";
+import latestTransactionsReducer from "../slices/latestTransactionSlice";
 
 export const store = configureStore({
   reducer: {
@@ -24,5 +29,10 @@ export const store = configureStore({
     myCourse: myCourseReducer,
     support: supportReducer,
     updates: updateReducer,
+    learningTime: LearningTimeReducer,
+    totalTask: totalTaskReducer,
+    latestCourse: latestCourseReducer,
+    upcomingTask: upcomingTaskReducer,
+    latestTransactions: latestTransactionsReducer,
   },
 });
