@@ -4,7 +4,7 @@ import CustomIcon from "../Common/CustomIcon";
 import CustomLink from "../Common/CustomLink";
 import { FiSun } from "react-icons/fi";
 import { MdOutlineDarkMode } from "react-icons/md";
-import avatar from "../../assets/avater/avater1.jpg";
+import avatar from "../../assets/avater/user_avatar.png";
 
 const NavBar = ({ sidebarToggle, setSidebarToggle, setTriggred }) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -46,7 +46,7 @@ const NavBar = ({ sidebarToggle, setSidebarToggle, setTriggred }) => {
         <ul className="navbar__menu__lists">
           <li className="navbar__menu__list">
             <div className="theme_icon">
-              <button
+              {/* <button
                 onClick={() =>
                   setChangeTheme(changeTheme === "light" ? "dark" : "light")
                 }
@@ -61,7 +61,7 @@ const NavBar = ({ sidebarToggle, setSidebarToggle, setTriggred }) => {
                     <MdOutlineDarkMode />
                   </CustomIcon>
                 )}
-              </button>
+              </button> */}
             </div>
           </li>
           <li className="navbar__menu__list" ref={toggleRef}>

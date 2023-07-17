@@ -116,25 +116,25 @@ export let dashboardMenus = [
     id: "vn3es6uru3sf7",
     menu: "support",
     icon: <MdOutlineSupportAgent />,
-    permission: ["student"],
+    permission: ["student", "teacher"],
     dropdown: [
       {
         id: "sfs4f4s8e8r",
         menu: "updates",
         route: "/dashboard/support/updates",
-        permission: ["student"],
+        permission: ["student", "teacher"],
       },
       {
         id: "vmj4dfs4f8sf",
         menu: "support ticket",
         route: "/dashboard/support/support-ticket",
-        permission: ["student"],
+        permission: ["student", "teacher"],
       },
       {
         id: "vmj4de4ru4sf7s7",
         menu: "ticket history",
         route: "/dashboard/support/ticket-history",
-        permission: ["student"],
+        permission: ["student", "teacher"],
       },
       // {
       //   id: "f7s8f8fd",
